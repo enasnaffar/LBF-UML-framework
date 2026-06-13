@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_zroK0Fq3EfGsOv-VTOBDaQ" name="online shopping v0">
+  <eAnnotations xmi:id="_zroK0Vq3EfGsOv-VTOBDaQ" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_zroK0lq3EfGsOv-VTOBDaQ" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_zroK01q3EfGsOv-VTOBDaQ" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zroK1Fq3EfGsOv-VTOBDaQ" name="use cases L0">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_zroK1Vq3EfGsOv-VTOBDaQ" name="registered customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroK1lq3EfGsOv-VTOBDaQ" memberEnd="_zroK11q3EfGsOv-VTOBDaQ _zroK2Vq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroK11q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroK11q3EfGsOv-VTOBDaQ" visibility="public" type="_zroK21q3EfGsOv-VTOBDaQ" isUnique="false" association="_zroK1lq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroK2Fq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroK2Vq3EfGsOv-VTOBDaQ" visibility="public" type="_zroK1Vq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroK1lq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroK2lq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroK21q3EfGsOv-VTOBDaQ" name="view item">
+      <ownedComment xmi:id="_zroK3Fq3EfGsOv-VTOBDaQ">
+        <body>objectTag: product
+Trigger: view product
+Basic Flow:  The system retrieves the selected product details, The system displays the product information (e.g., name, price, description), The system displays related options (e.g., add to cart, view recommendations).
+Alternative flow: Customer selects “Add to Shopping Cart”
+.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroK3Vq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroK3lq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroK31q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroK4Fq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroK4Vq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_zroK4lq3EfGsOv-VTOBDaQ" name="view item Interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_zroK41q3EfGsOv-VTOBDaQ" name="locals">
+          <ownedAttribute xmi:id="_zroK5Fq3EfGsOv-VTOBDaQ" name="r" type="_zroK1Vq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroK5Vq3EfGsOv-VTOBDaQ" name="r1" type="_zrrOUFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroK5lq3EfGsOv-VTOBDaQ" name="r2" type="_zrrOsVq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroK51q3EfGsOv-VTOBDaQ" name="r3" type="_zrrOmFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroK6Fq3EfGsOv-VTOBDaQ" name="r4" type="_zrrOpVq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_zroK6Vq3EfGsOv-VTOBDaQ" name="r" represents="_zroK5Fq3EfGsOv-VTOBDaQ" coveredBy="_zroK7Vq3EfGsOv-VTOBDaQ _zroK9Vq3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroK6lq3EfGsOv-VTOBDaQ" name="r2" represents="_zroK5lq3EfGsOv-VTOBDaQ" coveredBy="_zroK7lq3EfGsOv-VTOBDaQ _zroK71q3EfGsOv-VTOBDaQ _zroK8Fq3EfGsOv-VTOBDaQ _zroK8Vq3EfGsOv-VTOBDaQ _zroK8lq3EfGsOv-VTOBDaQ _zroK81q3EfGsOv-VTOBDaQ _zroK9Fq3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroK61q3EfGsOv-VTOBDaQ" name="r3" represents="_zroK51q3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroK7Fq3EfGsOv-VTOBDaQ" name="r4" represents="_zroK6Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroK7Vq3EfGsOv-VTOBDaQ" covered="_zroK6Vq3EfGsOv-VTOBDaQ" event="_zroLHlq3EfGsOv-VTOBDaQ" message="_zroK-1q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroK7lq3EfGsOv-VTOBDaQ" covered="_zroK6lq3EfGsOv-VTOBDaQ" event="_zroLH1q3EfGsOv-VTOBDaQ" message="_zroK-1q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroK71q3EfGsOv-VTOBDaQ" covered="_zroK6lq3EfGsOv-VTOBDaQ" start="_zroK7lq3EfGsOv-VTOBDaQ" finish="_zroK9Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroK8Fq3EfGsOv-VTOBDaQ" covered="_zroK6lq3EfGsOv-VTOBDaQ" event="_zroLIFq3EfGsOv-VTOBDaQ" message="_zroK_Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroK8Vq3EfGsOv-VTOBDaQ" covered="_zroK6lq3EfGsOv-VTOBDaQ" event="_zroLIVq3EfGsOv-VTOBDaQ" message="_zroK_Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroK8lq3EfGsOv-VTOBDaQ" covered="_zroK6lq3EfGsOv-VTOBDaQ" event="_zroLIlq3EfGsOv-VTOBDaQ" message="_zroK_Vq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroK81q3EfGsOv-VTOBDaQ" covered="_zroK6lq3EfGsOv-VTOBDaQ" event="_zroLI1q3EfGsOv-VTOBDaQ" message="_zroK_Vq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroK9Fq3EfGsOv-VTOBDaQ" covered="_zroK6lq3EfGsOv-VTOBDaQ" message="_zroK_lq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroK9Vq3EfGsOv-VTOBDaQ" covered="_zroK6Vq3EfGsOv-VTOBDaQ" message="_zroK_lq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_zroK9lq3EfGsOv-VTOBDaQ" name="CombinedFragment" interactionOperator="opt">
+          <operand xmi:id="_zroK91q3EfGsOv-VTOBDaQ">
+            <guard xmi:id="_zroK-Fq3EfGsOv-VTOBDaQ">
+              <specification xmi:type="uml:LiteralString" xmi:id="_zroK-Vq3EfGsOv-VTOBDaQ" value="customer chooses add to cart"/>
+            </guard>
+            <fragment xmi:type="uml:InteractionUse" xmi:id="_zroK-lq3EfGsOv-VTOBDaQ" name="InteractionUse" refersTo="_zroL0Vq3EfGsOv-VTOBDaQ"/>
+          </operand>
+        </fragment>
+        <message xmi:id="_zroK-1q3EfGsOv-VTOBDaQ" name="view product" receiveEvent="_zroK7lq3EfGsOv-VTOBDaQ" sendEvent="_zroK7Vq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroK_Fq3EfGsOv-VTOBDaQ" name="getID" receiveEvent="_zroK8Vq3EfGsOv-VTOBDaQ" sendEvent="_zroK8Fq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroK_Vq3EfGsOv-VTOBDaQ" name="getName" receiveEvent="_zroK81q3EfGsOv-VTOBDaQ" sendEvent="_zroK8lq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroK_lq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zroK9Vq3EfGsOv-VTOBDaQ" sendEvent="_zroK9Fq3EfGsOv-VTOBDaQ"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_zroK_1q3EfGsOv-VTOBDaQ" name="Activity">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_zroLAFq3EfGsOv-VTOBDaQ" name="locals"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_zroLAVq3EfGsOv-VTOBDaQ" name="Initial Node" outgoing="_zroLClq3EfGsOv-VTOBDaQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_zroLAlq3EfGsOv-VTOBDaQ" name="select view product" outgoing="_zroLDFq3EfGsOv-VTOBDaQ" incoming="_zroLClq3EfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_zroLA1q3EfGsOv-VTOBDaQ" name="retreive product details" outgoing="_zroLDlq3EfGsOv-VTOBDaQ" incoming="_zroLDFq3EfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_zroLBFq3EfGsOv-VTOBDaQ" name="Decision-Merge" outgoing="_zroLEFq3EfGsOv-VTOBDaQ _zroLE1q3EfGsOv-VTOBDaQ" incoming="_zroLGFq3EfGsOv-VTOBDaQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_zroLBVq3EfGsOv-VTOBDaQ" name="add item to shopping cart" outgoing="_zroLFlq3EfGsOv-VTOBDaQ" incoming="_zroLEFq3EfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_zroLBlq3EfGsOv-VTOBDaQ" name="Activity Final Node" incoming="_zroLHFq3EfGsOv-VTOBDaQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_zroLB1q3EfGsOv-VTOBDaQ" name="display product details" outgoing="_zroLGFq3EfGsOv-VTOBDaQ" incoming="_zroLDlq3EfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_zroLCFq3EfGsOv-VTOBDaQ" name="confirm adding item" outgoing="_zroLGlq3EfGsOv-VTOBDaQ" incoming="_zroLFlq3EfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <node xmi:type="uml:MergeNode" xmi:id="_zroLCVq3EfGsOv-VTOBDaQ" name="Decision-Merge1" outgoing="_zroLHFq3EfGsOv-VTOBDaQ" incoming="_zroLE1q3EfGsOv-VTOBDaQ _zroLGlq3EfGsOv-VTOBDaQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zroLClq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zroLAVq3EfGsOv-VTOBDaQ" target="_zroLAlq3EfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_zroLC1q3EfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zroLDFq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zroLAlq3EfGsOv-VTOBDaQ" target="_zroLA1q3EfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_zroLDVq3EfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zroLDlq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zroLA1q3EfGsOv-VTOBDaQ" target="_zroLB1q3EfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_zroLD1q3EfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zroLEFq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zroLBFq3EfGsOv-VTOBDaQ" target="_zroLBVq3EfGsOv-VTOBDaQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_zroLEVq3EfGsOv-VTOBDaQ">
+            <body>add to cart</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_zroLElq3EfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zroLE1q3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zroLBFq3EfGsOv-VTOBDaQ" target="_zroLCVq3EfGsOv-VTOBDaQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_zroLFFq3EfGsOv-VTOBDaQ">
+            <body>else</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_zroLFVq3EfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zroLFlq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zroLBVq3EfGsOv-VTOBDaQ" target="_zroLCFq3EfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_zroLF1q3EfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zroLGFq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zroLB1q3EfGsOv-VTOBDaQ" target="_zroLBFq3EfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_zroLGVq3EfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zroLGlq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zroLCFq3EfGsOv-VTOBDaQ" target="_zroLCVq3EfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_zroLG1q3EfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zroLHFq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zroLCVq3EfGsOv-VTOBDaQ" target="_zroLBlq3EfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_zroLHVq3EfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLHlq3EfGsOv-VTOBDaQ" operation="_zrrOuFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLH1q3EfGsOv-VTOBDaQ" operation="_zrrOuFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLIFq3EfGsOv-VTOBDaQ" operation="_zrrOtVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLIVq3EfGsOv-VTOBDaQ" operation="_zrrOtVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLIlq3EfGsOv-VTOBDaQ" operation="_zrrOtlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLI1q3EfGsOv-VTOBDaQ" operation="_zrrOtlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroLJFq3EfGsOv-VTOBDaQ" name="make purchase">
+      <ownedComment xmi:id="_zroLJVq3EfGsOv-VTOBDaQ">
+        <body>objectTag: payment
+Trigger: make purchase</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLJlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLJ1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLKFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLKVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLKlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_zroLK1q3EfGsOv-VTOBDaQ" name="make purchase Interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_zroLLFq3EfGsOv-VTOBDaQ" name="locals">
+          <ownedAttribute xmi:id="_zroLLVq3EfGsOv-VTOBDaQ" name="r" type="_zrrOeFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroLLlq3EfGsOv-VTOBDaQ" name="r1" type="_zrrOUFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroLL1q3EfGsOv-VTOBDaQ" name="r2" type="_zrrOsVq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroLMFq3EfGsOv-VTOBDaQ" name="r3" type="_zrrOeFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroLMVq3EfGsOv-VTOBDaQ" name="r4" type="_zroK1Vq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroLMlq3EfGsOv-VTOBDaQ" name="r5" type="_zrrOUFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroLM1q3EfGsOv-VTOBDaQ" name="r6" type="_zrrOmFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroLNFq3EfGsOv-VTOBDaQ" name="r7" type="_zrrOhVq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_zroLNVq3EfGsOv-VTOBDaQ" name="r2" represents="_zroLL1q3EfGsOv-VTOBDaQ" coveredBy="_zroLQlq3EfGsOv-VTOBDaQ _zroLQ1q3EfGsOv-VTOBDaQ _zroLRFq3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroLNlq3EfGsOv-VTOBDaQ" name="r3" represents="_zroLMFq3EfGsOv-VTOBDaQ" coveredBy="_zroLT1q3EfGsOv-VTOBDaQ _zroLUFq3EfGsOv-VTOBDaQ _zroLUlq3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroLN1q3EfGsOv-VTOBDaQ" name="r4" represents="_zroLMVq3EfGsOv-VTOBDaQ" coveredBy="_zroLO1q3EfGsOv-VTOBDaQ _zroLP1q3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroLOFq3EfGsOv-VTOBDaQ" name="r5" represents="_zroLMlq3EfGsOv-VTOBDaQ" coveredBy="_zroLPFq3EfGsOv-VTOBDaQ _zroLPVq3EfGsOv-VTOBDaQ _zroLPlq3EfGsOv-VTOBDaQ _zroLQVq3EfGsOv-VTOBDaQ _zroLRVq3EfGsOv-VTOBDaQ _zroLRlq3EfGsOv-VTOBDaQ _zroLSlq3EfGsOv-VTOBDaQ _zroLTlq3EfGsOv-VTOBDaQ _zroLU1q3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroLOVq3EfGsOv-VTOBDaQ" name="r6" represents="_zroLM1q3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroLOlq3EfGsOv-VTOBDaQ" name="r7" represents="_zroLNFq3EfGsOv-VTOBDaQ" coveredBy="_zroLR1q3EfGsOv-VTOBDaQ _zroLSFq3EfGsOv-VTOBDaQ _zroLSVq3EfGsOv-VTOBDaQ _zroLS1q3EfGsOv-VTOBDaQ _zroLTFq3EfGsOv-VTOBDaQ _zroLTVq3EfGsOv-VTOBDaQ _zroLUVq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLO1q3EfGsOv-VTOBDaQ" covered="_zroLN1q3EfGsOv-VTOBDaQ" event="_zroLX1q3EfGsOv-VTOBDaQ" message="_zroLVFq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLPFq3EfGsOv-VTOBDaQ" covered="_zroLOFq3EfGsOv-VTOBDaQ" event="_zroLYFq3EfGsOv-VTOBDaQ" message="_zroLVFq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroLPVq3EfGsOv-VTOBDaQ" covered="_zroLOFq3EfGsOv-VTOBDaQ" start="_zroLPFq3EfGsOv-VTOBDaQ" finish="_zroLPlq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLPlq3EfGsOv-VTOBDaQ" covered="_zroLOFq3EfGsOv-VTOBDaQ" message="_zroLVVq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLP1q3EfGsOv-VTOBDaQ" covered="_zroLN1q3EfGsOv-VTOBDaQ" message="_zroLVVq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:InteractionUse" xmi:id="_zroLQFq3EfGsOv-VTOBDaQ" name="InteractionUse" refersTo="_zroK4lq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLQVq3EfGsOv-VTOBDaQ" covered="_zroLOFq3EfGsOv-VTOBDaQ" event="_zroLYVq3EfGsOv-VTOBDaQ" message="_zroLVlq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLQlq3EfGsOv-VTOBDaQ" covered="_zroLNVq3EfGsOv-VTOBDaQ" event="_zroLYlq3EfGsOv-VTOBDaQ" message="_zroLVlq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroLQ1q3EfGsOv-VTOBDaQ" covered="_zroLNVq3EfGsOv-VTOBDaQ" start="_zroLQlq3EfGsOv-VTOBDaQ" finish="_zroLRFq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLRFq3EfGsOv-VTOBDaQ" covered="_zroLNVq3EfGsOv-VTOBDaQ" message="_zroLV1q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLRVq3EfGsOv-VTOBDaQ" covered="_zroLOFq3EfGsOv-VTOBDaQ" message="_zroLV1q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLRlq3EfGsOv-VTOBDaQ" covered="_zroLOFq3EfGsOv-VTOBDaQ" message="_zroLWFq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLR1q3EfGsOv-VTOBDaQ" covered="_zroLOlq3EfGsOv-VTOBDaQ" message="_zroLWFq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroLSFq3EfGsOv-VTOBDaQ" covered="_zroLOlq3EfGsOv-VTOBDaQ" start="_zroLR1q3EfGsOv-VTOBDaQ" finish="_zroLSVq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLSVq3EfGsOv-VTOBDaQ" covered="_zroLOlq3EfGsOv-VTOBDaQ" message="_zroLWVq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLSlq3EfGsOv-VTOBDaQ" covered="_zroLOFq3EfGsOv-VTOBDaQ" message="_zroLWVq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLS1q3EfGsOv-VTOBDaQ" covered="_zroLOlq3EfGsOv-VTOBDaQ" event="_zroLY1q3EfGsOv-VTOBDaQ" message="_zroLWlq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLTFq3EfGsOv-VTOBDaQ" covered="_zroLOlq3EfGsOv-VTOBDaQ" event="_zroLZFq3EfGsOv-VTOBDaQ" message="_zroLWlq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroLTVq3EfGsOv-VTOBDaQ" covered="_zroLOlq3EfGsOv-VTOBDaQ" start="_zroLTFq3EfGsOv-VTOBDaQ" finish="_zroLUVq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLTlq3EfGsOv-VTOBDaQ" covered="_zroLOFq3EfGsOv-VTOBDaQ" event="_zroLZVq3EfGsOv-VTOBDaQ" message="_zroLW1q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLT1q3EfGsOv-VTOBDaQ" covered="_zroLNlq3EfGsOv-VTOBDaQ" event="_zroLZlq3EfGsOv-VTOBDaQ" message="_zroLW1q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroLUFq3EfGsOv-VTOBDaQ" covered="_zroLNlq3EfGsOv-VTOBDaQ" start="_zroLT1q3EfGsOv-VTOBDaQ" finish="_zroLUlq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_zroLUVq3EfGsOv-VTOBDaQ" covered="_zroLOlq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLUlq3EfGsOv-VTOBDaQ" covered="_zroLNlq3EfGsOv-VTOBDaQ" message="_zroLXFq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroLU1q3EfGsOv-VTOBDaQ" covered="_zroLOFq3EfGsOv-VTOBDaQ" message="_zroLXFq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroLVFq3EfGsOv-VTOBDaQ" name="make purchase" receiveEvent="_zroLPFq3EfGsOv-VTOBDaQ" sendEvent="_zroLO1q3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroLVVq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zroLP1q3EfGsOv-VTOBDaQ" sendEvent="_zroLPlq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroLVlq3EfGsOv-VTOBDaQ" name="get price" receiveEvent="_zroLQlq3EfGsOv-VTOBDaQ" sendEvent="_zroLQVq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroLV1q3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zroLRVq3EfGsOv-VTOBDaQ" sendEvent="_zroLRFq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroLWFq3EfGsOv-VTOBDaQ" name="create order" receiveEvent="_zroLR1q3EfGsOv-VTOBDaQ" sendEvent="_zroLRlq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroLWVq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zroLSlq3EfGsOv-VTOBDaQ" sendEvent="_zroLSVq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroLWlq3EfGsOv-VTOBDaQ" name="calc total" receiveEvent="_zroLTFq3EfGsOv-VTOBDaQ" sendEvent="_zroLS1q3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroLW1q3EfGsOv-VTOBDaQ" name="process payment" receiveEvent="_zroLT1q3EfGsOv-VTOBDaQ" sendEvent="_zroLTlq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroLXFq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zroLU1q3EfGsOv-VTOBDaQ" sendEvent="_zroLUlq3EfGsOv-VTOBDaQ"/>
+      </ownedBehavior>
+      <include xmi:id="_zroLXVq3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroK21q3EfGsOv-VTOBDaQ"/>
+      <include xmi:id="_zroLXlq3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroLbFq3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLX1q3EfGsOv-VTOBDaQ" operation="_zrrOalq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLYFq3EfGsOv-VTOBDaQ" operation="_zrrOalq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLYVq3EfGsOv-VTOBDaQ" operation="_zrrOt1q3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLYlq3EfGsOv-VTOBDaQ" operation="_zrrOt1q3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLY1q3EfGsOv-VTOBDaQ" operation="_zrrOj1q3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLZFq3EfGsOv-VTOBDaQ" operation="_zrrOj1q3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLZVq3EfGsOv-VTOBDaQ" operation="_zrrOfVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroLZlq3EfGsOv-VTOBDaQ" operation="_zrrOfVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLZ1q3EfGsOv-VTOBDaQ" memberEnd="_zroLaFq3EfGsOv-VTOBDaQ _zroLalq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLaFq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLaFq3EfGsOv-VTOBDaQ" visibility="public" type="_zroK1Vq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLZ1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLaVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLalq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLJFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLZ1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLa1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroLbFq3EfGsOv-VTOBDaQ" name="checkout">
+      <ownedComment xmi:id="_zroLbVq3EfGsOv-VTOBDaQ">
+        <body>Trigger: test</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLblq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLb1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLcFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLcVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLclq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_zroLc1q3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroMD1q3EfGsOv-VTOBDaQ"/>
+      <include xmi:id="_zroLdFq3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroMSlq3EfGsOv-VTOBDaQ"/>
+      <include xmi:id="_zroLdVq3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroMUVq3EfGsOv-VTOBDaQ"/>
+      <include xmi:id="_zroLdlq3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroMWVq3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroLd1q3EfGsOv-VTOBDaQ" name="client register">
+      <ownedComment xmi:id="_zroLeFq3EfGsOv-VTOBDaQ">
+        <body>trigger: select register
+objectTag:  Account, customer
+Basic flow:  System displays the registration form. 
+
+Customer enters personal information (username, email, password). 
+
+System validates the entered information. 
+
+System creates a new Account. 
+
+System confirms successful registration.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLeVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLelq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLe1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLfFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLfVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_zroLflq3EfGsOv-VTOBDaQ" name="new customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLf1q3EfGsOv-VTOBDaQ" memberEnd="_zroLgFq3EfGsOv-VTOBDaQ _zroLglq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLgFq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLgFq3EfGsOv-VTOBDaQ" visibility="public" type="_zroK21q3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLf1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLgVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLglq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLflq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLf1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLg1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLhFq3EfGsOv-VTOBDaQ" memberEnd="_zroLhVq3EfGsOv-VTOBDaQ _zroLh1q3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLhVq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLhVq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLd1q3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLhFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLhlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLh1q3EfGsOv-VTOBDaQ" visibility="public" type="_zroLflq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLhFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLiFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_zroLiVq3EfGsOv-VTOBDaQ" name="authentication service "/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLilq3EfGsOv-VTOBDaQ" memberEnd="_zroLi1q3EfGsOv-VTOBDaQ _zroLjVq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLi1q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLi1q3EfGsOv-VTOBDaQ" visibility="public" type="_zroK21q3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLilq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLjFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLjVq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLiVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLilq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLjlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLj1q3EfGsOv-VTOBDaQ" memberEnd="_zroLkFq3EfGsOv-VTOBDaQ _zroLklq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLkFq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLkFq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLbFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLj1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLkVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLklq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLiVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLj1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLk1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLlFq3EfGsOv-VTOBDaQ" memberEnd="_zroLlVq3EfGsOv-VTOBDaQ _zroLl1q3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLlVq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLlVq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLd1q3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLlFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLllq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLl1q3EfGsOv-VTOBDaQ" visibility="public" type="_zroLiVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLlFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLmFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_zroLmVq3EfGsOv-VTOBDaQ" name="identity provider"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLmlq3EfGsOv-VTOBDaQ" memberEnd="_zroLm1q3EfGsOv-VTOBDaQ _zroLnVq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLm1q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLm1q3EfGsOv-VTOBDaQ" visibility="public" type="_zroK21q3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLmlq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLnFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLnVq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLmVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLmlq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLnlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLn1q3EfGsOv-VTOBDaQ" memberEnd="_zroLoFq3EfGsOv-VTOBDaQ _zroLolq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLoFq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLoFq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLbFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLn1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLoVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLolq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLmVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLn1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLo1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_zroLpFq3EfGsOv-VTOBDaQ" name="credit payment service"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLpVq3EfGsOv-VTOBDaQ" memberEnd="_zroLplq3EfGsOv-VTOBDaQ _zroLqFq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLplq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLplq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLbFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLpVq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLp1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLqFq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLpFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLpVq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLqVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_zroLqlq3EfGsOv-VTOBDaQ" name="pay pal"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroLq1q3EfGsOv-VTOBDaQ" memberEnd="_zroLrFq3EfGsOv-VTOBDaQ _zroLrlq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroLrFq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroLrFq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLbFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLq1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLrVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroLrlq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLqlq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroLq1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroLr1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zroLsFq3EfGsOv-VTOBDaQ" name="use cases L1">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroLsVq3EfGsOv-VTOBDaQ" name="search items">
+      <ownedComment xmi:id="_zroLslq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLs1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLtFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLtVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLtlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLt1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <extend xmi:id="_zroLuFq3EfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_zroK21q3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroLuVq3EfGsOv-VTOBDaQ" name="browse items">
+      <ownedComment xmi:id="_zroLulq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLu1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLvFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLvVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLvlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLv1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <extend xmi:id="_zroLwFq3EfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_zroK21q3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroLwVq3EfGsOv-VTOBDaQ" name="view recommended items">
+      <ownedComment xmi:id="_zroLwlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLw1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLxFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLxVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLxlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLx1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_zroLyFq3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroMD1q3EfGsOv-VTOBDaQ"/>
+      <extend xmi:id="_zroLyVq3EfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_zroK21q3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroLylq3EfGsOv-VTOBDaQ" name="add to shopping cart">
+      <ownedComment xmi:id="_zroLy1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLzFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLzVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLzlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroLz1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroL0Fq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_zroL0Vq3EfGsOv-VTOBDaQ" name="add to cart Interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_zroL0lq3EfGsOv-VTOBDaQ" name="locals">
+          <ownedAttribute xmi:id="_zroL01q3EfGsOv-VTOBDaQ" name="r" type="_zroK1Vq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroL1Fq3EfGsOv-VTOBDaQ" name="r1" type="_zrrOUFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroL1Vq3EfGsOv-VTOBDaQ" name="r2" type="_zrrOmFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroL1lq3EfGsOv-VTOBDaQ" name="r3" type="_zrrOpVq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroL11q3EfGsOv-VTOBDaQ" name="r4" type="_zrrOsVq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroL2Fq3EfGsOv-VTOBDaQ" name="r5" type="_zrrOL1q3EfGsOv-VTOBDaQ" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_zroL2Vq3EfGsOv-VTOBDaQ" name="r" represents="_zroL01q3EfGsOv-VTOBDaQ" coveredBy="_zroL4Fq3EfGsOv-VTOBDaQ _zroL81q3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroL2lq3EfGsOv-VTOBDaQ" name="r1" represents="_zroL1Fq3EfGsOv-VTOBDaQ" coveredBy="_zroL4Vq3EfGsOv-VTOBDaQ _zroL4lq3EfGsOv-VTOBDaQ _zroL41q3EfGsOv-VTOBDaQ _zroL8Vq3EfGsOv-VTOBDaQ _zroL8lq3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroL21q3EfGsOv-VTOBDaQ" name="r2" represents="_zroL1Vq3EfGsOv-VTOBDaQ" coveredBy="_zroL5Fq3EfGsOv-VTOBDaQ _zroL5Vq3EfGsOv-VTOBDaQ _zroL5lq3EfGsOv-VTOBDaQ _zroL6lq3EfGsOv-VTOBDaQ _zroL61q3EfGsOv-VTOBDaQ _zroL71q3EfGsOv-VTOBDaQ _zroL8Fq3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroL3Fq3EfGsOv-VTOBDaQ" name="r3" represents="_zroL1lq3EfGsOv-VTOBDaQ" coveredBy="_zroL7Fq3EfGsOv-VTOBDaQ _zroL7Vq3EfGsOv-VTOBDaQ _zroL7lq3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroL3Vq3EfGsOv-VTOBDaQ" name="r4" represents="_zroL11q3EfGsOv-VTOBDaQ" coveredBy="_zroL51q3EfGsOv-VTOBDaQ _zroL6Fq3EfGsOv-VTOBDaQ _zroL6Vq3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroL3lq3EfGsOv-VTOBDaQ" name="r5" represents="_zroL2Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:InteractionUse" xmi:id="_zroL31q3EfGsOv-VTOBDaQ" name="authenticateUser()" refersTo="_zroMFlq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL4Fq3EfGsOv-VTOBDaQ" covered="_zroL2Vq3EfGsOv-VTOBDaQ" event="_zroL_lq3EfGsOv-VTOBDaQ" message="_zroL9Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL4Vq3EfGsOv-VTOBDaQ" covered="_zroL2lq3EfGsOv-VTOBDaQ" event="_zroL_1q3EfGsOv-VTOBDaQ" message="_zroL9Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroL4lq3EfGsOv-VTOBDaQ" covered="_zroL2lq3EfGsOv-VTOBDaQ" start="_zroL4Vq3EfGsOv-VTOBDaQ" finish="_zroL8lq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL41q3EfGsOv-VTOBDaQ" covered="_zroL2lq3EfGsOv-VTOBDaQ" event="_zroMAFq3EfGsOv-VTOBDaQ" message="_zroL9Vq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL5Fq3EfGsOv-VTOBDaQ" covered="_zroL21q3EfGsOv-VTOBDaQ" event="_zroMAVq3EfGsOv-VTOBDaQ" message="_zroL9Vq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroL5Vq3EfGsOv-VTOBDaQ" covered="_zroL21q3EfGsOv-VTOBDaQ" start="_zroL5Fq3EfGsOv-VTOBDaQ" finish="_zroL8Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL5lq3EfGsOv-VTOBDaQ" covered="_zroL21q3EfGsOv-VTOBDaQ" event="_zroMAlq3EfGsOv-VTOBDaQ" message="_zroL9lq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL51q3EfGsOv-VTOBDaQ" covered="_zroL3Vq3EfGsOv-VTOBDaQ" event="_zroMA1q3EfGsOv-VTOBDaQ" message="_zroL9lq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroL6Fq3EfGsOv-VTOBDaQ" covered="_zroL3Vq3EfGsOv-VTOBDaQ" start="_zroL51q3EfGsOv-VTOBDaQ" finish="_zroL6Vq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL6Vq3EfGsOv-VTOBDaQ" covered="_zroL3Vq3EfGsOv-VTOBDaQ" message="_zroL91q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL6lq3EfGsOv-VTOBDaQ" covered="_zroL21q3EfGsOv-VTOBDaQ" message="_zroL91q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL61q3EfGsOv-VTOBDaQ" covered="_zroL21q3EfGsOv-VTOBDaQ" event="_zroMBFq3EfGsOv-VTOBDaQ" message="_zroL-Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL7Fq3EfGsOv-VTOBDaQ" covered="_zroL3Fq3EfGsOv-VTOBDaQ" event="_zroMBVq3EfGsOv-VTOBDaQ" message="_zroL-Fq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroL7Vq3EfGsOv-VTOBDaQ" covered="_zroL3Fq3EfGsOv-VTOBDaQ" start="_zroL7Fq3EfGsOv-VTOBDaQ" finish="_zroL7lq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL7lq3EfGsOv-VTOBDaQ" covered="_zroL3Fq3EfGsOv-VTOBDaQ" message="_zroL-Vq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL71q3EfGsOv-VTOBDaQ" covered="_zroL21q3EfGsOv-VTOBDaQ" message="_zroL-Vq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL8Fq3EfGsOv-VTOBDaQ" covered="_zroL21q3EfGsOv-VTOBDaQ" message="_zroL-lq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL8Vq3EfGsOv-VTOBDaQ" covered="_zroL2lq3EfGsOv-VTOBDaQ" message="_zroL-lq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL8lq3EfGsOv-VTOBDaQ" covered="_zroL2lq3EfGsOv-VTOBDaQ" message="_zroL-1q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroL81q3EfGsOv-VTOBDaQ" covered="_zroL2Vq3EfGsOv-VTOBDaQ" message="_zroL-1q3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroL9Fq3EfGsOv-VTOBDaQ" name="updateOrder" receiveEvent="_zroL4Vq3EfGsOv-VTOBDaQ" sendEvent="_zroL4Fq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroL9Vq3EfGsOv-VTOBDaQ" name="addItem" receiveEvent="_zroL5Fq3EfGsOv-VTOBDaQ" sendEvent="_zroL41q3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroL9lq3EfGsOv-VTOBDaQ" name="getName" receiveEvent="_zroL51q3EfGsOv-VTOBDaQ" sendEvent="_zroL5lq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroL91q3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zroL6lq3EfGsOv-VTOBDaQ" sendEvent="_zroL6Vq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroL-Fq3EfGsOv-VTOBDaQ" name="setQuantity" receiveEvent="_zroL7Fq3EfGsOv-VTOBDaQ" sendEvent="_zroL61q3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroL-Vq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zroL71q3EfGsOv-VTOBDaQ" sendEvent="_zroL7lq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroL-lq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zroL8Vq3EfGsOv-VTOBDaQ" sendEvent="_zroL8Fq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroL-1q3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zroL81q3EfGsOv-VTOBDaQ" sendEvent="_zroL8lq3EfGsOv-VTOBDaQ"/>
+      </ownedBehavior>
+      <include xmi:id="_zroL_Fq3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroMD1q3EfGsOv-VTOBDaQ"/>
+      <extend xmi:id="_zroL_Vq3EfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_zroK21q3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroL_lq3EfGsOv-VTOBDaQ" operation="_zrrOaVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroL_1q3EfGsOv-VTOBDaQ" operation="_zrrOaVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMAFq3EfGsOv-VTOBDaQ" operation="_zrrOmlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMAVq3EfGsOv-VTOBDaQ" operation="_zrrOmlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMAlq3EfGsOv-VTOBDaQ" operation="_zrrOtlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMA1q3EfGsOv-VTOBDaQ" operation="_zrrOtlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMBFq3EfGsOv-VTOBDaQ" operation="_zrrOq1q3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMBVq3EfGsOv-VTOBDaQ" operation="_zrrOq1q3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMBlq3EfGsOv-VTOBDaQ" name="add to wishlist">
+      <ownedComment xmi:id="_zroMB1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMCFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMCVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMClq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMC1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMDFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_zroMDVq3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroMD1q3EfGsOv-VTOBDaQ"/>
+      <extend xmi:id="_zroMDlq3EfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_zroK21q3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMD1q3EfGsOv-VTOBDaQ" name="customer authentication">
+      <ownedComment xmi:id="_zroMEFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMEVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMElq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroME1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMFFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMFVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_zroMFlq3EfGsOv-VTOBDaQ" name="authenticate interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_zroMF1q3EfGsOv-VTOBDaQ" name="locals">
+          <ownedAttribute xmi:id="_zroMGFq3EfGsOv-VTOBDaQ" name="r" type="_zroK1Vq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_zroMGVq3EfGsOv-VTOBDaQ" name="r1" type="_zrrOL1q3EfGsOv-VTOBDaQ" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_zroMGlq3EfGsOv-VTOBDaQ" name="r" represents="_zroMGFq3EfGsOv-VTOBDaQ" coveredBy="_zroMHFq3EfGsOv-VTOBDaQ _zroMIlq3EfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_zroMG1q3EfGsOv-VTOBDaQ" name="r1" represents="_zroMGVq3EfGsOv-VTOBDaQ" coveredBy="_zroMHVq3EfGsOv-VTOBDaQ _zroMHlq3EfGsOv-VTOBDaQ _zroMH1q3EfGsOv-VTOBDaQ _zroMIFq3EfGsOv-VTOBDaQ _zroMIVq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroMHFq3EfGsOv-VTOBDaQ" covered="_zroMGlq3EfGsOv-VTOBDaQ" event="_zroMJ1q3EfGsOv-VTOBDaQ" message="_zroMI1q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroMHVq3EfGsOv-VTOBDaQ" covered="_zroMG1q3EfGsOv-VTOBDaQ" event="_zroMKFq3EfGsOv-VTOBDaQ" message="_zroMI1q3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zroMHlq3EfGsOv-VTOBDaQ" covered="_zroMG1q3EfGsOv-VTOBDaQ" start="_zroMHVq3EfGsOv-VTOBDaQ" finish="_zroMIVq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroMH1q3EfGsOv-VTOBDaQ" covered="_zroMG1q3EfGsOv-VTOBDaQ" event="_zroMKVq3EfGsOv-VTOBDaQ" message="_zroMJFq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroMIFq3EfGsOv-VTOBDaQ" covered="_zroMG1q3EfGsOv-VTOBDaQ" event="_zroMKlq3EfGsOv-VTOBDaQ" message="_zroMJFq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroMIVq3EfGsOv-VTOBDaQ" covered="_zroMG1q3EfGsOv-VTOBDaQ" message="_zroMJlq3EfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zroMIlq3EfGsOv-VTOBDaQ" covered="_zroMGlq3EfGsOv-VTOBDaQ" message="_zroMJlq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroMI1q3EfGsOv-VTOBDaQ" name="Login" receiveEvent="_zroMHVq3EfGsOv-VTOBDaQ" sendEvent="_zroMHFq3EfGsOv-VTOBDaQ"/>
+        <message xmi:id="_zroMJFq3EfGsOv-VTOBDaQ" name="setState" receiveEvent="_zroMIFq3EfGsOv-VTOBDaQ" sendEvent="_zroMH1q3EfGsOv-VTOBDaQ">
+          <argument xmi:type="uml:LiteralString" xmi:id="_zroMJVq3EfGsOv-VTOBDaQ" value="active"/>
+        </message>
+        <message xmi:id="_zroMJlq3EfGsOv-VTOBDaQ" name="result" messageSort="reply" receiveEvent="_zroMIlq3EfGsOv-VTOBDaQ" sendEvent="_zroMIVq3EfGsOv-VTOBDaQ"/>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMJ1q3EfGsOv-VTOBDaQ" operation="_zrrONFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMKFq3EfGsOv-VTOBDaQ" operation="_zrrONFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMKVq3EfGsOv-VTOBDaQ" operation="_zrrON1q3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zroMKlq3EfGsOv-VTOBDaQ" operation="_zrrON1q3EfGsOv-VTOBDaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zroMK1q3EfGsOv-VTOBDaQ" name="use cases L1_">
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroMLFq3EfGsOv-VTOBDaQ" memberEnd="_zroMLVq3EfGsOv-VTOBDaQ _zroML1q3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroMLVq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroMLVq3EfGsOv-VTOBDaQ" visibility="public" type="_zroMYFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMLFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMLlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroML1q3EfGsOv-VTOBDaQ" visibility="public" type="_zroLiVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMLFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMMFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroMMVq3EfGsOv-VTOBDaQ" memberEnd="_zroMMlq3EfGsOv-VTOBDaQ _zroMNFq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroMMlq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroMMlq3EfGsOv-VTOBDaQ" visibility="public" type="_zroMaFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMMVq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMM1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroMNFq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLiVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMMVq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMNVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroMNlq3EfGsOv-VTOBDaQ" memberEnd="_zroMN1q3EfGsOv-VTOBDaQ _zroMOVq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroMN1q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroMN1q3EfGsOv-VTOBDaQ" visibility="public" type="_zroMcFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMNlq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMOFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroMOVq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLiVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMNlq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMOlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroMO1q3EfGsOv-VTOBDaQ" memberEnd="_zroMPFq3EfGsOv-VTOBDaQ _zroMPlq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroMPFq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroMPFq3EfGsOv-VTOBDaQ" visibility="public" type="_zroMcFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMO1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMPVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroMPlq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLmVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMO1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMP1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroMQFq3EfGsOv-VTOBDaQ" memberEnd="_zroMQVq3EfGsOv-VTOBDaQ _zroMQ1q3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroMQVq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroMQVq3EfGsOv-VTOBDaQ" visibility="public" type="_zroMf1q3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMQFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMQlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroMQ1q3EfGsOv-VTOBDaQ" visibility="public" type="_zroLpFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMQFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMRFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zroMRVq3EfGsOv-VTOBDaQ" memberEnd="_zroMRlq3EfGsOv-VTOBDaQ _zroMSFq3EfGsOv-VTOBDaQ" navigableOwnedEnd="_zroMRlq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zroMRlq3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOJlq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMRVq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMR1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zroMSFq3EfGsOv-VTOBDaQ" visibility="public" type="_zroLqlq3EfGsOv-VTOBDaQ" isUnique="false" association="_zroMRVq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zroMSVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMSlq3EfGsOv-VTOBDaQ" name="view/update shopping cart">
+      <ownedComment xmi:id="_zroMS1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMTFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMTVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMTlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMT1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMUFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMUVq3EfGsOv-VTOBDaQ" name="calculate taxes and shipping">
+      <ownedComment xmi:id="_zroMUlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMU1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMVFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMVVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMVlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMV1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_zroMWFq3EfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_zroMeFq3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMWVq3EfGsOv-VTOBDaQ" name="payment">
+      <ownedComment xmi:id="_zroMWlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMW1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMXFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMXVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMXlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMX1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMYFq3EfGsOv-VTOBDaQ" name="user sign in">
+      <ownedComment xmi:id="_zroMYVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMYlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMY1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMZFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMZVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMZlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_zroMZ1q3EfGsOv-VTOBDaQ" general="_zroMD1q3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMaFq3EfGsOv-VTOBDaQ" name="remember me">
+      <ownedComment xmi:id="_zroMaVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMalq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMa1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMbFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMbVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMblq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_zroMb1q3EfGsOv-VTOBDaQ" general="_zroMD1q3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMcFq3EfGsOv-VTOBDaQ" name="single sign on">
+      <ownedComment xmi:id="_zroMcVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMclq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMc1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMdFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMdVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMdlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_zroMd1q3EfGsOv-VTOBDaQ" general="_zroMD1q3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMeFq3EfGsOv-VTOBDaQ" name="calculate total">
+      <ownedComment xmi:id="_zroMeVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMelq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMe1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMfFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMfVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zroMflq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zroMf1q3EfGsOv-VTOBDaQ" name="payment by credit">
+      <ownedComment xmi:id="_zroMgFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOIFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOIVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOIlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOI1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOJFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_zrrOJVq3EfGsOv-VTOBDaQ" general="_zroMWVq3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zrrOJlq3EfGsOv-VTOBDaQ" name="payment by paypal">
+      <ownedComment xmi:id="_zrrOJ1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOKFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOKVq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOKlq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOK1q3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_zrrOLFq3EfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_zrrOLVq3EfGsOv-VTOBDaQ" general="_zroMWVq3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zrrOLlq3EfGsOv-VTOBDaQ" name="class diagram">
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrrOL1q3EfGsOv-VTOBDaQ" name="Web user">
+      <ownedComment xmi:id="_zrrOMFq3EfGsOv-VTOBDaQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_zrrOMVq3EfGsOv-VTOBDaQ" name="login_id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOMlq3EfGsOv-VTOBDaQ" name="password" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOM1q3EfGsOv-VTOBDaQ" name="state" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_zrrONFq3EfGsOv-VTOBDaQ" name="login" visibility="public"/>
+      <ownedOperation xmi:id="_zrrONVq3EfGsOv-VTOBDaQ" name="logout" visibility="public"/>
+      <ownedOperation xmi:id="_zrrONlq3EfGsOv-VTOBDaQ" name="getState" visibility="public"/>
+      <ownedOperation xmi:id="_zrrON1q3EfGsOv-VTOBDaQ" name="setState" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOOFq3EfGsOv-VTOBDaQ" memberEnd="_zrrOOVq3EfGsOv-VTOBDaQ _zrrOO1q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrOOVq3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOQ1q3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOOFq3EfGsOv-VTOBDaQ">
+        <ownedComment xmi:id="_zrrOOlq3EfGsOv-VTOBDaQ">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOO1q3EfGsOv-VTOBDaQ" name="web user" visibility="public" type="_zrrOL1q3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOOFq3EfGsOv-VTOBDaQ">
+        <ownedComment xmi:id="_zrrOPFq3EfGsOv-VTOBDaQ">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOPVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOPlq3EfGsOv-VTOBDaQ" memberEnd="_zrrOP1q3EfGsOv-VTOBDaQ _zrrOQVq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrOP1q3EfGsOv-VTOBDaQ" name="shopping cart" visibility="public" type="_zrrOmFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOPlq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOQFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOQVq3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOL1q3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOPlq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOQlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrrOQ1q3EfGsOv-VTOBDaQ" name="Customer">
+      <ownedAttribute xmi:id="_zrrORFq3EfGsOv-VTOBDaQ" name="id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrORVq3EfGsOv-VTOBDaQ" name="address" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrORlq3EfGsOv-VTOBDaQ" name="phone" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOR1q3EfGsOv-VTOBDaQ" name="email" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_zrrOSFq3EfGsOv-VTOBDaQ" name="getID" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOSVq3EfGsOv-VTOBDaQ" name="getAddress" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOSlq3EfGsOv-VTOBDaQ" name="getEmail" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOS1q3EfGsOv-VTOBDaQ" name="getPhone" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOTFq3EfGsOv-VTOBDaQ" memberEnd="_zrrOTVq3EfGsOv-VTOBDaQ _zrrOT1q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrOTVq3EfGsOv-VTOBDaQ" name="account" visibility="public" type="_zrrOUFq3EfGsOv-VTOBDaQ" isUnique="false" aggregation="composite" association="_zrrOTFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOTlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOT1q3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOQ1q3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOTFq3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrrOUFq3EfGsOv-VTOBDaQ" name="Account">
+      <ownedAttribute xmi:id="_zrrOUVq3EfGsOv-VTOBDaQ" name="id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOUlq3EfGsOv-VTOBDaQ" name="biling_address" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOU1q3EfGsOv-VTOBDaQ" name="is_closed" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOVFq3EfGsOv-VTOBDaQ" name="open" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOVVq3EfGsOv-VTOBDaQ" name="closed" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_zrrOVlq3EfGsOv-VTOBDaQ" name="State Machine1">
+        <region xmi:id="_zrrOV1q3EfGsOv-VTOBDaQ">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_zrrOWFq3EfGsOv-VTOBDaQ" name="Initial State"/>
+          <subvertex xmi:type="uml:State" xmi:id="_zrrOWVq3EfGsOv-VTOBDaQ" name="new"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_zrrOWlq3EfGsOv-VTOBDaQ" name="Final State"/>
+          <subvertex xmi:type="uml:State" xmi:id="_zrrOW1q3EfGsOv-VTOBDaQ" name="active"/>
+          <subvertex xmi:type="uml:State" xmi:id="_zrrOXFq3EfGsOv-VTOBDaQ" name="closed"/>
+          <subvertex xmi:type="uml:State" xmi:id="_zrrOXVq3EfGsOv-VTOBDaQ" name="suspended"/>
+          <transition xmi:id="_zrrOXlq3EfGsOv-VTOBDaQ" name="select register" source="_zrrOWFq3EfGsOv-VTOBDaQ" target="_zrrOWVq3EfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_zrrOX1q3EfGsOv-VTOBDaQ" name="activate" source="_zrrOWVq3EfGsOv-VTOBDaQ" target="_zrrOW1q3EfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_zrrOYFq3EfGsOv-VTOBDaQ" name="suspend" source="_zrrOWVq3EfGsOv-VTOBDaQ" target="_zrrOXVq3EfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_zrrOYVq3EfGsOv-VTOBDaQ" name="cancel" source="_zrrOWVq3EfGsOv-VTOBDaQ" target="_zrrOXFq3EfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_zrrOYlq3EfGsOv-VTOBDaQ" name="Transition" source="_zrrOW1q3EfGsOv-VTOBDaQ" target="_zrrOXFq3EfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_zrrOY1q3EfGsOv-VTOBDaQ" name="suspend" source="_zrrOW1q3EfGsOv-VTOBDaQ" target="_zrrOXVq3EfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_zrrOZFq3EfGsOv-VTOBDaQ" name="resume" source="_zrrOXVq3EfGsOv-VTOBDaQ" target="_zrrOW1q3EfGsOv-VTOBDaQ"/>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_zrrOZVq3EfGsOv-VTOBDaQ" name="getCustomer" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOZlq3EfGsOv-VTOBDaQ" name="getOrder" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOZ1q3EfGsOv-VTOBDaQ" name="createOrder" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOaFq3EfGsOv-VTOBDaQ" name="getShoppingCart" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOaVq3EfGsOv-VTOBDaQ" name="updateOrder" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOalq3EfGsOv-VTOBDaQ" name="make purchase" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOa1q3EfGsOv-VTOBDaQ" memberEnd="_zrrObFq3EfGsOv-VTOBDaQ _zrrOblq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrObFq3EfGsOv-VTOBDaQ" name="shopping cart" visibility="public" type="_zrrOmFq3EfGsOv-VTOBDaQ" isUnique="false" aggregation="composite" association="_zrrOa1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrObVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOblq3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOUFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOa1q3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOb1q3EfGsOv-VTOBDaQ" memberEnd="_zrrOcFq3EfGsOv-VTOBDaQ _zrrOclq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrOcFq3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOeFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOb1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOcVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOclq3EfGsOv-VTOBDaQ" name="account" visibility="public" type="_zrrOUFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOb1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOc1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOdFq3EfGsOv-VTOBDaQ" memberEnd="_zrrOdVq3EfGsOv-VTOBDaQ _zrrOd1q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrOdVq3EfGsOv-VTOBDaQ" name="order" visibility="public" type="_zrrOhVq3EfGsOv-VTOBDaQ" isUnique="false" aggregation="composite" association="_zrrOdFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOdlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOd1q3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOUFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOdFq3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrrOeFq3EfGsOv-VTOBDaQ" name="Payment">
+      <ownedAttribute xmi:id="_zrrOeVq3EfGsOv-VTOBDaQ" name="id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOelq3EfGsOv-VTOBDaQ" name="paid" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOe1q3EfGsOv-VTOBDaQ" name="total" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOfFq3EfGsOv-VTOBDaQ" name="details" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_zrrOfVq3EfGsOv-VTOBDaQ" name="processPayment" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOflq3EfGsOv-VTOBDaQ" name="getOrder" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOf1q3EfGsOv-VTOBDaQ" name="setOrder" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOgFq3EfGsOv-VTOBDaQ" memberEnd="_zrrOgVq3EfGsOv-VTOBDaQ _zrrOg1q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrOgVq3EfGsOv-VTOBDaQ" name="order" visibility="public" type="_zrrOhVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOgFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOglq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOg1q3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOeFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOgFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOhFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrrOhVq3EfGsOv-VTOBDaQ" name="Order">
+      <ownedAttribute xmi:id="_zrrOhlq3EfGsOv-VTOBDaQ" name="number" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOh1q3EfGsOv-VTOBDaQ" name="ordered" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOiFq3EfGsOv-VTOBDaQ" name="shipped" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOiVq3EfGsOv-VTOBDaQ" name="ship_to" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOilq3EfGsOv-VTOBDaQ" name="status" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOi1q3EfGsOv-VTOBDaQ" name="total" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_zrrOjFq3EfGsOv-VTOBDaQ" name="getLineItem" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOjVq3EfGsOv-VTOBDaQ" name="getShippingAddress" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOjlq3EfGsOv-VTOBDaQ" name="setShippingAddress" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOj1q3EfGsOv-VTOBDaQ" name="calcTotal" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOkFq3EfGsOv-VTOBDaQ" name="getStatus" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOkVq3EfGsOv-VTOBDaQ" name="setStatus" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOklq3EfGsOv-VTOBDaQ" name="addLineItem" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOk1q3EfGsOv-VTOBDaQ" memberEnd="_zrrOlFq3EfGsOv-VTOBDaQ _zrrOllq3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrOlFq3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOpVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOk1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOlVq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOllq3EfGsOv-VTOBDaQ" name="order" visibility="public" type="_zrrOhVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOk1q3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOl1q3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrrOmFq3EfGsOv-VTOBDaQ" name="Shopping cart">
+      <ownedAttribute xmi:id="_zrrOmVq3EfGsOv-VTOBDaQ" name="created" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_zrrOmlq3EfGsOv-VTOBDaQ" name="addItem" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOm1q3EfGsOv-VTOBDaQ" name="removeItem" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOnFq3EfGsOv-VTOBDaQ" name="getTotal" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOnVq3EfGsOv-VTOBDaQ" name="viewItems" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOnlq3EfGsOv-VTOBDaQ" name="getItems" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOn1q3EfGsOv-VTOBDaQ" name="findItems" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOoFq3EfGsOv-VTOBDaQ" memberEnd="_zrrOoVq3EfGsOv-VTOBDaQ _zrrOo1q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrOoVq3EfGsOv-VTOBDaQ" name="lineItem" visibility="public" type="_zrrOpVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOoFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOolq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOo1q3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOmFq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOoFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOpFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrrOpVq3EfGsOv-VTOBDaQ" name="LineItem">
+      <ownedAttribute xmi:id="_zrrOplq3EfGsOv-VTOBDaQ" name="quantity" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOp1q3EfGsOv-VTOBDaQ" name="price" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_zrrOqFq3EfGsOv-VTOBDaQ" name="getQuantity" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOqVq3EfGsOv-VTOBDaQ" name="getPrice" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOqlq3EfGsOv-VTOBDaQ" name="LineItem" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOq1q3EfGsOv-VTOBDaQ" name="setQuantity" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zrrOrFq3EfGsOv-VTOBDaQ" memberEnd="_zrrOrVq3EfGsOv-VTOBDaQ _zrrOr1q3EfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_zrrOrVq3EfGsOv-VTOBDaQ" name="product" visibility="public" type="_zrrOsVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOrFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOrlq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_zrrOr1q3EfGsOv-VTOBDaQ" visibility="public" type="_zrrOpVq3EfGsOv-VTOBDaQ" isUnique="false" association="_zrrOrFq3EfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrrOsFq3EfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrrOsVq3EfGsOv-VTOBDaQ" name="Product">
+      <ownedAttribute xmi:id="_zrrOslq3EfGsOv-VTOBDaQ" name="id" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOs1q3EfGsOv-VTOBDaQ" name="name" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zrrOtFq3EfGsOv-VTOBDaQ" name="supplier" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_zrrOtVq3EfGsOv-VTOBDaQ" name="getID" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOtlq3EfGsOv-VTOBDaQ" name="getName" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOt1q3EfGsOv-VTOBDaQ" name="getSupplier" visibility="public"/>
+      <ownedOperation xmi:id="_zrrOuFq3EfGsOv-VTOBDaQ" name="viewProduct" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_zrrOuVq3EfGsOv-VTOBDaQ" name="Orderstatus">
+      <ownedLiteral xmi:id="_zrrOulq3EfGsOv-VTOBDaQ" name="new"/>
+      <ownedLiteral xmi:id="_zrrOu1q3EfGsOv-VTOBDaQ" name="hold"/>
+      <ownedLiteral xmi:id="_zrrOvFq3EfGsOv-VTOBDaQ" name="shipped"/>
+      <ownedLiteral xmi:id="_zrrOvVq3EfGsOv-VTOBDaQ" name="delivered"/>
+      <ownedLiteral xmi:id="_zrrOvlq3EfGsOv-VTOBDaQ" name="closed"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_zrrOv1q3EfGsOv-VTOBDaQ" name="user state ">
+      <ownedLiteral xmi:id="_zrrOwFq3EfGsOv-VTOBDaQ" name="new"/>
+      <ownedLiteral xmi:id="_zrrOwVq3EfGsOv-VTOBDaQ" name="active"/>
+      <ownedLiteral xmi:id="_zrrOwlq3EfGsOv-VTOBDaQ" name="blocked"/>
+      <ownedLiteral xmi:id="_zrrOw1q3EfGsOv-VTOBDaQ" name="banned"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zrrOxFq3EfGsOv-VTOBDaQ" name="sequence">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_zrrOxVq3EfGsOv-VTOBDaQ" name="Interaction">
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_zrrOxlq3EfGsOv-VTOBDaQ" name="locals">
+        <ownedAttribute xmi:id="_zrrOx1q3EfGsOv-VTOBDaQ" name="r" type="_zroK1Vq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_zrrOyFq3EfGsOv-VTOBDaQ" name="r1" type="_zrrOL1q3EfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_zrrOyVq3EfGsOv-VTOBDaQ" name="r2" type="_zrrOmFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_zrrOylq3EfGsOv-VTOBDaQ" name="r3" type="_zrrOsVq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_zrrOy1q3EfGsOv-VTOBDaQ" name="r4" type="_zrrOpVq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_zrrOzFq3EfGsOv-VTOBDaQ" name="r5" type="_zrrOUFq3EfGsOv-VTOBDaQ" aggregation="composite"/>
+      </nestedClassifier>
+      <lifeline xmi:id="_zrrOzVq3EfGsOv-VTOBDaQ" name="r" represents="_zrrOx1q3EfGsOv-VTOBDaQ" coveredBy="_zrrO01q3EfGsOv-VTOBDaQ _zrrO3Fq3EfGsOv-VTOBDaQ _zrrO3Vq3EfGsOv-VTOBDaQ _zrrO4Vq3EfGsOv-VTOBDaQ _zrrO4lq3EfGsOv-VTOBDaQ _zrrO5lq3EfGsOv-VTOBDaQ _zrrO51q3EfGsOv-VTOBDaQ _zrrO61q3EfGsOv-VTOBDaQ _zrrO7Fq3EfGsOv-VTOBDaQ _zrrO-lq3EfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_zrrOzlq3EfGsOv-VTOBDaQ" name="r1" represents="_zrrOyFq3EfGsOv-VTOBDaQ" coveredBy="_zrrO1Fq3EfGsOv-VTOBDaQ _zrrO1Vq3EfGsOv-VTOBDaQ _zrrO1lq3EfGsOv-VTOBDaQ _zrrO2lq3EfGsOv-VTOBDaQ _zrrO21q3EfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_zrrOz1q3EfGsOv-VTOBDaQ" name="r2" represents="_zrrOyVq3EfGsOv-VTOBDaQ" coveredBy="_zrrO7Vq3EfGsOv-VTOBDaQ _zrrO7lq3EfGsOv-VTOBDaQ _zrrO71q3EfGsOv-VTOBDaQ _zrrO81q3EfGsOv-VTOBDaQ _zrrO9Fq3EfGsOv-VTOBDaQ _zrrO-Fq3EfGsOv-VTOBDaQ _zrrO-Vq3EfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_zrrO0Fq3EfGsOv-VTOBDaQ" name="r3" represents="_zrrOylq3EfGsOv-VTOBDaQ" coveredBy="_zrrO41q3EfGsOv-VTOBDaQ _zrrO5Fq3EfGsOv-VTOBDaQ _zrrO5Vq3EfGsOv-VTOBDaQ _zrrO6Fq3EfGsOv-VTOBDaQ _zrrO6Vq3EfGsOv-VTOBDaQ _zrrO6lq3EfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_zrrO0Vq3EfGsOv-VTOBDaQ" name="r4" represents="_zrrOy1q3EfGsOv-VTOBDaQ" coveredBy="_zrrO8Fq3EfGsOv-VTOBDaQ _zrrO8Vq3EfGsOv-VTOBDaQ _zrrO8lq3EfGsOv-VTOBDaQ _zrrO9Vq3EfGsOv-VTOBDaQ _zrrO9lq3EfGsOv-VTOBDaQ _zrrO91q3EfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_zrrO0lq3EfGsOv-VTOBDaQ" name="r5" represents="_zrrOzFq3EfGsOv-VTOBDaQ" coveredBy="_zrrO11q3EfGsOv-VTOBDaQ _zrrO2Fq3EfGsOv-VTOBDaQ _zrrO2Vq3EfGsOv-VTOBDaQ _zrrO3lq3EfGsOv-VTOBDaQ _zrrO31q3EfGsOv-VTOBDaQ _zrrO4Fq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO01q3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" event="_zrrPC1q3EfGsOv-VTOBDaQ" message="_zrrO-1q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO1Fq3EfGsOv-VTOBDaQ" covered="_zrrOzlq3EfGsOv-VTOBDaQ" event="_zrrPDFq3EfGsOv-VTOBDaQ" message="_zrrO-1q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zrrO1Vq3EfGsOv-VTOBDaQ" covered="_zrrOzlq3EfGsOv-VTOBDaQ" start="_zrrO1Fq3EfGsOv-VTOBDaQ" finish="_zrrO21q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO1lq3EfGsOv-VTOBDaQ" covered="_zrrOzlq3EfGsOv-VTOBDaQ" event="_zrrPDVq3EfGsOv-VTOBDaQ" message="_zrrO_Fq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO11q3EfGsOv-VTOBDaQ" covered="_zrrO0lq3EfGsOv-VTOBDaQ" event="_zrrPDlq3EfGsOv-VTOBDaQ" message="_zrrO_Fq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zrrO2Fq3EfGsOv-VTOBDaQ" covered="_zrrO0lq3EfGsOv-VTOBDaQ" start="_zrrO11q3EfGsOv-VTOBDaQ" finish="_zrrO2Vq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO2Vq3EfGsOv-VTOBDaQ" covered="_zrrO0lq3EfGsOv-VTOBDaQ" message="_zrrO_Vq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO2lq3EfGsOv-VTOBDaQ" covered="_zrrOzlq3EfGsOv-VTOBDaQ" message="_zrrO_Vq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO21q3EfGsOv-VTOBDaQ" covered="_zrrOzlq3EfGsOv-VTOBDaQ" message="_zrrO_lq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO3Fq3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" message="_zrrO_lq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO3Vq3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" event="_zrrPD1q3EfGsOv-VTOBDaQ" message="_zrrO_1q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO3lq3EfGsOv-VTOBDaQ" covered="_zrrO0lq3EfGsOv-VTOBDaQ" event="_zrrPEFq3EfGsOv-VTOBDaQ" message="_zrrO_1q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zrrO31q3EfGsOv-VTOBDaQ" covered="_zrrO0lq3EfGsOv-VTOBDaQ" start="_zrrO3lq3EfGsOv-VTOBDaQ" finish="_zrrO4Fq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO4Fq3EfGsOv-VTOBDaQ" covered="_zrrO0lq3EfGsOv-VTOBDaQ" message="_zrrPAFq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO4Vq3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" message="_zrrPAFq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO4lq3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" event="_zrrPEVq3EfGsOv-VTOBDaQ" message="_zrrPAVq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO41q3EfGsOv-VTOBDaQ" covered="_zrrO0Fq3EfGsOv-VTOBDaQ" event="_zrrPElq3EfGsOv-VTOBDaQ" message="_zrrPAVq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zrrO5Fq3EfGsOv-VTOBDaQ" covered="_zrrO0Fq3EfGsOv-VTOBDaQ" start="_zrrO41q3EfGsOv-VTOBDaQ" finish="_zrrO5Vq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO5Vq3EfGsOv-VTOBDaQ" covered="_zrrO0Fq3EfGsOv-VTOBDaQ" message="_zrrPAlq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO5lq3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" message="_zrrPAlq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO51q3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" event="_zrrPE1q3EfGsOv-VTOBDaQ" message="_zrrPA1q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO6Fq3EfGsOv-VTOBDaQ" covered="_zrrO0Fq3EfGsOv-VTOBDaQ" event="_zrrPFFq3EfGsOv-VTOBDaQ" message="_zrrPA1q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zrrO6Vq3EfGsOv-VTOBDaQ" covered="_zrrO0Fq3EfGsOv-VTOBDaQ" start="_zrrO6Fq3EfGsOv-VTOBDaQ" finish="_zrrO6lq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO6lq3EfGsOv-VTOBDaQ" covered="_zrrO0Fq3EfGsOv-VTOBDaQ" message="_zrrPBFq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO61q3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" message="_zrrPBFq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO7Fq3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" event="_zrrPFVq3EfGsOv-VTOBDaQ" message="_zrrPBVq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO7Vq3EfGsOv-VTOBDaQ" covered="_zrrOz1q3EfGsOv-VTOBDaQ" event="_zrrPFlq3EfGsOv-VTOBDaQ" message="_zrrPBVq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zrrO7lq3EfGsOv-VTOBDaQ" covered="_zrrOz1q3EfGsOv-VTOBDaQ" start="_zrrO7Vq3EfGsOv-VTOBDaQ" finish="_zrrO-Vq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO71q3EfGsOv-VTOBDaQ" covered="_zrrOz1q3EfGsOv-VTOBDaQ" event="_zrrPF1q3EfGsOv-VTOBDaQ" message="_zrrPBlq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO8Fq3EfGsOv-VTOBDaQ" covered="_zrrO0Vq3EfGsOv-VTOBDaQ" event="_zrrPGFq3EfGsOv-VTOBDaQ" message="_zrrPBlq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zrrO8Vq3EfGsOv-VTOBDaQ" covered="_zrrO0Vq3EfGsOv-VTOBDaQ" start="_zrrO8Fq3EfGsOv-VTOBDaQ" finish="_zrrO8lq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO8lq3EfGsOv-VTOBDaQ" covered="_zrrO0Vq3EfGsOv-VTOBDaQ" message="_zrrPB1q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO81q3EfGsOv-VTOBDaQ" covered="_zrrOz1q3EfGsOv-VTOBDaQ" message="_zrrPB1q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO9Fq3EfGsOv-VTOBDaQ" covered="_zrrOz1q3EfGsOv-VTOBDaQ" event="_zrrPGVq3EfGsOv-VTOBDaQ" message="_zrrPCFq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO9Vq3EfGsOv-VTOBDaQ" covered="_zrrO0Vq3EfGsOv-VTOBDaQ" event="_zrrPGlq3EfGsOv-VTOBDaQ" message="_zrrPCFq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zrrO9lq3EfGsOv-VTOBDaQ" covered="_zrrO0Vq3EfGsOv-VTOBDaQ" start="_zrrO9Vq3EfGsOv-VTOBDaQ" finish="_zrrO91q3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO91q3EfGsOv-VTOBDaQ" covered="_zrrO0Vq3EfGsOv-VTOBDaQ" message="_zrrPCVq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO-Fq3EfGsOv-VTOBDaQ" covered="_zrrOz1q3EfGsOv-VTOBDaQ" message="_zrrPCVq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO-Vq3EfGsOv-VTOBDaQ" covered="_zrrOz1q3EfGsOv-VTOBDaQ" message="_zrrPClq3EfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zrrO-lq3EfGsOv-VTOBDaQ" covered="_zrrOzVq3EfGsOv-VTOBDaQ" message="_zrrPClq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrO-1q3EfGsOv-VTOBDaQ" name=" login" receiveEvent="_zrrO1Fq3EfGsOv-VTOBDaQ" sendEvent="_zrrO01q3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrO_Fq3EfGsOv-VTOBDaQ" name="getCustomer" receiveEvent="_zrrO11q3EfGsOv-VTOBDaQ" sendEvent="_zrrO1lq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrO_Vq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zrrO2lq3EfGsOv-VTOBDaQ" sendEvent="_zrrO2Vq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrO_lq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zrrO3Fq3EfGsOv-VTOBDaQ" sendEvent="_zrrO21q3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrO_1q3EfGsOv-VTOBDaQ" name="getShoppingCart" receiveEvent="_zrrO3lq3EfGsOv-VTOBDaQ" sendEvent="_zrrO3Vq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPAFq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zrrO4Vq3EfGsOv-VTOBDaQ" sendEvent="_zrrO4Fq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPAVq3EfGsOv-VTOBDaQ" name="getID" receiveEvent="_zrrO41q3EfGsOv-VTOBDaQ" sendEvent="_zrrO4lq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPAlq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zrrO5lq3EfGsOv-VTOBDaQ" sendEvent="_zrrO5Vq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPA1q3EfGsOv-VTOBDaQ" name="getName" receiveEvent="_zrrO6Fq3EfGsOv-VTOBDaQ" sendEvent="_zrrO51q3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPBFq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zrrO61q3EfGsOv-VTOBDaQ" sendEvent="_zrrO6lq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPBVq3EfGsOv-VTOBDaQ" receiveEvent="_zrrO7Vq3EfGsOv-VTOBDaQ" sendEvent="_zrrO7Fq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPBlq3EfGsOv-VTOBDaQ" name="getQuantity" receiveEvent="_zrrO8Fq3EfGsOv-VTOBDaQ" sendEvent="_zrrO71q3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPB1q3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zrrO81q3EfGsOv-VTOBDaQ" sendEvent="_zrrO8lq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPCFq3EfGsOv-VTOBDaQ" name="getPrice" receiveEvent="_zrrO9Vq3EfGsOv-VTOBDaQ" sendEvent="_zrrO9Fq3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPCVq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zrrO-Fq3EfGsOv-VTOBDaQ" sendEvent="_zrrO91q3EfGsOv-VTOBDaQ"/>
+      <message xmi:id="_zrrPClq3EfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_zrrO-lq3EfGsOv-VTOBDaQ" sendEvent="_zrrO-Vq3EfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPC1q3EfGsOv-VTOBDaQ" operation="_zrrONFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPDFq3EfGsOv-VTOBDaQ" operation="_zrrONFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPDVq3EfGsOv-VTOBDaQ" operation="_zrrOZVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPDlq3EfGsOv-VTOBDaQ" operation="_zrrOZVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPD1q3EfGsOv-VTOBDaQ" operation="_zrrOaFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPEFq3EfGsOv-VTOBDaQ" operation="_zrrOaFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPEVq3EfGsOv-VTOBDaQ" operation="_zrrOtVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPElq3EfGsOv-VTOBDaQ" operation="_zrrOtVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPE1q3EfGsOv-VTOBDaQ" operation="_zrrOtlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPFFq3EfGsOv-VTOBDaQ" operation="_zrrOtlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPFVq3EfGsOv-VTOBDaQ" operation="_zrrOmlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPFlq3EfGsOv-VTOBDaQ" operation="_zrrOmlq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPF1q3EfGsOv-VTOBDaQ" operation="_zrrOqFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPGFq3EfGsOv-VTOBDaQ" operation="_zrrOqFq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPGVq3EfGsOv-VTOBDaQ" operation="_zrrOqVq3EfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_zrrPGlq3EfGsOv-VTOBDaQ" operation="_zrrOqVq3EfGsOv-VTOBDaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zrrPG1q3EfGsOv-VTOBDaQ" name="Activity">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_zrrPHFq3EfGsOv-VTOBDaQ" name="Activity">
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_zrrPHVq3EfGsOv-VTOBDaQ" name="locals"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_zrrPHlq3EfGsOv-VTOBDaQ" name="Initial Node" outgoing="_zrtDUFq3EfGsOv-VTOBDaQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zrrPH1q3EfGsOv-VTOBDaQ" name="Authenticate user" outgoing="_zrtDUlq3EfGsOv-VTOBDaQ" incoming="_zrtDUFq3EfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zrrPIFq3EfGsOv-VTOBDaQ" name="view shopping cart" outgoing="_zrtDVFq3EfGsOv-VTOBDaQ" incoming="_zrtDUlq3EfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zrrPIVq3EfGsOv-VTOBDaQ" name="calculate taxes and shipping" outgoing="_zrtDVlq3EfGsOv-VTOBDaQ" incoming="_zrtDVFq3EfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zrrPIlq3EfGsOv-VTOBDaQ" name="calculate total" outgoing="_zrtDWFq3EfGsOv-VTOBDaQ" incoming="_zrtDVlq3EfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_zrrPI1q3EfGsOv-VTOBDaQ" name="Decision-Merge" outgoing="_zrtDWlq3EfGsOv-VTOBDaQ _zrtDXVq3EfGsOv-VTOBDaQ" incoming="_zrtDWFq3EfGsOv-VTOBDaQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zrrPJFq3EfGsOv-VTOBDaQ" name="payment using PayPal" outgoing="_zrtDYFq3EfGsOv-VTOBDaQ" incoming="_zrtDXVq3EfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zrrPJVq3EfGsOv-VTOBDaQ" name="payment using credit card" outgoing="_zrtDYlq3EfGsOv-VTOBDaQ" incoming="_zrtDWlq3EfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_zrrPJlq3EfGsOv-VTOBDaQ" name="Activity Final Node" incoming="_zrtDZFq3EfGsOv-VTOBDaQ"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_zrrPJ1q3EfGsOv-VTOBDaQ" name="Decision-Merge1" outgoing="_zrtDZFq3EfGsOv-VTOBDaQ" incoming="_zrtDYFq3EfGsOv-VTOBDaQ _zrtDYlq3EfGsOv-VTOBDaQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDUFq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPHlq3EfGsOv-VTOBDaQ" target="_zrrPH1q3EfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDUVq3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDUlq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPH1q3EfGsOv-VTOBDaQ" target="_zrrPIFq3EfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDU1q3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDVFq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPIFq3EfGsOv-VTOBDaQ" target="_zrrPIVq3EfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDVVq3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDVlq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPIVq3EfGsOv-VTOBDaQ" target="_zrrPIlq3EfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDV1q3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDWFq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPIlq3EfGsOv-VTOBDaQ" target="_zrrPI1q3EfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDWVq3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDWlq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPI1q3EfGsOv-VTOBDaQ" target="_zrrPJVq3EfGsOv-VTOBDaQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_zrtDW1q3EfGsOv-VTOBDaQ">
+          <body>method= credit card</body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDXFq3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDXVq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPI1q3EfGsOv-VTOBDaQ" target="_zrrPJFq3EfGsOv-VTOBDaQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_zrtDXlq3EfGsOv-VTOBDaQ">
+          <body>method = paypal</body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDX1q3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDYFq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPJFq3EfGsOv-VTOBDaQ" target="_zrrPJ1q3EfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDYVq3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDYlq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPJVq3EfGsOv-VTOBDaQ" target="_zrrPJ1q3EfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDY1q3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zrtDZFq3EfGsOv-VTOBDaQ" name="ControlFlow" source="_zrrPJ1q3EfGsOv-VTOBDaQ" target="_zrrPJlq3EfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zrtDZVq3EfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zrtDZlq3EfGsOv-VTOBDaQ" name="State">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_zrtDZ1q3EfGsOv-VTOBDaQ" name="State Machine">
+      <region xmi:id="_zrtDaFq3EfGsOv-VTOBDaQ">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_zrtDaVq3EfGsOv-VTOBDaQ" name="Initial State"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_zrtDalq3EfGsOv-VTOBDaQ" name="Final State"/>
+        <subvertex xmi:type="uml:State" xmi:id="_zrtDa1q3EfGsOv-VTOBDaQ" name="New"/>
+        <subvertex xmi:type="uml:State" xmi:id="_zrtDbFq3EfGsOv-VTOBDaQ" name="Active"/>
+        <subvertex xmi:type="uml:State" xmi:id="_zrtDbVq3EfGsOv-VTOBDaQ" name="Closed"/>
+        <subvertex xmi:type="uml:State" xmi:id="_zrtDblq3EfGsOv-VTOBDaQ" name="Suspended"/>
+        <transition xmi:id="_zrtDb1q3EfGsOv-VTOBDaQ" name="create" source="_zrtDaVq3EfGsOv-VTOBDaQ" target="_zrtDa1q3EfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_zrtDcFq3EfGsOv-VTOBDaQ" name="Transition" source="_zrtDa1q3EfGsOv-VTOBDaQ" target="_zrtDbFq3EfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_zrtDcVq3EfGsOv-VTOBDaQ" name="Cancel" source="_zrtDa1q3EfGsOv-VTOBDaQ" target="_zrtDbVq3EfGsOv-VTOBDaQ" guard="_zrtDclq3EfGsOv-VTOBDaQ">
+          <ownedRule xmi:id="_zrtDclq3EfGsOv-VTOBDaQ" name="x = true" constrainedElement="_zrtDcVq3EfGsOv-VTOBDaQ">
+            <specification xmi:type="uml:LiteralString" xmi:id="_zrtDc1q3EfGsOv-VTOBDaQ" value="x = true"/>
+          </ownedRule>
+        </transition>
+        <transition xmi:id="_zrtDdFq3EfGsOv-VTOBDaQ" name="Suspend" source="_zrtDa1q3EfGsOv-VTOBDaQ" target="_zrtDblq3EfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_zrtDdVq3EfGsOv-VTOBDaQ" name="Cancel" source="_zrtDbFq3EfGsOv-VTOBDaQ" target="_zrtDbVq3EfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_zrtDdlq3EfGsOv-VTOBDaQ" name="Lock" source="_zrtDbFq3EfGsOv-VTOBDaQ" target="_zrtDblq3EfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_zrtDd1q3EfGsOv-VTOBDaQ" source="_zrtDbVq3EfGsOv-VTOBDaQ" target="_zrtDalq3EfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_zrtDeFq3EfGsOv-VTOBDaQ" name="unlock" source="_zrtDblq3EfGsOv-VTOBDaQ" target="_zrtDbFq3EfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_zrtDeVq3EfGsOv-VTOBDaQ" name="Cancel" source="_zrtDblq3EfGsOv-VTOBDaQ" target="_zrtDbVq3EfGsOv-VTOBDaQ"/>
+      </region>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

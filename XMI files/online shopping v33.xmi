@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_JIgTYFrJEfGsOv-VTOBDaQ" name="online shopping v33">
+  <eAnnotations xmi:id="_JIgTYVrJEfGsOv-VTOBDaQ" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_JIgTYlrJEfGsOv-VTOBDaQ" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_JIgTY1rJEfGsOv-VTOBDaQ" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JIgTZFrJEfGsOv-VTOBDaQ" name="use cases L0">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_JIgTZVrJEfGsOv-VTOBDaQ" name="registered customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgTZlrJEfGsOv-VTOBDaQ" memberEnd="_JIgTZ1rJEfGsOv-VTOBDaQ _JIgTaVrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgTZ1rJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgTZ1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgTa1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgTZlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgTaFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgTaVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgTZVrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgTZlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgTalrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgTa1rJEfGsOv-VTOBDaQ" name="view item">
+      <ownedComment xmi:id="_JIgTbFrJEfGsOv-VTOBDaQ">
+        <body>objectTag: product
+Trigger: view product
+Basic Flow:  The system retrieves the selected product details, The system displays the product information (e.g., name, price, description), The system displays related options (e.g., add to cart, view recommendations).
+Alternative flow: Customer selects “Add to Shopping Cart”
+.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTbVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTblrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTb1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTcFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTcVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JIgTclrJEfGsOv-VTOBDaQ" name="view item Interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_JIgTc1rJEfGsOv-VTOBDaQ" name="locals">
+          <ownedAttribute xmi:id="_JIgTdFrJEfGsOv-VTOBDaQ" name="r" type="_JIgTZVrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTdVrJEfGsOv-VTOBDaQ" name="r1" type="_JIgVNlrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTdlrJEfGsOv-VTOBDaQ" name="r2" type="_JIgVmFrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTd1rJEfGsOv-VTOBDaQ" name="r3" type="_JIgVf1rJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTeFrJEfGsOv-VTOBDaQ" name="r4" type="_JIgVjFrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_JIgTeVrJEfGsOv-VTOBDaQ" name="r" represents="_JIgTdFrJEfGsOv-VTOBDaQ" coveredBy="_JIgTfVrJEfGsOv-VTOBDaQ _JIgThVrJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgTelrJEfGsOv-VTOBDaQ" name="r2" represents="_JIgTdlrJEfGsOv-VTOBDaQ" coveredBy="_JIgTflrJEfGsOv-VTOBDaQ _JIgTf1rJEfGsOv-VTOBDaQ _JIgTgFrJEfGsOv-VTOBDaQ _JIgTgVrJEfGsOv-VTOBDaQ _JIgTglrJEfGsOv-VTOBDaQ _JIgTg1rJEfGsOv-VTOBDaQ _JIgThFrJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgTe1rJEfGsOv-VTOBDaQ" name="r3" represents="_JIgTd1rJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgTfFrJEfGsOv-VTOBDaQ" name="r4" represents="_JIgTeFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTfVrJEfGsOv-VTOBDaQ" covered="_JIgTeVrJEfGsOv-VTOBDaQ" event="_JIgTpFrJEfGsOv-VTOBDaQ" message="_JIgTi1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTflrJEfGsOv-VTOBDaQ" covered="_JIgTelrJEfGsOv-VTOBDaQ" event="_JIgTpVrJEfGsOv-VTOBDaQ" message="_JIgTi1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgTf1rJEfGsOv-VTOBDaQ" covered="_JIgTelrJEfGsOv-VTOBDaQ" start="_JIgTflrJEfGsOv-VTOBDaQ" finish="_JIgThFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTgFrJEfGsOv-VTOBDaQ" covered="_JIgTelrJEfGsOv-VTOBDaQ" event="_JIgTplrJEfGsOv-VTOBDaQ" message="_JIgTjFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTgVrJEfGsOv-VTOBDaQ" covered="_JIgTelrJEfGsOv-VTOBDaQ" event="_JIgTp1rJEfGsOv-VTOBDaQ" message="_JIgTjFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTglrJEfGsOv-VTOBDaQ" covered="_JIgTelrJEfGsOv-VTOBDaQ" event="_JIgTqFrJEfGsOv-VTOBDaQ" message="_JIgTjVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTg1rJEfGsOv-VTOBDaQ" covered="_JIgTelrJEfGsOv-VTOBDaQ" event="_JIgTqVrJEfGsOv-VTOBDaQ" message="_JIgTjVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgThFrJEfGsOv-VTOBDaQ" covered="_JIgTelrJEfGsOv-VTOBDaQ" message="_JIgTjlrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgThVrJEfGsOv-VTOBDaQ" covered="_JIgTeVrJEfGsOv-VTOBDaQ" message="_JIgTjlrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_JIgThlrJEfGsOv-VTOBDaQ" name="CombinedFragment" interactionOperator="opt">
+          <operand xmi:id="_JIgTh1rJEfGsOv-VTOBDaQ">
+            <guard xmi:id="_JIgTiFrJEfGsOv-VTOBDaQ">
+              <specification xmi:type="uml:LiteralString" xmi:id="_JIgTiVrJEfGsOv-VTOBDaQ" value="customer chooses add to cart"/>
+            </guard>
+            <fragment xmi:type="uml:InteractionUse" xmi:id="_JIgTilrJEfGsOv-VTOBDaQ" name="InteractionUse" refersTo="_JIgUVlrJEfGsOv-VTOBDaQ"/>
+          </operand>
+        </fragment>
+        <message xmi:id="_JIgTi1rJEfGsOv-VTOBDaQ" name="view product" receiveEvent="_JIgTflrJEfGsOv-VTOBDaQ" sendEvent="_JIgTfVrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgTjFrJEfGsOv-VTOBDaQ" name="getID" receiveEvent="_JIgTgVrJEfGsOv-VTOBDaQ" sendEvent="_JIgTgFrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgTjVrJEfGsOv-VTOBDaQ" name="getName" receiveEvent="_JIgTg1rJEfGsOv-VTOBDaQ" sendEvent="_JIgTglrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgTjlrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgThVrJEfGsOv-VTOBDaQ" sendEvent="_JIgThFrJEfGsOv-VTOBDaQ"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_JIgTj1rJEfGsOv-VTOBDaQ" name="Activity">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_JIgTkFrJEfGsOv-VTOBDaQ" name="locals"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_JIgTkVrJEfGsOv-VTOBDaQ" name="Initial Node" outgoing="_JIgTmFrJEfGsOv-VTOBDaQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_JIgTklrJEfGsOv-VTOBDaQ" name="select view product" outgoing="_JIgTmlrJEfGsOv-VTOBDaQ" incoming="_JIgTmFrJEfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_JIgTk1rJEfGsOv-VTOBDaQ" name="retreive product details" outgoing="_JIgTnFrJEfGsOv-VTOBDaQ" incoming="_JIgTmlrJEfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_JIgTlFrJEfGsOv-VTOBDaQ" name="add item to shopping cart" outgoing="_JIgTnlrJEfGsOv-VTOBDaQ" incoming="_JIgToFrJEfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_JIgTlVrJEfGsOv-VTOBDaQ" name="Activity Final Node" incoming="_JIgTolrJEfGsOv-VTOBDaQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_JIgTllrJEfGsOv-VTOBDaQ" name="display product details" outgoing="_JIgToFrJEfGsOv-VTOBDaQ" incoming="_JIgTnFrJEfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_JIgTl1rJEfGsOv-VTOBDaQ" name="confirm adding item" outgoing="_JIgTolrJEfGsOv-VTOBDaQ" incoming="_JIgTnlrJEfGsOv-VTOBDaQ">
+          <body></body>
+        </node>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JIgTmFrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgTkVrJEfGsOv-VTOBDaQ" target="_JIgTklrJEfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgTmVrJEfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JIgTmlrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgTklrJEfGsOv-VTOBDaQ" target="_JIgTk1rJEfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgTm1rJEfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JIgTnFrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgTk1rJEfGsOv-VTOBDaQ" target="_JIgTllrJEfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgTnVrJEfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JIgTnlrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgTlFrJEfGsOv-VTOBDaQ" target="_JIgTl1rJEfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgTn1rJEfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JIgToFrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgTllrJEfGsOv-VTOBDaQ" target="_JIgTlFrJEfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgToVrJEfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JIgTolrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgTl1rJEfGsOv-VTOBDaQ" target="_JIgTlVrJEfGsOv-VTOBDaQ">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgTo1rJEfGsOv-VTOBDaQ" value="1"/>
+        </edge>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgTpFrJEfGsOv-VTOBDaQ" operation="_JIgVn1rJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgTpVrJEfGsOv-VTOBDaQ" operation="_JIgVn1rJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgTplrJEfGsOv-VTOBDaQ" operation="_JIgVnFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgTp1rJEfGsOv-VTOBDaQ" operation="_JIgVnFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgTqFrJEfGsOv-VTOBDaQ" operation="_JIgVnVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgTqVrJEfGsOv-VTOBDaQ" operation="_JIgVnVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgTqlrJEfGsOv-VTOBDaQ" name="make purchase">
+      <ownedComment xmi:id="_JIgTq1rJEfGsOv-VTOBDaQ">
+        <body>objectTag: payment
+Trigger: make purchase</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTrFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTrVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTrlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTr1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgTsFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JIgTsVrJEfGsOv-VTOBDaQ" name="make purchase Interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_JIgTslrJEfGsOv-VTOBDaQ" name="locals">
+          <ownedAttribute xmi:id="_JIgTs1rJEfGsOv-VTOBDaQ" name="r" type="_JIgVX1rJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTtFrJEfGsOv-VTOBDaQ" name="r1" type="_JIgVNlrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTtVrJEfGsOv-VTOBDaQ" name="r2" type="_JIgVmFrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTtlrJEfGsOv-VTOBDaQ" name="r3" type="_JIgVX1rJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTt1rJEfGsOv-VTOBDaQ" name="r4" type="_JIgTZVrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTuFrJEfGsOv-VTOBDaQ" name="r5" type="_JIgVNlrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTuVrJEfGsOv-VTOBDaQ" name="r6" type="_JIgVf1rJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgTulrJEfGsOv-VTOBDaQ" name="r7" type="_JIgVbFrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_JIgTu1rJEfGsOv-VTOBDaQ" name="r2" represents="_JIgTtVrJEfGsOv-VTOBDaQ" coveredBy="_JIgTx1rJEfGsOv-VTOBDaQ _JIgTyFrJEfGsOv-VTOBDaQ _JIgTyVrJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgTvFrJEfGsOv-VTOBDaQ" name="r3" represents="_JIgTtlrJEfGsOv-VTOBDaQ" coveredBy="_JIgT1FrJEfGsOv-VTOBDaQ _JIgT1VrJEfGsOv-VTOBDaQ _JIgT11rJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgTvVrJEfGsOv-VTOBDaQ" name="r4" represents="_JIgTt1rJEfGsOv-VTOBDaQ" coveredBy="_JIgTwVrJEfGsOv-VTOBDaQ _JIgTxVrJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgTvlrJEfGsOv-VTOBDaQ" name="r5" represents="_JIgTuFrJEfGsOv-VTOBDaQ" coveredBy="_JIgTwlrJEfGsOv-VTOBDaQ _JIgTw1rJEfGsOv-VTOBDaQ _JIgTxFrJEfGsOv-VTOBDaQ _JIgTxlrJEfGsOv-VTOBDaQ _JIgTylrJEfGsOv-VTOBDaQ _JIgTy1rJEfGsOv-VTOBDaQ _JIgTz1rJEfGsOv-VTOBDaQ _JIgT01rJEfGsOv-VTOBDaQ _JIgT2FrJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgTv1rJEfGsOv-VTOBDaQ" name="r6" represents="_JIgTuVrJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgTwFrJEfGsOv-VTOBDaQ" name="r7" represents="_JIgTulrJEfGsOv-VTOBDaQ" coveredBy="_JIgTzFrJEfGsOv-VTOBDaQ _JIgTzVrJEfGsOv-VTOBDaQ _JIgTzlrJEfGsOv-VTOBDaQ _JIgT0FrJEfGsOv-VTOBDaQ _JIgT0VrJEfGsOv-VTOBDaQ _JIgT0lrJEfGsOv-VTOBDaQ _JIgT1lrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTwVrJEfGsOv-VTOBDaQ" covered="_JIgTvVrJEfGsOv-VTOBDaQ" event="_JIgT5FrJEfGsOv-VTOBDaQ" message="_JIgT2VrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTwlrJEfGsOv-VTOBDaQ" covered="_JIgTvlrJEfGsOv-VTOBDaQ" event="_JIgT5VrJEfGsOv-VTOBDaQ" message="_JIgT2VrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgTw1rJEfGsOv-VTOBDaQ" covered="_JIgTvlrJEfGsOv-VTOBDaQ" start="_JIgTwlrJEfGsOv-VTOBDaQ" finish="_JIgTxFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTxFrJEfGsOv-VTOBDaQ" covered="_JIgTvlrJEfGsOv-VTOBDaQ" message="_JIgT2lrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTxVrJEfGsOv-VTOBDaQ" covered="_JIgTvVrJEfGsOv-VTOBDaQ" message="_JIgT2lrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTxlrJEfGsOv-VTOBDaQ" covered="_JIgTvlrJEfGsOv-VTOBDaQ" event="_JIgT5lrJEfGsOv-VTOBDaQ" message="_JIgT21rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTx1rJEfGsOv-VTOBDaQ" covered="_JIgTu1rJEfGsOv-VTOBDaQ" event="_JIgT51rJEfGsOv-VTOBDaQ" message="_JIgT21rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgTyFrJEfGsOv-VTOBDaQ" covered="_JIgTu1rJEfGsOv-VTOBDaQ" start="_JIgTx1rJEfGsOv-VTOBDaQ" finish="_JIgTyVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTyVrJEfGsOv-VTOBDaQ" covered="_JIgTu1rJEfGsOv-VTOBDaQ" message="_JIgT3FrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTylrJEfGsOv-VTOBDaQ" covered="_JIgTvlrJEfGsOv-VTOBDaQ" message="_JIgT3FrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTy1rJEfGsOv-VTOBDaQ" covered="_JIgTvlrJEfGsOv-VTOBDaQ" message="_JIgT3VrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTzFrJEfGsOv-VTOBDaQ" covered="_JIgTwFrJEfGsOv-VTOBDaQ" message="_JIgT3VrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgTzVrJEfGsOv-VTOBDaQ" covered="_JIgTwFrJEfGsOv-VTOBDaQ" start="_JIgTzFrJEfGsOv-VTOBDaQ" finish="_JIgTzlrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTzlrJEfGsOv-VTOBDaQ" covered="_JIgTwFrJEfGsOv-VTOBDaQ" message="_JIgT3lrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgTz1rJEfGsOv-VTOBDaQ" covered="_JIgTvlrJEfGsOv-VTOBDaQ" message="_JIgT3lrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgT0FrJEfGsOv-VTOBDaQ" covered="_JIgTwFrJEfGsOv-VTOBDaQ" event="_JIgT6FrJEfGsOv-VTOBDaQ" message="_JIgT31rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgT0VrJEfGsOv-VTOBDaQ" covered="_JIgTwFrJEfGsOv-VTOBDaQ" event="_JIgT6VrJEfGsOv-VTOBDaQ" message="_JIgT31rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgT0lrJEfGsOv-VTOBDaQ" covered="_JIgTwFrJEfGsOv-VTOBDaQ" start="_JIgT0VrJEfGsOv-VTOBDaQ" finish="_JIgT1lrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgT01rJEfGsOv-VTOBDaQ" covered="_JIgTvlrJEfGsOv-VTOBDaQ" event="_JIgT6lrJEfGsOv-VTOBDaQ" message="_JIgT4FrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgT1FrJEfGsOv-VTOBDaQ" covered="_JIgTvFrJEfGsOv-VTOBDaQ" event="_JIgT61rJEfGsOv-VTOBDaQ" message="_JIgT4FrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgT1VrJEfGsOv-VTOBDaQ" covered="_JIgTvFrJEfGsOv-VTOBDaQ" start="_JIgT1FrJEfGsOv-VTOBDaQ" finish="_JIgT11rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_JIgT1lrJEfGsOv-VTOBDaQ" covered="_JIgTwFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgT11rJEfGsOv-VTOBDaQ" covered="_JIgTvFrJEfGsOv-VTOBDaQ" message="_JIgT4VrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgT2FrJEfGsOv-VTOBDaQ" covered="_JIgTvlrJEfGsOv-VTOBDaQ" message="_JIgT4VrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgT2VrJEfGsOv-VTOBDaQ" name="make purchase" receiveEvent="_JIgTwlrJEfGsOv-VTOBDaQ" sendEvent="_JIgTwVrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgT2lrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgTxVrJEfGsOv-VTOBDaQ" sendEvent="_JIgTxFrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgT21rJEfGsOv-VTOBDaQ" name="get price" receiveEvent="_JIgTx1rJEfGsOv-VTOBDaQ" sendEvent="_JIgTxlrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgT3FrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgTylrJEfGsOv-VTOBDaQ" sendEvent="_JIgTyVrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgT3VrJEfGsOv-VTOBDaQ" name="create order" receiveEvent="_JIgTzFrJEfGsOv-VTOBDaQ" sendEvent="_JIgTy1rJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgT3lrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgTz1rJEfGsOv-VTOBDaQ" sendEvent="_JIgTzlrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgT31rJEfGsOv-VTOBDaQ" name="calc total" receiveEvent="_JIgT0VrJEfGsOv-VTOBDaQ" sendEvent="_JIgT0FrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgT4FrJEfGsOv-VTOBDaQ" name="process payment" receiveEvent="_JIgT1FrJEfGsOv-VTOBDaQ" sendEvent="_JIgT01rJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgT4VrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgT2FrJEfGsOv-VTOBDaQ" sendEvent="_JIgT11rJEfGsOv-VTOBDaQ"/>
+      </ownedBehavior>
+      <include xmi:id="_JIgT4lrJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgTa1rJEfGsOv-VTOBDaQ"/>
+      <include xmi:id="_JIgT41rJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgT8VrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgT5FrJEfGsOv-VTOBDaQ" operation="_JIgVUVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgT5VrJEfGsOv-VTOBDaQ" operation="_JIgVUVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgT5lrJEfGsOv-VTOBDaQ" operation="_JIgVnlrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgT51rJEfGsOv-VTOBDaQ" operation="_JIgVnlrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgT6FrJEfGsOv-VTOBDaQ" operation="_JIgVdlrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgT6VrJEfGsOv-VTOBDaQ" operation="_JIgVdlrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgT6lrJEfGsOv-VTOBDaQ" operation="_JIgVZFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgT61rJEfGsOv-VTOBDaQ" operation="_JIgVZFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgT7FrJEfGsOv-VTOBDaQ" memberEnd="_JIgT7VrJEfGsOv-VTOBDaQ _JIgT71rJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgT7VrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgT7VrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgTZVrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgT7FrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgT7lrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgT71rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgTqlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgT7FrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgT8FrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgT8VrJEfGsOv-VTOBDaQ" name="checkout">
+      <ownedComment xmi:id="_JIgT8lrJEfGsOv-VTOBDaQ">
+        <body>Trigger: test</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgT81rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgT9FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgT9VrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgT9lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgT91rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_JIgT-FrJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgUlFrJEfGsOv-VTOBDaQ"/>
+      <include xmi:id="_JIgT-VrJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgUz1rJEfGsOv-VTOBDaQ"/>
+      <include xmi:id="_JIgT-lrJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgU1lrJEfGsOv-VTOBDaQ"/>
+      <include xmi:id="_JIgT-1rJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgU3lrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgT_FrJEfGsOv-VTOBDaQ" name="client register">
+      <ownedComment xmi:id="_JIgT_VrJEfGsOv-VTOBDaQ">
+        <body>trigger: select register&#xD;
+objectTag:  Account, customer&#xD;
+Basic flow:  System displays the registration form. &#xD;
+&#xD;
+Customer enters personal information (username, email, password). &#xD;
+&#xD;
+System validates the entered information. &#xD;
+&#xD;
+System creates a new Account. &#xD;
+&#xD;
+System confirms successful registration.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgT_lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgT_1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUAFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUAVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUAlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_JIgUA1rJEfGsOv-VTOBDaQ" name="new customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUBFrJEfGsOv-VTOBDaQ" memberEnd="_JIgUBVrJEfGsOv-VTOBDaQ _JIgUB1rJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUBVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUBVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgTa1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUBFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUBlrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUB1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUA1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUBFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUCFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUCVrJEfGsOv-VTOBDaQ" memberEnd="_JIgUClrJEfGsOv-VTOBDaQ _JIgUDFrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUClrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUClrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgT_FrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUCVrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUC1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUDFrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUA1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUCVrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUDVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_JIgUDlrJEfGsOv-VTOBDaQ" name="authentication service "/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUD1rJEfGsOv-VTOBDaQ" memberEnd="_JIgUEFrJEfGsOv-VTOBDaQ _JIgUElrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUEFrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUEFrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgTa1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUD1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUEVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUElrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUDlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUD1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUE1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUFFrJEfGsOv-VTOBDaQ" memberEnd="_JIgUFVrJEfGsOv-VTOBDaQ _JIgUF1rJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUFVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUFVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgT8VrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUFFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUFlrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUF1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUDlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUFFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUGFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUGVrJEfGsOv-VTOBDaQ" memberEnd="_JIgUGlrJEfGsOv-VTOBDaQ _JIgUHFrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUGlrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUGlrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgT_FrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUGVrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUG1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUHFrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUDlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUGVrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUHVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_JIgUHlrJEfGsOv-VTOBDaQ" name="identity provider"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUH1rJEfGsOv-VTOBDaQ" memberEnd="_JIgUIFrJEfGsOv-VTOBDaQ _JIgUIlrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUIFrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUIFrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgTa1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUH1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUIVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUIlrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUHlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUH1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUI1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUJFrJEfGsOv-VTOBDaQ" memberEnd="_JIgUJVrJEfGsOv-VTOBDaQ _JIgUJ1rJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUJVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUJVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgT8VrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUJFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUJlrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUJ1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUHlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUJFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUKFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_JIgUKVrJEfGsOv-VTOBDaQ" name="credit payment service"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUKlrJEfGsOv-VTOBDaQ" memberEnd="_JIgUK1rJEfGsOv-VTOBDaQ _JIgULVrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUK1rJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUK1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgT8VrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUKlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgULFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgULVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUKVrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUKlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgULlrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_JIgUL1rJEfGsOv-VTOBDaQ" name="pay pal"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUMFrJEfGsOv-VTOBDaQ" memberEnd="_JIgUMVrJEfGsOv-VTOBDaQ _JIgUM1rJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUMVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUMVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgT8VrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUMFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUMlrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUM1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUL1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUMFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUNFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JIgUNVrJEfGsOv-VTOBDaQ" name="use cases L1">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgUNlrJEfGsOv-VTOBDaQ" name="search items">
+      <ownedComment xmi:id="_JIgUN1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUOFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUOVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUOlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUO1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUPFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <extend xmi:id="_JIgUPVrJEfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_JIgTa1rJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgUPlrJEfGsOv-VTOBDaQ" name="browse items">
+      <ownedComment xmi:id="_JIgUP1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUQFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUQVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUQlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUQ1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgURFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <extend xmi:id="_JIgURVrJEfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_JIgTa1rJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgURlrJEfGsOv-VTOBDaQ" name="view recommended items">
+      <ownedComment xmi:id="_JIgUR1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUSFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUSVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUSlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUS1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUTFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_JIgUTVrJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgUlFrJEfGsOv-VTOBDaQ"/>
+      <extend xmi:id="_JIgUTlrJEfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_JIgTa1rJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgUT1rJEfGsOv-VTOBDaQ" name="add to shopping cart">
+      <ownedComment xmi:id="_JIgUUFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUUVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUUlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUU1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUVFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUVVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JIgUVlrJEfGsOv-VTOBDaQ" name="add to cart Interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_JIgUV1rJEfGsOv-VTOBDaQ" name="locals">
+          <ownedAttribute xmi:id="_JIgUWFrJEfGsOv-VTOBDaQ" name="r" type="_JIgTZVrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgUWVrJEfGsOv-VTOBDaQ" name="r1" type="_JIgVNlrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgUWlrJEfGsOv-VTOBDaQ" name="r2" type="_JIgVf1rJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgUW1rJEfGsOv-VTOBDaQ" name="r3" type="_JIgVjFrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgUXFrJEfGsOv-VTOBDaQ" name="r4" type="_JIgVmFrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgUXVrJEfGsOv-VTOBDaQ" name="r5" type="_JIgVFVrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_JIgUXlrJEfGsOv-VTOBDaQ" name="r" represents="_JIgUWFrJEfGsOv-VTOBDaQ" coveredBy="_JIgUZVrJEfGsOv-VTOBDaQ _JIgUeFrJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgUX1rJEfGsOv-VTOBDaQ" name="r1" represents="_JIgUWVrJEfGsOv-VTOBDaQ" coveredBy="_JIgUZlrJEfGsOv-VTOBDaQ _JIgUZ1rJEfGsOv-VTOBDaQ _JIgUaFrJEfGsOv-VTOBDaQ _JIgUdlrJEfGsOv-VTOBDaQ _JIgUd1rJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgUYFrJEfGsOv-VTOBDaQ" name="r2" represents="_JIgUWlrJEfGsOv-VTOBDaQ" coveredBy="_JIgUaVrJEfGsOv-VTOBDaQ _JIgUalrJEfGsOv-VTOBDaQ _JIgUa1rJEfGsOv-VTOBDaQ _JIgUb1rJEfGsOv-VTOBDaQ _JIgUcFrJEfGsOv-VTOBDaQ _JIgUdFrJEfGsOv-VTOBDaQ _JIgUdVrJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgUYVrJEfGsOv-VTOBDaQ" name="r3" represents="_JIgUW1rJEfGsOv-VTOBDaQ" coveredBy="_JIgUcVrJEfGsOv-VTOBDaQ _JIgUclrJEfGsOv-VTOBDaQ _JIgUc1rJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgUYlrJEfGsOv-VTOBDaQ" name="r4" represents="_JIgUXFrJEfGsOv-VTOBDaQ" coveredBy="_JIgUbFrJEfGsOv-VTOBDaQ _JIgUbVrJEfGsOv-VTOBDaQ _JIgUblrJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgUY1rJEfGsOv-VTOBDaQ" name="r5" represents="_JIgUXVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:InteractionUse" xmi:id="_JIgUZFrJEfGsOv-VTOBDaQ" name="authenticateUser()" refersTo="_JIgUm1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUZVrJEfGsOv-VTOBDaQ" covered="_JIgUXlrJEfGsOv-VTOBDaQ" event="_JIgUg1rJEfGsOv-VTOBDaQ" message="_JIgUeVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUZlrJEfGsOv-VTOBDaQ" covered="_JIgUX1rJEfGsOv-VTOBDaQ" event="_JIgUhFrJEfGsOv-VTOBDaQ" message="_JIgUeVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgUZ1rJEfGsOv-VTOBDaQ" covered="_JIgUX1rJEfGsOv-VTOBDaQ" start="_JIgUZlrJEfGsOv-VTOBDaQ" finish="_JIgUd1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUaFrJEfGsOv-VTOBDaQ" covered="_JIgUX1rJEfGsOv-VTOBDaQ" event="_JIgUhVrJEfGsOv-VTOBDaQ" message="_JIgUelrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUaVrJEfGsOv-VTOBDaQ" covered="_JIgUYFrJEfGsOv-VTOBDaQ" event="_JIgUhlrJEfGsOv-VTOBDaQ" message="_JIgUelrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgUalrJEfGsOv-VTOBDaQ" covered="_JIgUYFrJEfGsOv-VTOBDaQ" start="_JIgUaVrJEfGsOv-VTOBDaQ" finish="_JIgUdVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUa1rJEfGsOv-VTOBDaQ" covered="_JIgUYFrJEfGsOv-VTOBDaQ" event="_JIgUh1rJEfGsOv-VTOBDaQ" message="_JIgUe1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUbFrJEfGsOv-VTOBDaQ" covered="_JIgUYlrJEfGsOv-VTOBDaQ" event="_JIgUiFrJEfGsOv-VTOBDaQ" message="_JIgUe1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgUbVrJEfGsOv-VTOBDaQ" covered="_JIgUYlrJEfGsOv-VTOBDaQ" start="_JIgUbFrJEfGsOv-VTOBDaQ" finish="_JIgUblrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUblrJEfGsOv-VTOBDaQ" covered="_JIgUYlrJEfGsOv-VTOBDaQ" message="_JIgUfFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUb1rJEfGsOv-VTOBDaQ" covered="_JIgUYFrJEfGsOv-VTOBDaQ" message="_JIgUfFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUcFrJEfGsOv-VTOBDaQ" covered="_JIgUYFrJEfGsOv-VTOBDaQ" event="_JIgUiVrJEfGsOv-VTOBDaQ" message="_JIgUfVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUcVrJEfGsOv-VTOBDaQ" covered="_JIgUYVrJEfGsOv-VTOBDaQ" event="_JIgUilrJEfGsOv-VTOBDaQ" message="_JIgUfVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgUclrJEfGsOv-VTOBDaQ" covered="_JIgUYVrJEfGsOv-VTOBDaQ" start="_JIgUcVrJEfGsOv-VTOBDaQ" finish="_JIgUc1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUc1rJEfGsOv-VTOBDaQ" covered="_JIgUYVrJEfGsOv-VTOBDaQ" message="_JIgUflrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUdFrJEfGsOv-VTOBDaQ" covered="_JIgUYFrJEfGsOv-VTOBDaQ" message="_JIgUflrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUdVrJEfGsOv-VTOBDaQ" covered="_JIgUYFrJEfGsOv-VTOBDaQ" message="_JIgUf1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUdlrJEfGsOv-VTOBDaQ" covered="_JIgUX1rJEfGsOv-VTOBDaQ" message="_JIgUf1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUd1rJEfGsOv-VTOBDaQ" covered="_JIgUX1rJEfGsOv-VTOBDaQ" message="_JIgUgFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUeFrJEfGsOv-VTOBDaQ" covered="_JIgUXlrJEfGsOv-VTOBDaQ" message="_JIgUgFrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUeVrJEfGsOv-VTOBDaQ" name="updateOrder" receiveEvent="_JIgUZlrJEfGsOv-VTOBDaQ" sendEvent="_JIgUZVrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUelrJEfGsOv-VTOBDaQ" name="addItem" receiveEvent="_JIgUaVrJEfGsOv-VTOBDaQ" sendEvent="_JIgUaFrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUe1rJEfGsOv-VTOBDaQ" name="getName" receiveEvent="_JIgUbFrJEfGsOv-VTOBDaQ" sendEvent="_JIgUa1rJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUfFrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgUb1rJEfGsOv-VTOBDaQ" sendEvent="_JIgUblrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUfVrJEfGsOv-VTOBDaQ" name="setQuantity" receiveEvent="_JIgUcVrJEfGsOv-VTOBDaQ" sendEvent="_JIgUcFrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUflrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgUdFrJEfGsOv-VTOBDaQ" sendEvent="_JIgUc1rJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUf1rJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgUdlrJEfGsOv-VTOBDaQ" sendEvent="_JIgUdVrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUgFrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgUeFrJEfGsOv-VTOBDaQ" sendEvent="_JIgUd1rJEfGsOv-VTOBDaQ"/>
+      </ownedBehavior>
+      <include xmi:id="_JIgUgVrJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgUlFrJEfGsOv-VTOBDaQ"/>
+      <extend xmi:id="_JIgUglrJEfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_JIgTa1rJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUg1rJEfGsOv-VTOBDaQ" operation="_JIgVUFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUhFrJEfGsOv-VTOBDaQ" operation="_JIgVUFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUhVrJEfGsOv-VTOBDaQ" operation="_JIgVgVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUhlrJEfGsOv-VTOBDaQ" operation="_JIgVgVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUh1rJEfGsOv-VTOBDaQ" operation="_JIgVnVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUiFrJEfGsOv-VTOBDaQ" operation="_JIgVnVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUiVrJEfGsOv-VTOBDaQ" operation="_JIgVklrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUilrJEfGsOv-VTOBDaQ" operation="_JIgVklrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgUi1rJEfGsOv-VTOBDaQ" name="add to wishlist">
+      <ownedComment xmi:id="_JIgUjFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUjVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUjlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUj1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUkFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUkVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_JIgUklrJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgUlFrJEfGsOv-VTOBDaQ"/>
+      <extend xmi:id="_JIgUk1rJEfGsOv-VTOBDaQ" name="UseCaseDependency" extendedCase="_JIgTa1rJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgUlFrJEfGsOv-VTOBDaQ" name="customer authentication">
+      <ownedComment xmi:id="_JIgUlVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUllrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUl1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUmFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUmVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgUmlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JIgUm1rJEfGsOv-VTOBDaQ" name="authenticate interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_JIgUnFrJEfGsOv-VTOBDaQ" name="locals">
+          <ownedAttribute xmi:id="_JIgUnVrJEfGsOv-VTOBDaQ" name="r" type="_JIgTZVrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+          <ownedAttribute xmi:id="_JIgUnlrJEfGsOv-VTOBDaQ" name="r1" type="_JIgVFVrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_JIgUn1rJEfGsOv-VTOBDaQ" name="r" represents="_JIgUnVrJEfGsOv-VTOBDaQ" coveredBy="_JIgUoVrJEfGsOv-VTOBDaQ _JIgUp1rJEfGsOv-VTOBDaQ"/>
+        <lifeline xmi:id="_JIgUoFrJEfGsOv-VTOBDaQ" name="r1" represents="_JIgUnlrJEfGsOv-VTOBDaQ" coveredBy="_JIgUolrJEfGsOv-VTOBDaQ _JIgUo1rJEfGsOv-VTOBDaQ _JIgUpFrJEfGsOv-VTOBDaQ _JIgUpVrJEfGsOv-VTOBDaQ _JIgUplrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUoVrJEfGsOv-VTOBDaQ" covered="_JIgUn1rJEfGsOv-VTOBDaQ" event="_JIgUrFrJEfGsOv-VTOBDaQ" message="_JIgUqFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUolrJEfGsOv-VTOBDaQ" covered="_JIgUoFrJEfGsOv-VTOBDaQ" event="_JIgUrVrJEfGsOv-VTOBDaQ" message="_JIgUqFrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgUo1rJEfGsOv-VTOBDaQ" covered="_JIgUoFrJEfGsOv-VTOBDaQ" start="_JIgUolrJEfGsOv-VTOBDaQ" finish="_JIgUplrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUpFrJEfGsOv-VTOBDaQ" covered="_JIgUoFrJEfGsOv-VTOBDaQ" event="_JIgUrlrJEfGsOv-VTOBDaQ" message="_JIgUqVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUpVrJEfGsOv-VTOBDaQ" covered="_JIgUoFrJEfGsOv-VTOBDaQ" event="_JIgUr1rJEfGsOv-VTOBDaQ" message="_JIgUqVrJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUplrJEfGsOv-VTOBDaQ" covered="_JIgUoFrJEfGsOv-VTOBDaQ" message="_JIgUq1rJEfGsOv-VTOBDaQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgUp1rJEfGsOv-VTOBDaQ" covered="_JIgUn1rJEfGsOv-VTOBDaQ" message="_JIgUq1rJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUqFrJEfGsOv-VTOBDaQ" name="Login" receiveEvent="_JIgUolrJEfGsOv-VTOBDaQ" sendEvent="_JIgUoVrJEfGsOv-VTOBDaQ"/>
+        <message xmi:id="_JIgUqVrJEfGsOv-VTOBDaQ" name="setState" receiveEvent="_JIgUpVrJEfGsOv-VTOBDaQ" sendEvent="_JIgUpFrJEfGsOv-VTOBDaQ">
+          <argument xmi:type="uml:LiteralString" xmi:id="_JIgUqlrJEfGsOv-VTOBDaQ" value="active"/>
+        </message>
+        <message xmi:id="_JIgUq1rJEfGsOv-VTOBDaQ" name="result" messageSort="reply" receiveEvent="_JIgUp1rJEfGsOv-VTOBDaQ" sendEvent="_JIgUplrJEfGsOv-VTOBDaQ"/>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUrFrJEfGsOv-VTOBDaQ" operation="_JIgVGlrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUrVrJEfGsOv-VTOBDaQ" operation="_JIgVGlrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUrlrJEfGsOv-VTOBDaQ" operation="_JIgVHVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgUr1rJEfGsOv-VTOBDaQ" operation="_JIgVHVrJEfGsOv-VTOBDaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JIgUsFrJEfGsOv-VTOBDaQ" name="use cases L1_">
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUsVrJEfGsOv-VTOBDaQ" memberEnd="_JIgUslrJEfGsOv-VTOBDaQ _JIgUtFrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUslrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUslrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgU5VrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUsVrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUs1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUtFrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUDlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUsVrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUtVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUtlrJEfGsOv-VTOBDaQ" memberEnd="_JIgUt1rJEfGsOv-VTOBDaQ _JIgUuVrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUt1rJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUt1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgU7VrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUtlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUuFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUuVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUDlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUtlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUulrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUu1rJEfGsOv-VTOBDaQ" memberEnd="_JIgUvFrJEfGsOv-VTOBDaQ _JIgUvlrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUvFrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUvFrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgU9VrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUu1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUvVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUvlrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUDlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUu1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUv1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUwFrJEfGsOv-VTOBDaQ" memberEnd="_JIgUwVrJEfGsOv-VTOBDaQ _JIgUw1rJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUwVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUwVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgU9VrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUwFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUwlrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUw1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUHlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUwFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUxFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUxVrJEfGsOv-VTOBDaQ" memberEnd="_JIgUxlrJEfGsOv-VTOBDaQ _JIgUyFrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUxlrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUxlrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVBFrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUxVrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUx1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUyFrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUKVrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUxVrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUyVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgUylrJEfGsOv-VTOBDaQ" memberEnd="_JIgUy1rJEfGsOv-VTOBDaQ _JIgUzVrJEfGsOv-VTOBDaQ" navigableOwnedEnd="_JIgUy1rJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgUy1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVDFrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUylrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUzFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgUzVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgUL1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgUylrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgUzlrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgUz1rJEfGsOv-VTOBDaQ" name="view/update shopping cart">
+      <ownedComment xmi:id="_JIgU0FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU0VrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU0lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU01rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU1FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU1VrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgU1lrJEfGsOv-VTOBDaQ" name="calculate taxes and shipping">
+      <ownedComment xmi:id="_JIgU11rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU2FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU2VrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU2lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU21rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU3FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_JIgU3VrJEfGsOv-VTOBDaQ" name="UseCaseDependency" addition="_JIgU_VrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgU3lrJEfGsOv-VTOBDaQ" name="payment">
+      <ownedComment xmi:id="_JIgU31rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU4FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU4VrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU4lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU41rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU5FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgU5VrJEfGsOv-VTOBDaQ" name="user sign in">
+      <ownedComment xmi:id="_JIgU5lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU51rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU6FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU6VrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU6lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU61rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_JIgU7FrJEfGsOv-VTOBDaQ" general="_JIgUlFrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgU7VrJEfGsOv-VTOBDaQ" name="remember me">
+      <ownedComment xmi:id="_JIgU7lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU71rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU8FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU8VrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU8lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU81rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_JIgU9FrJEfGsOv-VTOBDaQ" general="_JIgUlFrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgU9VrJEfGsOv-VTOBDaQ" name="single sign on">
+      <ownedComment xmi:id="_JIgU9lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU91rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU-FrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU-VrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU-lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU-1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_JIgU_FrJEfGsOv-VTOBDaQ" general="_JIgUlFrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgU_VrJEfGsOv-VTOBDaQ" name="calculate total">
+      <ownedComment xmi:id="_JIgU_lrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgU_1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVAFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVAVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVAlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVA1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgVBFrJEfGsOv-VTOBDaQ" name="payment by credit">
+      <ownedComment xmi:id="_JIgVBVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVBlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVB1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVCFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVCVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVClrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_JIgVC1rJEfGsOv-VTOBDaQ" general="_JIgU3lrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JIgVDFrJEfGsOv-VTOBDaQ" name="payment by paypal">
+      <ownedComment xmi:id="_JIgVDVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVDlrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVD1rJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVEFrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVEVrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_JIgVElrJEfGsOv-VTOBDaQ">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_JIgVE1rJEfGsOv-VTOBDaQ" general="_JIgU3lrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JIgVFFrJEfGsOv-VTOBDaQ" name="class diagram">
+    <packagedElement xmi:type="uml:Class" xmi:id="_JIgVFVrJEfGsOv-VTOBDaQ" name="Web user">
+      <ownedComment xmi:id="_JIgVFlrJEfGsOv-VTOBDaQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_JIgVF1rJEfGsOv-VTOBDaQ" name="login_id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVGFrJEfGsOv-VTOBDaQ" name="password" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVGVrJEfGsOv-VTOBDaQ" name="state" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_JIgVGlrJEfGsOv-VTOBDaQ" name="login" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVG1rJEfGsOv-VTOBDaQ" name="logout" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVHFrJEfGsOv-VTOBDaQ" name="getState" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVHVrJEfGsOv-VTOBDaQ" name="setState" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVHlrJEfGsOv-VTOBDaQ" memberEnd="_JIgVH1rJEfGsOv-VTOBDaQ _JIgVIVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgVH1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVKVrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVHlrJEfGsOv-VTOBDaQ">
+        <ownedComment xmi:id="_JIgVIFrJEfGsOv-VTOBDaQ">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgVIVrJEfGsOv-VTOBDaQ" name="web user" visibility="public" type="_JIgVFVrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVHlrJEfGsOv-VTOBDaQ">
+        <ownedComment xmi:id="_JIgVIlrJEfGsOv-VTOBDaQ">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVI1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVJFrJEfGsOv-VTOBDaQ" memberEnd="_JIgVJVrJEfGsOv-VTOBDaQ _JIgVJ1rJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgVJVrJEfGsOv-VTOBDaQ" name="shopping cart" visibility="public" type="_JIgVf1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVJFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVJlrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgVJ1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVFVrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVJFrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVKFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JIgVKVrJEfGsOv-VTOBDaQ" name="Customer">
+      <ownedAttribute xmi:id="_JIgVKlrJEfGsOv-VTOBDaQ" name="id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVK1rJEfGsOv-VTOBDaQ" name="address" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVLFrJEfGsOv-VTOBDaQ" name="phone" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVLVrJEfGsOv-VTOBDaQ" name="email" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_JIgVLlrJEfGsOv-VTOBDaQ" name="getID" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVL1rJEfGsOv-VTOBDaQ" name="getAddress" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVMFrJEfGsOv-VTOBDaQ" name="getEmail" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVMVrJEfGsOv-VTOBDaQ" name="getPhone" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVMlrJEfGsOv-VTOBDaQ" memberEnd="_JIgVM1rJEfGsOv-VTOBDaQ _JIgVNVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgVM1rJEfGsOv-VTOBDaQ" name="account" visibility="public" type="_JIgVNlrJEfGsOv-VTOBDaQ" isUnique="false" aggregation="composite" association="_JIgVMlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVNFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgVNVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVKVrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVMlrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JIgVNlrJEfGsOv-VTOBDaQ" name="Account">
+      <ownedAttribute xmi:id="_JIgVN1rJEfGsOv-VTOBDaQ" name="id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVOFrJEfGsOv-VTOBDaQ" name="biling_address" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVOVrJEfGsOv-VTOBDaQ" name="is_closed" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVOlrJEfGsOv-VTOBDaQ" name="open" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVO1rJEfGsOv-VTOBDaQ" name="closed" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_JIgVPFrJEfGsOv-VTOBDaQ" name="State Machine1">
+        <region xmi:id="_JIgVPVrJEfGsOv-VTOBDaQ">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_JIgVPlrJEfGsOv-VTOBDaQ" name="Initial State"/>
+          <subvertex xmi:type="uml:State" xmi:id="_JIgVP1rJEfGsOv-VTOBDaQ" name="new"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_JIgVQFrJEfGsOv-VTOBDaQ" name="Final State"/>
+          <subvertex xmi:type="uml:State" xmi:id="_JIgVQVrJEfGsOv-VTOBDaQ" name="active"/>
+          <subvertex xmi:type="uml:State" xmi:id="_JIgVQlrJEfGsOv-VTOBDaQ" name="closed"/>
+          <subvertex xmi:type="uml:State" xmi:id="_JIgVQ1rJEfGsOv-VTOBDaQ" name="suspended"/>
+          <transition xmi:id="_JIgVRFrJEfGsOv-VTOBDaQ" name="select new" source="_JIgVPlrJEfGsOv-VTOBDaQ" target="_JIgVP1rJEfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_JIgVRVrJEfGsOv-VTOBDaQ" name="activate" source="_JIgVP1rJEfGsOv-VTOBDaQ" target="_JIgVQVrJEfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_JIgVRlrJEfGsOv-VTOBDaQ" name="suspend" source="_JIgVP1rJEfGsOv-VTOBDaQ" target="_JIgVQ1rJEfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_JIgVR1rJEfGsOv-VTOBDaQ" name="cancel" source="_JIgVP1rJEfGsOv-VTOBDaQ" target="_JIgVQlrJEfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_JIgVSFrJEfGsOv-VTOBDaQ" name="Transition" source="_JIgVQVrJEfGsOv-VTOBDaQ" target="_JIgVQlrJEfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_JIgVSVrJEfGsOv-VTOBDaQ" name="suspend" source="_JIgVQVrJEfGsOv-VTOBDaQ" target="_JIgVQ1rJEfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_JIgVSlrJEfGsOv-VTOBDaQ" name="Transition" source="_JIgVQlrJEfGsOv-VTOBDaQ" target="_JIgVQFrJEfGsOv-VTOBDaQ"/>
+          <transition xmi:id="_JIgVS1rJEfGsOv-VTOBDaQ" name="resume" source="_JIgVQ1rJEfGsOv-VTOBDaQ" target="_JIgVQVrJEfGsOv-VTOBDaQ"/>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_JIgVTFrJEfGsOv-VTOBDaQ" name="getCustomer" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVTVrJEfGsOv-VTOBDaQ" name="getOrder" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVTlrJEfGsOv-VTOBDaQ" name="createOrder" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVT1rJEfGsOv-VTOBDaQ" name="getShoppingCart" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVUFrJEfGsOv-VTOBDaQ" name="updateOrder" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVUVrJEfGsOv-VTOBDaQ" name="make purchase" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVUlrJEfGsOv-VTOBDaQ" memberEnd="_JIgVU1rJEfGsOv-VTOBDaQ _JIgVVVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgVU1rJEfGsOv-VTOBDaQ" name="shopping cart" visibility="public" type="_JIgVf1rJEfGsOv-VTOBDaQ" isUnique="false" aggregation="composite" association="_JIgVUlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVVFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgVVVrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVNlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVUlrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVVlrJEfGsOv-VTOBDaQ" memberEnd="_JIgVV1rJEfGsOv-VTOBDaQ _JIgVWVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgVV1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVX1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVVlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVWFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgVWVrJEfGsOv-VTOBDaQ" name="account" visibility="public" type="_JIgVNlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVVlrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVWlrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVW1rJEfGsOv-VTOBDaQ" memberEnd="_JIgVXFrJEfGsOv-VTOBDaQ _JIgVXlrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgVXFrJEfGsOv-VTOBDaQ" name="order" visibility="public" type="_JIgVbFrJEfGsOv-VTOBDaQ" isUnique="false" aggregation="composite" association="_JIgVW1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVXVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgVXlrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVNlrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVW1rJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JIgVX1rJEfGsOv-VTOBDaQ" name="Payment">
+      <ownedAttribute xmi:id="_JIgVYFrJEfGsOv-VTOBDaQ" name="id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVYVrJEfGsOv-VTOBDaQ" name="paid" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVYlrJEfGsOv-VTOBDaQ" name="total" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVY1rJEfGsOv-VTOBDaQ" name="details" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_JIgVZFrJEfGsOv-VTOBDaQ" name="processPayment" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVZVrJEfGsOv-VTOBDaQ" name="getOrder" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVZlrJEfGsOv-VTOBDaQ" name="setOrder" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVZ1rJEfGsOv-VTOBDaQ" memberEnd="_JIgVaFrJEfGsOv-VTOBDaQ _JIgValrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgVaFrJEfGsOv-VTOBDaQ" name="order" visibility="public" type="_JIgVbFrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVZ1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVaVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgValrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVX1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVZ1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVa1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JIgVbFrJEfGsOv-VTOBDaQ" name="Order">
+      <ownedAttribute xmi:id="_JIgVbVrJEfGsOv-VTOBDaQ" name="number" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVblrJEfGsOv-VTOBDaQ" name="ordered" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVb1rJEfGsOv-VTOBDaQ" name="shipped" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVcFrJEfGsOv-VTOBDaQ" name="ship_to" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVcVrJEfGsOv-VTOBDaQ" name="status" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVclrJEfGsOv-VTOBDaQ" name="total" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_JIgVc1rJEfGsOv-VTOBDaQ" name="getLineItem" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVdFrJEfGsOv-VTOBDaQ" name="getShippingAddress" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVdVrJEfGsOv-VTOBDaQ" name="setShippingAddress" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVdlrJEfGsOv-VTOBDaQ" name="calcTotal" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVd1rJEfGsOv-VTOBDaQ" name="getStatus" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVeFrJEfGsOv-VTOBDaQ" name="setStatus" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVeVrJEfGsOv-VTOBDaQ" name="addLineItem" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVelrJEfGsOv-VTOBDaQ" memberEnd="_JIgVe1rJEfGsOv-VTOBDaQ _JIgVfVrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgVe1rJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVjFrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVelrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVfFrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgVfVrJEfGsOv-VTOBDaQ" name="order" visibility="public" type="_JIgVbFrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVelrJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVflrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JIgVf1rJEfGsOv-VTOBDaQ" name="Shopping cart">
+      <ownedAttribute xmi:id="_JIgVgFrJEfGsOv-VTOBDaQ" name="created" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_JIgVgVrJEfGsOv-VTOBDaQ" name="addItem" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVglrJEfGsOv-VTOBDaQ" name="removeItem" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVg1rJEfGsOv-VTOBDaQ" name="getTotal" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVhFrJEfGsOv-VTOBDaQ" name="viewItems" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVhVrJEfGsOv-VTOBDaQ" name="getItems" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVhlrJEfGsOv-VTOBDaQ" name="findItems" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVh1rJEfGsOv-VTOBDaQ" memberEnd="_JIgViFrJEfGsOv-VTOBDaQ _JIgVilrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgViFrJEfGsOv-VTOBDaQ" name="lineItem" visibility="public" type="_JIgVjFrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVh1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgViVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgVilrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVf1rJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVh1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVi1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JIgVjFrJEfGsOv-VTOBDaQ" name="LineItem">
+      <ownedAttribute xmi:id="_JIgVjVrJEfGsOv-VTOBDaQ" name="quantity" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVjlrJEfGsOv-VTOBDaQ" name="price" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_JIgVj1rJEfGsOv-VTOBDaQ" name="getQuantity" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVkFrJEfGsOv-VTOBDaQ" name="getPrice" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVkVrJEfGsOv-VTOBDaQ" name="LineItem" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVklrJEfGsOv-VTOBDaQ" name="setQuantity" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIgVk1rJEfGsOv-VTOBDaQ" memberEnd="_JIgVlFrJEfGsOv-VTOBDaQ _JIgVllrJEfGsOv-VTOBDaQ">
+      <ownedEnd xmi:id="_JIgVlFrJEfGsOv-VTOBDaQ" name="product" visibility="public" type="_JIgVmFrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVk1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVlVrJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_JIgVllrJEfGsOv-VTOBDaQ" visibility="public" type="_JIgVjFrJEfGsOv-VTOBDaQ" isUnique="false" association="_JIgVk1rJEfGsOv-VTOBDaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIgVl1rJEfGsOv-VTOBDaQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JIgVmFrJEfGsOv-VTOBDaQ" name="Product">
+      <ownedAttribute xmi:id="_JIgVmVrJEfGsOv-VTOBDaQ" name="id" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVmlrJEfGsOv-VTOBDaQ" name="name" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JIgVm1rJEfGsOv-VTOBDaQ" name="supplier" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_JIgVnFrJEfGsOv-VTOBDaQ" name="getID" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVnVrJEfGsOv-VTOBDaQ" name="getName" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVnlrJEfGsOv-VTOBDaQ" name="getSupplier" visibility="public"/>
+      <ownedOperation xmi:id="_JIgVn1rJEfGsOv-VTOBDaQ" name="viewProduct" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_JIgVoFrJEfGsOv-VTOBDaQ" name="Orderstatus">
+      <ownedLiteral xmi:id="_JIgVoVrJEfGsOv-VTOBDaQ" name="new"/>
+      <ownedLiteral xmi:id="_JIgVolrJEfGsOv-VTOBDaQ" name="hold"/>
+      <ownedLiteral xmi:id="_JIgVo1rJEfGsOv-VTOBDaQ" name="shipped"/>
+      <ownedLiteral xmi:id="_JIgVpFrJEfGsOv-VTOBDaQ" name="delivered"/>
+      <ownedLiteral xmi:id="_JIgVpVrJEfGsOv-VTOBDaQ" name="closed"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_JIgVplrJEfGsOv-VTOBDaQ" name="user state ">
+      <ownedLiteral xmi:id="_JIgVp1rJEfGsOv-VTOBDaQ" name="new"/>
+      <ownedLiteral xmi:id="_JIgVqFrJEfGsOv-VTOBDaQ" name="active"/>
+      <ownedLiteral xmi:id="_JIgVqVrJEfGsOv-VTOBDaQ" name="blocked"/>
+      <ownedLiteral xmi:id="_JIgVqlrJEfGsOv-VTOBDaQ" name="banned"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JIgVq1rJEfGsOv-VTOBDaQ" name="sequence">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_JIgVrFrJEfGsOv-VTOBDaQ" name="Interaction">
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_JIgVrVrJEfGsOv-VTOBDaQ" name="locals">
+        <ownedAttribute xmi:id="_JIgVrlrJEfGsOv-VTOBDaQ" name="r" type="_JIgTZVrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_JIgVr1rJEfGsOv-VTOBDaQ" name="r1" type="_JIgVFVrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_JIgVsFrJEfGsOv-VTOBDaQ" name="r2" type="_JIgVf1rJEfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_JIgVsVrJEfGsOv-VTOBDaQ" name="r3" type="_JIgVmFrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_JIgVslrJEfGsOv-VTOBDaQ" name="r4" type="_JIgVjFrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+        <ownedAttribute xmi:id="_JIgVs1rJEfGsOv-VTOBDaQ" name="r5" type="_JIgVNlrJEfGsOv-VTOBDaQ" aggregation="composite"/>
+      </nestedClassifier>
+      <lifeline xmi:id="_JIgVtFrJEfGsOv-VTOBDaQ" name="r" represents="_JIgVrlrJEfGsOv-VTOBDaQ" coveredBy="_JIgVulrJEfGsOv-VTOBDaQ _JIgVw1rJEfGsOv-VTOBDaQ _JIgVxFrJEfGsOv-VTOBDaQ _JIgVyFrJEfGsOv-VTOBDaQ _JIgVyVrJEfGsOv-VTOBDaQ _JIgVzVrJEfGsOv-VTOBDaQ _JIgVzlrJEfGsOv-VTOBDaQ _JIgV0lrJEfGsOv-VTOBDaQ _JIgV01rJEfGsOv-VTOBDaQ _JIgV4VrJEfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_JIgVtVrJEfGsOv-VTOBDaQ" name="r1" represents="_JIgVr1rJEfGsOv-VTOBDaQ" coveredBy="_JIgVu1rJEfGsOv-VTOBDaQ _JIgVvFrJEfGsOv-VTOBDaQ _JIgVvVrJEfGsOv-VTOBDaQ _JIgVwVrJEfGsOv-VTOBDaQ _JIgVwlrJEfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_JIgVtlrJEfGsOv-VTOBDaQ" name="r2" represents="_JIgVsFrJEfGsOv-VTOBDaQ" coveredBy="_JIgV1FrJEfGsOv-VTOBDaQ _JIgV1VrJEfGsOv-VTOBDaQ _JIgV1lrJEfGsOv-VTOBDaQ _JIgV2lrJEfGsOv-VTOBDaQ _JIgV21rJEfGsOv-VTOBDaQ _JIgV31rJEfGsOv-VTOBDaQ _JIgV4FrJEfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_JIgVt1rJEfGsOv-VTOBDaQ" name="r3" represents="_JIgVsVrJEfGsOv-VTOBDaQ" coveredBy="_JIgVylrJEfGsOv-VTOBDaQ _JIgVy1rJEfGsOv-VTOBDaQ _JIgVzFrJEfGsOv-VTOBDaQ _JIgVz1rJEfGsOv-VTOBDaQ _JIgV0FrJEfGsOv-VTOBDaQ _JIgV0VrJEfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_JIgVuFrJEfGsOv-VTOBDaQ" name="r4" represents="_JIgVslrJEfGsOv-VTOBDaQ" coveredBy="_JIgV11rJEfGsOv-VTOBDaQ _JIgV2FrJEfGsOv-VTOBDaQ _JIgV2VrJEfGsOv-VTOBDaQ _JIgV3FrJEfGsOv-VTOBDaQ _JIgV3VrJEfGsOv-VTOBDaQ _JIgV3lrJEfGsOv-VTOBDaQ"/>
+      <lifeline xmi:id="_JIgVuVrJEfGsOv-VTOBDaQ" name="r5" represents="_JIgVs1rJEfGsOv-VTOBDaQ" coveredBy="_JIgVvlrJEfGsOv-VTOBDaQ _JIgVv1rJEfGsOv-VTOBDaQ _JIgVwFrJEfGsOv-VTOBDaQ _JIgVxVrJEfGsOv-VTOBDaQ _JIgVxlrJEfGsOv-VTOBDaQ _JIgVx1rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVulrJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" event="_JIgV8lrJEfGsOv-VTOBDaQ" message="_JIgV4lrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVu1rJEfGsOv-VTOBDaQ" covered="_JIgVtVrJEfGsOv-VTOBDaQ" event="_JIgV81rJEfGsOv-VTOBDaQ" message="_JIgV4lrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgVvFrJEfGsOv-VTOBDaQ" covered="_JIgVtVrJEfGsOv-VTOBDaQ" start="_JIgVu1rJEfGsOv-VTOBDaQ" finish="_JIgVwlrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVvVrJEfGsOv-VTOBDaQ" covered="_JIgVtVrJEfGsOv-VTOBDaQ" event="_JIgV9FrJEfGsOv-VTOBDaQ" message="_JIgV41rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVvlrJEfGsOv-VTOBDaQ" covered="_JIgVuVrJEfGsOv-VTOBDaQ" event="_JIgV9VrJEfGsOv-VTOBDaQ" message="_JIgV41rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgVv1rJEfGsOv-VTOBDaQ" covered="_JIgVuVrJEfGsOv-VTOBDaQ" start="_JIgVvlrJEfGsOv-VTOBDaQ" finish="_JIgVwFrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVwFrJEfGsOv-VTOBDaQ" covered="_JIgVuVrJEfGsOv-VTOBDaQ" message="_JIgV5FrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVwVrJEfGsOv-VTOBDaQ" covered="_JIgVtVrJEfGsOv-VTOBDaQ" message="_JIgV5FrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVwlrJEfGsOv-VTOBDaQ" covered="_JIgVtVrJEfGsOv-VTOBDaQ" message="_JIgV5VrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVw1rJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" message="_JIgV5VrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVxFrJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" event="_JIgV9lrJEfGsOv-VTOBDaQ" message="_JIgV5lrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVxVrJEfGsOv-VTOBDaQ" covered="_JIgVuVrJEfGsOv-VTOBDaQ" event="_JIgV91rJEfGsOv-VTOBDaQ" message="_JIgV5lrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgVxlrJEfGsOv-VTOBDaQ" covered="_JIgVuVrJEfGsOv-VTOBDaQ" start="_JIgVxVrJEfGsOv-VTOBDaQ" finish="_JIgVx1rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVx1rJEfGsOv-VTOBDaQ" covered="_JIgVuVrJEfGsOv-VTOBDaQ" message="_JIgV51rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVyFrJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" message="_JIgV51rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVyVrJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" event="_JIgV-FrJEfGsOv-VTOBDaQ" message="_JIgV6FrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVylrJEfGsOv-VTOBDaQ" covered="_JIgVt1rJEfGsOv-VTOBDaQ" event="_JIgV-VrJEfGsOv-VTOBDaQ" message="_JIgV6FrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgVy1rJEfGsOv-VTOBDaQ" covered="_JIgVt1rJEfGsOv-VTOBDaQ" start="_JIgVylrJEfGsOv-VTOBDaQ" finish="_JIgVzFrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVzFrJEfGsOv-VTOBDaQ" covered="_JIgVt1rJEfGsOv-VTOBDaQ" message="_JIgV6VrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVzVrJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" message="_JIgV6VrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVzlrJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" event="_JIgV-lrJEfGsOv-VTOBDaQ" message="_JIgV6lrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgVz1rJEfGsOv-VTOBDaQ" covered="_JIgVt1rJEfGsOv-VTOBDaQ" event="_JIgV-1rJEfGsOv-VTOBDaQ" message="_JIgV6lrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgV0FrJEfGsOv-VTOBDaQ" covered="_JIgVt1rJEfGsOv-VTOBDaQ" start="_JIgVz1rJEfGsOv-VTOBDaQ" finish="_JIgV0VrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV0VrJEfGsOv-VTOBDaQ" covered="_JIgVt1rJEfGsOv-VTOBDaQ" message="_JIgV61rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV0lrJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" message="_JIgV61rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV01rJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" event="_JIgV_FrJEfGsOv-VTOBDaQ" message="_JIgV7FrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV1FrJEfGsOv-VTOBDaQ" covered="_JIgVtlrJEfGsOv-VTOBDaQ" event="_JIgV_VrJEfGsOv-VTOBDaQ" message="_JIgV7FrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgV1VrJEfGsOv-VTOBDaQ" covered="_JIgVtlrJEfGsOv-VTOBDaQ" start="_JIgV1FrJEfGsOv-VTOBDaQ" finish="_JIgV4FrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV1lrJEfGsOv-VTOBDaQ" covered="_JIgVtlrJEfGsOv-VTOBDaQ" event="_JIgV_lrJEfGsOv-VTOBDaQ" message="_JIgV7VrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV11rJEfGsOv-VTOBDaQ" covered="_JIgVuFrJEfGsOv-VTOBDaQ" event="_JIgV_1rJEfGsOv-VTOBDaQ" message="_JIgV7VrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgV2FrJEfGsOv-VTOBDaQ" covered="_JIgVuFrJEfGsOv-VTOBDaQ" start="_JIgV11rJEfGsOv-VTOBDaQ" finish="_JIgV2VrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV2VrJEfGsOv-VTOBDaQ" covered="_JIgVuFrJEfGsOv-VTOBDaQ" message="_JIgV7lrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV2lrJEfGsOv-VTOBDaQ" covered="_JIgVtlrJEfGsOv-VTOBDaQ" message="_JIgV7lrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV21rJEfGsOv-VTOBDaQ" covered="_JIgVtlrJEfGsOv-VTOBDaQ" event="_JIgWAFrJEfGsOv-VTOBDaQ" message="_JIgV71rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV3FrJEfGsOv-VTOBDaQ" covered="_JIgVuFrJEfGsOv-VTOBDaQ" event="_JIgWAVrJEfGsOv-VTOBDaQ" message="_JIgV71rJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JIgV3VrJEfGsOv-VTOBDaQ" covered="_JIgVuFrJEfGsOv-VTOBDaQ" start="_JIgV3FrJEfGsOv-VTOBDaQ" finish="_JIgV3lrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV3lrJEfGsOv-VTOBDaQ" covered="_JIgVuFrJEfGsOv-VTOBDaQ" message="_JIgV8FrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV31rJEfGsOv-VTOBDaQ" covered="_JIgVtlrJEfGsOv-VTOBDaQ" message="_JIgV8FrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV4FrJEfGsOv-VTOBDaQ" covered="_JIgVtlrJEfGsOv-VTOBDaQ" message="_JIgV8VrJEfGsOv-VTOBDaQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JIgV4VrJEfGsOv-VTOBDaQ" covered="_JIgVtFrJEfGsOv-VTOBDaQ" message="_JIgV8VrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV4lrJEfGsOv-VTOBDaQ" name=" login" receiveEvent="_JIgVu1rJEfGsOv-VTOBDaQ" sendEvent="_JIgVulrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV41rJEfGsOv-VTOBDaQ" name="getCustomer" receiveEvent="_JIgVvlrJEfGsOv-VTOBDaQ" sendEvent="_JIgVvVrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV5FrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgVwVrJEfGsOv-VTOBDaQ" sendEvent="_JIgVwFrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV5VrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgVw1rJEfGsOv-VTOBDaQ" sendEvent="_JIgVwlrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV5lrJEfGsOv-VTOBDaQ" name="getShoppingCart" receiveEvent="_JIgVxVrJEfGsOv-VTOBDaQ" sendEvent="_JIgVxFrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV51rJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgVyFrJEfGsOv-VTOBDaQ" sendEvent="_JIgVx1rJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV6FrJEfGsOv-VTOBDaQ" name="getID" receiveEvent="_JIgVylrJEfGsOv-VTOBDaQ" sendEvent="_JIgVyVrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV6VrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgVzVrJEfGsOv-VTOBDaQ" sendEvent="_JIgVzFrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV6lrJEfGsOv-VTOBDaQ" name="getName" receiveEvent="_JIgVz1rJEfGsOv-VTOBDaQ" sendEvent="_JIgVzlrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV61rJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgV0lrJEfGsOv-VTOBDaQ" sendEvent="_JIgV0VrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV7FrJEfGsOv-VTOBDaQ" receiveEvent="_JIgV1FrJEfGsOv-VTOBDaQ" sendEvent="_JIgV01rJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV7VrJEfGsOv-VTOBDaQ" name="getQuantity" receiveEvent="_JIgV11rJEfGsOv-VTOBDaQ" sendEvent="_JIgV1lrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV7lrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgV2lrJEfGsOv-VTOBDaQ" sendEvent="_JIgV2VrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV71rJEfGsOv-VTOBDaQ" name="getPrice" receiveEvent="_JIgV3FrJEfGsOv-VTOBDaQ" sendEvent="_JIgV21rJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV8FrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgV31rJEfGsOv-VTOBDaQ" sendEvent="_JIgV3lrJEfGsOv-VTOBDaQ"/>
+      <message xmi:id="_JIgV8VrJEfGsOv-VTOBDaQ" messageSort="reply" receiveEvent="_JIgV4VrJEfGsOv-VTOBDaQ" sendEvent="_JIgV4FrJEfGsOv-VTOBDaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV8lrJEfGsOv-VTOBDaQ" operation="_JIgVGlrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV81rJEfGsOv-VTOBDaQ" operation="_JIgVGlrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV9FrJEfGsOv-VTOBDaQ" operation="_JIgVTFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV9VrJEfGsOv-VTOBDaQ" operation="_JIgVTFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV9lrJEfGsOv-VTOBDaQ" operation="_JIgVT1rJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV91rJEfGsOv-VTOBDaQ" operation="_JIgVT1rJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV-FrJEfGsOv-VTOBDaQ" operation="_JIgVnFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV-VrJEfGsOv-VTOBDaQ" operation="_JIgVnFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV-lrJEfGsOv-VTOBDaQ" operation="_JIgVnVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV-1rJEfGsOv-VTOBDaQ" operation="_JIgVnVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV_FrJEfGsOv-VTOBDaQ" operation="_JIgVgVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV_VrJEfGsOv-VTOBDaQ" operation="_JIgVgVrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV_lrJEfGsOv-VTOBDaQ" operation="_JIgVj1rJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgV_1rJEfGsOv-VTOBDaQ" operation="_JIgVj1rJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgWAFrJEfGsOv-VTOBDaQ" operation="_JIgVkFrJEfGsOv-VTOBDaQ"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_JIgWAVrJEfGsOv-VTOBDaQ" operation="_JIgVkFrJEfGsOv-VTOBDaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JIgWAlrJEfGsOv-VTOBDaQ" name="Activity">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_JIgWA1rJEfGsOv-VTOBDaQ" name="Activity">
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_JIgWBFrJEfGsOv-VTOBDaQ" name="locals"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_JIgWBVrJEfGsOv-VTOBDaQ" name="Initial Node" outgoing="_JIgWD1rJEfGsOv-VTOBDaQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_JIgWBlrJEfGsOv-VTOBDaQ" name="Authenticate user" outgoing="_JIgWEVrJEfGsOv-VTOBDaQ" incoming="_JIgWD1rJEfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_JIgWB1rJEfGsOv-VTOBDaQ" name="view shopping cart" outgoing="_JIgWE1rJEfGsOv-VTOBDaQ" incoming="_JIgWEVrJEfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_JIgWCFrJEfGsOv-VTOBDaQ" name="calculate taxes and shipping" outgoing="_JIgWFVrJEfGsOv-VTOBDaQ" incoming="_JIgWE1rJEfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_JIgWCVrJEfGsOv-VTOBDaQ" name="calculate total" outgoing="_JIgWF1rJEfGsOv-VTOBDaQ" incoming="_JIgWFVrJEfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_JIgWClrJEfGsOv-VTOBDaQ" name="Decision-Merge" outgoing="_JIgWGVrJEfGsOv-VTOBDaQ _JIgWHFrJEfGsOv-VTOBDaQ" incoming="_JIgWF1rJEfGsOv-VTOBDaQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_JIgWC1rJEfGsOv-VTOBDaQ" name="payment using PayPal" outgoing="_JIgWH1rJEfGsOv-VTOBDaQ" incoming="_JIgWHFrJEfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_JIgWDFrJEfGsOv-VTOBDaQ" name="payment using credit card" outgoing="_JIgWIVrJEfGsOv-VTOBDaQ" incoming="_JIgWGVrJEfGsOv-VTOBDaQ">
+        <body></body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_JIgWDVrJEfGsOv-VTOBDaQ" name="Activity Final Node" incoming="_JIgWI1rJEfGsOv-VTOBDaQ"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_JIgWDlrJEfGsOv-VTOBDaQ" name="Decision-Merge1" outgoing="_JIgWI1rJEfGsOv-VTOBDaQ" incoming="_JIgWH1rJEfGsOv-VTOBDaQ _JIgWIVrJEfGsOv-VTOBDaQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWD1rJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWBVrJEfGsOv-VTOBDaQ" target="_JIgWBlrJEfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWEFrJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWEVrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWBlrJEfGsOv-VTOBDaQ" target="_JIgWB1rJEfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWElrJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWE1rJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWB1rJEfGsOv-VTOBDaQ" target="_JIgWCFrJEfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWFFrJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWFVrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWCFrJEfGsOv-VTOBDaQ" target="_JIgWCVrJEfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWFlrJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWF1rJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWCVrJEfGsOv-VTOBDaQ" target="_JIgWClrJEfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWGFrJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWGVrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWClrJEfGsOv-VTOBDaQ" target="_JIgWDFrJEfGsOv-VTOBDaQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_JIgWGlrJEfGsOv-VTOBDaQ">
+          <body>method= credit card</body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWG1rJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWHFrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWClrJEfGsOv-VTOBDaQ" target="_JIgWC1rJEfGsOv-VTOBDaQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_JIgWHVrJEfGsOv-VTOBDaQ">
+          <body>method = paypal</body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWHlrJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWH1rJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWC1rJEfGsOv-VTOBDaQ" target="_JIgWDlrJEfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWIFrJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWIVrJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWDFrJEfGsOv-VTOBDaQ" target="_JIgWDlrJEfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWIlrJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JIgWI1rJEfGsOv-VTOBDaQ" name="ControlFlow" source="_JIgWDlrJEfGsOv-VTOBDaQ" target="_JIgWDVrJEfGsOv-VTOBDaQ">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JIgWJFrJEfGsOv-VTOBDaQ" value="1"/>
+      </edge>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JIgWJVrJEfGsOv-VTOBDaQ" name="State">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_JIgWJlrJEfGsOv-VTOBDaQ" name="State Machine">
+      <region xmi:id="_JIgWJ1rJEfGsOv-VTOBDaQ">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_JIgWKFrJEfGsOv-VTOBDaQ" name="Initial State"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_JIgWKVrJEfGsOv-VTOBDaQ" name="Final State"/>
+        <subvertex xmi:type="uml:State" xmi:id="_JIgWKlrJEfGsOv-VTOBDaQ" name="New"/>
+        <subvertex xmi:type="uml:State" xmi:id="_JIgWK1rJEfGsOv-VTOBDaQ" name="Active"/>
+        <subvertex xmi:type="uml:State" xmi:id="_JIgWLFrJEfGsOv-VTOBDaQ" name="Closed"/>
+        <subvertex xmi:type="uml:State" xmi:id="_JIgWLVrJEfGsOv-VTOBDaQ" name="Suspended"/>
+        <transition xmi:id="_JIgWLlrJEfGsOv-VTOBDaQ" name="create" source="_JIgWKFrJEfGsOv-VTOBDaQ" target="_JIgWKlrJEfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_JIgWL1rJEfGsOv-VTOBDaQ" name="Transition" source="_JIgWKlrJEfGsOv-VTOBDaQ" target="_JIgWK1rJEfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_JIgWMFrJEfGsOv-VTOBDaQ" name="Cancel" source="_JIgWKlrJEfGsOv-VTOBDaQ" target="_JIgWLFrJEfGsOv-VTOBDaQ" guard="_JIgWMVrJEfGsOv-VTOBDaQ">
+          <ownedRule xmi:id="_JIgWMVrJEfGsOv-VTOBDaQ" name="x = true" constrainedElement="_JIgWMFrJEfGsOv-VTOBDaQ">
+            <specification xmi:type="uml:LiteralString" xmi:id="_JIgWMlrJEfGsOv-VTOBDaQ" value="x = true"/>
+          </ownedRule>
+        </transition>
+        <transition xmi:id="_JIgWM1rJEfGsOv-VTOBDaQ" name="Suspend" source="_JIgWKlrJEfGsOv-VTOBDaQ" target="_JIgWLVrJEfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_JIgWNFrJEfGsOv-VTOBDaQ" name="Cancel" source="_JIgWK1rJEfGsOv-VTOBDaQ" target="_JIgWLFrJEfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_JIgWNVrJEfGsOv-VTOBDaQ" name="Lock" source="_JIgWK1rJEfGsOv-VTOBDaQ" target="_JIgWLVrJEfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_JIgWNlrJEfGsOv-VTOBDaQ" source="_JIgWLFrJEfGsOv-VTOBDaQ" target="_JIgWKVrJEfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_JIgWN1rJEfGsOv-VTOBDaQ" name="unlock" source="_JIgWLVrJEfGsOv-VTOBDaQ" target="_JIgWK1rJEfGsOv-VTOBDaQ"/>
+        <transition xmi:id="_JIgWOFrJEfGsOv-VTOBDaQ" name="Cancel" source="_JIgWLVrJEfGsOv-VTOBDaQ" target="_JIgWLFrJEfGsOv-VTOBDaQ"/>
+      </region>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

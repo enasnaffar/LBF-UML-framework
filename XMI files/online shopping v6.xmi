@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ItYXoAWYEfGAS7nvoHpUTg" name="online shopping v6">
+  <eAnnotations xmi:id="_ItYXoQWYEfGAS7nvoHpUTg" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_ItYXogWYEfGAS7nvoHpUTg" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ItYXowWYEfGAS7nvoHpUTg" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ItYXpAWYEfGAS7nvoHpUTg" name="use cases L0">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ItYXpQWYEfGAS7nvoHpUTg" name="registered customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYXpgWYEfGAS7nvoHpUTg" memberEnd="_ItYXpwWYEfGAS7nvoHpUTg _ItYXqQWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYXpwWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYXpwWYEfGAS7nvoHpUTg" visibility="public" type="_ItYXqwWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYXpgWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYXqAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYXqQWYEfGAS7nvoHpUTg" visibility="public" type="_ItYXpQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYXpgWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYXqgWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYXqwWYEfGAS7nvoHpUTg" name="view item">
+      <ownedComment xmi:id="_ItYXrAWYEfGAS7nvoHpUTg">
+        <body>objectTag: product
+Trigger: view product
+Basic Flow:  The system retrieves the selected product details, The system displays the product information (e.g., name, price, description), The system displays related options (e.g., add to cart, view recommendations).
+Alternative flow: Customer selects “Add to Shopping Cart”
+.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYXrQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYXrgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYXrwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYXsAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYXsQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_ItYXsgWYEfGAS7nvoHpUTg" name="view item Interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ItYXswWYEfGAS7nvoHpUTg" name="locals">
+          <ownedAttribute xmi:id="_ItYXtAWYEfGAS7nvoHpUTg" name="r" type="_ItYXpQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYXtQWYEfGAS7nvoHpUTg" name="r1" type="_ItYZgQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYXtgWYEfGAS7nvoHpUTg" name="r2" type="_ItYZ4gWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYXtwWYEfGAS7nvoHpUTg" name="r3" type="_ItYZyQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYXuAWYEfGAS7nvoHpUTg" name="r4" type="_ItYZ1gWYEfGAS7nvoHpUTg" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_ItYXuQWYEfGAS7nvoHpUTg" name="r" represents="_ItYXtAWYEfGAS7nvoHpUTg" coveredBy="_ItYXvgWYEfGAS7nvoHpUTg _ItYXxgWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYXugWYEfGAS7nvoHpUTg" name="r1" represents="_ItYXtQWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYXuwWYEfGAS7nvoHpUTg" name="r2" represents="_ItYXtgWYEfGAS7nvoHpUTg" coveredBy="_ItYXvwWYEfGAS7nvoHpUTg _ItYXwAWYEfGAS7nvoHpUTg _ItYXwQWYEfGAS7nvoHpUTg _ItYXwgWYEfGAS7nvoHpUTg _ItYXwwWYEfGAS7nvoHpUTg _ItYXxAWYEfGAS7nvoHpUTg _ItYXxQWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYXvAWYEfGAS7nvoHpUTg" name="r3" represents="_ItYXtwWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYXvQWYEfGAS7nvoHpUTg" name="r4" represents="_ItYXuAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYXvgWYEfGAS7nvoHpUTg" covered="_ItYXuQWYEfGAS7nvoHpUTg" event="_ItYX7gWYEfGAS7nvoHpUTg" message="_ItYXywWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYXvwWYEfGAS7nvoHpUTg" covered="_ItYXuwWYEfGAS7nvoHpUTg" event="_ItYX7wWYEfGAS7nvoHpUTg" message="_ItYXywWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYXwAWYEfGAS7nvoHpUTg" covered="_ItYXuwWYEfGAS7nvoHpUTg" start="_ItYXvwWYEfGAS7nvoHpUTg" finish="_ItYXxQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYXwQWYEfGAS7nvoHpUTg" covered="_ItYXuwWYEfGAS7nvoHpUTg" event="_ItYX8AWYEfGAS7nvoHpUTg" message="_ItYXzAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYXwgWYEfGAS7nvoHpUTg" covered="_ItYXuwWYEfGAS7nvoHpUTg" event="_ItYX8QWYEfGAS7nvoHpUTg" message="_ItYXzAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYXwwWYEfGAS7nvoHpUTg" covered="_ItYXuwWYEfGAS7nvoHpUTg" event="_ItYX8gWYEfGAS7nvoHpUTg" message="_ItYXzQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYXxAWYEfGAS7nvoHpUTg" covered="_ItYXuwWYEfGAS7nvoHpUTg" event="_ItYX8wWYEfGAS7nvoHpUTg" message="_ItYXzQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYXxQWYEfGAS7nvoHpUTg" covered="_ItYXuwWYEfGAS7nvoHpUTg" message="_ItYXzgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYXxgWYEfGAS7nvoHpUTg" covered="_ItYXuQWYEfGAS7nvoHpUTg" message="_ItYXzgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_ItYXxwWYEfGAS7nvoHpUTg" name="CombinedFragment" interactionOperator="opt">
+          <operand xmi:id="_ItYXyAWYEfGAS7nvoHpUTg">
+            <guard xmi:id="_ItYXyQWYEfGAS7nvoHpUTg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_ItYXygWYEfGAS7nvoHpUTg" value="customer chooses add to cart"/>
+            </guard>
+          </operand>
+        </fragment>
+        <message xmi:id="_ItYXywWYEfGAS7nvoHpUTg" name="view product" receiveEvent="_ItYXvwWYEfGAS7nvoHpUTg" sendEvent="_ItYXvgWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYXzAWYEfGAS7nvoHpUTg" name="getID" receiveEvent="_ItYXwgWYEfGAS7nvoHpUTg" sendEvent="_ItYXwQWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYXzQWYEfGAS7nvoHpUTg" name="getName" receiveEvent="_ItYXxAWYEfGAS7nvoHpUTg" sendEvent="_ItYXwwWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYXzgWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYXxgWYEfGAS7nvoHpUTg" sendEvent="_ItYXxQWYEfGAS7nvoHpUTg"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ItYXzwWYEfGAS7nvoHpUTg" name="Activity">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ItYX0AWYEfGAS7nvoHpUTg" name="locals"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_ItYX0QWYEfGAS7nvoHpUTg" name="Initial Node" outgoing="_ItYX2gWYEfGAS7nvoHpUTg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ItYX0gWYEfGAS7nvoHpUTg" name="select view product" outgoing="_ItYX3AWYEfGAS7nvoHpUTg" incoming="_ItYX2gWYEfGAS7nvoHpUTg">
+          <body></body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ItYX0wWYEfGAS7nvoHpUTg" name="retreive product details" outgoing="_ItYX3gWYEfGAS7nvoHpUTg" incoming="_ItYX3AWYEfGAS7nvoHpUTg">
+          <body></body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_ItYX1AWYEfGAS7nvoHpUTg" name="Decision-Merge" outgoing="_ItYX4AWYEfGAS7nvoHpUTg _ItYX4wWYEfGAS7nvoHpUTg" incoming="_ItYX6AWYEfGAS7nvoHpUTg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ItYX1QWYEfGAS7nvoHpUTg" name="add item to shopping cart" outgoing="_ItYX5gWYEfGAS7nvoHpUTg" incoming="_ItYX4AWYEfGAS7nvoHpUTg">
+          <body></body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_ItYX1gWYEfGAS7nvoHpUTg" name="Activity Final Node" incoming="_ItYX7AWYEfGAS7nvoHpUTg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ItYX1wWYEfGAS7nvoHpUTg" name="display product details" outgoing="_ItYX6AWYEfGAS7nvoHpUTg" incoming="_ItYX3gWYEfGAS7nvoHpUTg">
+          <body></body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ItYX2AWYEfGAS7nvoHpUTg" name="confirm adding item" outgoing="_ItYX6gWYEfGAS7nvoHpUTg" incoming="_ItYX5gWYEfGAS7nvoHpUTg">
+          <body></body>
+        </node>
+        <node xmi:type="uml:MergeNode" xmi:id="_ItYX2QWYEfGAS7nvoHpUTg" name="Decision-Merge1" outgoing="_ItYX7AWYEfGAS7nvoHpUTg" incoming="_ItYX4wWYEfGAS7nvoHpUTg _ItYX6gWYEfGAS7nvoHpUTg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ItYX2gWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYX0QWYEfGAS7nvoHpUTg" target="_ItYX0gWYEfGAS7nvoHpUTg">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYX2wWYEfGAS7nvoHpUTg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ItYX3AWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYX0gWYEfGAS7nvoHpUTg" target="_ItYX0wWYEfGAS7nvoHpUTg">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYX3QWYEfGAS7nvoHpUTg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ItYX3gWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYX0wWYEfGAS7nvoHpUTg" target="_ItYX1wWYEfGAS7nvoHpUTg">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYX3wWYEfGAS7nvoHpUTg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ItYX4AWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYX1AWYEfGAS7nvoHpUTg" target="_ItYX1QWYEfGAS7nvoHpUTg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_ItYX4QWYEfGAS7nvoHpUTg">
+            <body>add to cart</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYX4gWYEfGAS7nvoHpUTg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ItYX4wWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYX1AWYEfGAS7nvoHpUTg" target="_ItYX2QWYEfGAS7nvoHpUTg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_ItYX5AWYEfGAS7nvoHpUTg">
+            <body>else</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYX5QWYEfGAS7nvoHpUTg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ItYX5gWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYX1QWYEfGAS7nvoHpUTg" target="_ItYX2AWYEfGAS7nvoHpUTg">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYX5wWYEfGAS7nvoHpUTg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ItYX6AWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYX1wWYEfGAS7nvoHpUTg" target="_ItYX1AWYEfGAS7nvoHpUTg">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYX6QWYEfGAS7nvoHpUTg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ItYX6gWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYX2AWYEfGAS7nvoHpUTg" target="_ItYX2QWYEfGAS7nvoHpUTg">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYX6wWYEfGAS7nvoHpUTg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ItYX7AWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYX2QWYEfGAS7nvoHpUTg" target="_ItYX1gWYEfGAS7nvoHpUTg">
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYX7QWYEfGAS7nvoHpUTg" value="1"/>
+        </edge>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYX7gWYEfGAS7nvoHpUTg" operation="_ItYZ6QWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYX7wWYEfGAS7nvoHpUTg" operation="_ItYZ6QWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYX8AWYEfGAS7nvoHpUTg" operation="_ItYZ5gWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYX8QWYEfGAS7nvoHpUTg" operation="_ItYZ5gWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYX8gWYEfGAS7nvoHpUTg" operation="_ItYZ5wWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYX8wWYEfGAS7nvoHpUTg" operation="_ItYZ5wWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYX9AWYEfGAS7nvoHpUTg" name="make purchase">
+      <ownedComment xmi:id="_ItYX9QWYEfGAS7nvoHpUTg">
+        <body>objectTag: payment
+Trigger: make purchase</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYX9gWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYX9wWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYX-AWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYX-QWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYX-gWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_ItYX-wWYEfGAS7nvoHpUTg" name="make purchase Interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ItYX_AWYEfGAS7nvoHpUTg" name="locals">
+          <ownedAttribute xmi:id="_ItYX_QWYEfGAS7nvoHpUTg" name="r" type="_ItYZqQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYX_gWYEfGAS7nvoHpUTg" name="r1" type="_ItYZgQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYX_wWYEfGAS7nvoHpUTg" name="r2" type="_ItYZ4gWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYAAWYEfGAS7nvoHpUTg" name="r3" type="_ItYZqQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYAQWYEfGAS7nvoHpUTg" name="r4" type="_ItYXpQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYAgWYEfGAS7nvoHpUTg" name="r5" type="_ItYZgQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYAwWYEfGAS7nvoHpUTg" name="r6" type="_ItYZyQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYBAWYEfGAS7nvoHpUTg" name="r7" type="_ItYZtgWYEfGAS7nvoHpUTg" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_ItYYBQWYEfGAS7nvoHpUTg" name="r2" represents="_ItYX_wWYEfGAS7nvoHpUTg" coveredBy="_ItYYEgWYEfGAS7nvoHpUTg _ItYYEwWYEfGAS7nvoHpUTg _ItYYFAWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYBgWYEfGAS7nvoHpUTg" name="r3" represents="_ItYYAAWYEfGAS7nvoHpUTg" coveredBy="_ItYYHwWYEfGAS7nvoHpUTg _ItYYIAWYEfGAS7nvoHpUTg _ItYYIgWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYBwWYEfGAS7nvoHpUTg" name="r4" represents="_ItYYAQWYEfGAS7nvoHpUTg" coveredBy="_ItYYCwWYEfGAS7nvoHpUTg _ItYYDwWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYCAWYEfGAS7nvoHpUTg" name="r5" represents="_ItYYAgWYEfGAS7nvoHpUTg" coveredBy="_ItYYDAWYEfGAS7nvoHpUTg _ItYYDQWYEfGAS7nvoHpUTg _ItYYDgWYEfGAS7nvoHpUTg _ItYYEQWYEfGAS7nvoHpUTg _ItYYFQWYEfGAS7nvoHpUTg _ItYYFgWYEfGAS7nvoHpUTg _ItYYGgWYEfGAS7nvoHpUTg _ItYYHgWYEfGAS7nvoHpUTg _ItYYIwWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYCQWYEfGAS7nvoHpUTg" name="r6" represents="_ItYYAwWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYCgWYEfGAS7nvoHpUTg" name="r7" represents="_ItYYBAWYEfGAS7nvoHpUTg" coveredBy="_ItYYFwWYEfGAS7nvoHpUTg _ItYYGAWYEfGAS7nvoHpUTg _ItYYGQWYEfGAS7nvoHpUTg _ItYYGwWYEfGAS7nvoHpUTg _ItYYHAWYEfGAS7nvoHpUTg _ItYYHQWYEfGAS7nvoHpUTg _ItYYIQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYCwWYEfGAS7nvoHpUTg" covered="_ItYYBwWYEfGAS7nvoHpUTg" event="_ItYYLwWYEfGAS7nvoHpUTg" message="_ItYYJAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYDAWYEfGAS7nvoHpUTg" covered="_ItYYCAWYEfGAS7nvoHpUTg" event="_ItYYMAWYEfGAS7nvoHpUTg" message="_ItYYJAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYYDQWYEfGAS7nvoHpUTg" covered="_ItYYCAWYEfGAS7nvoHpUTg" start="_ItYYDAWYEfGAS7nvoHpUTg" finish="_ItYYDgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYDgWYEfGAS7nvoHpUTg" covered="_ItYYCAWYEfGAS7nvoHpUTg" message="_ItYYJQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYDwWYEfGAS7nvoHpUTg" covered="_ItYYBwWYEfGAS7nvoHpUTg" message="_ItYYJQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:InteractionUse" xmi:id="_ItYYEAWYEfGAS7nvoHpUTg" name="InteractionUse" refersTo="_ItYXsgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYEQWYEfGAS7nvoHpUTg" covered="_ItYYCAWYEfGAS7nvoHpUTg" event="_ItYYMQWYEfGAS7nvoHpUTg" message="_ItYYJgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYEgWYEfGAS7nvoHpUTg" covered="_ItYYBQWYEfGAS7nvoHpUTg" event="_ItYYMgWYEfGAS7nvoHpUTg" message="_ItYYJgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYYEwWYEfGAS7nvoHpUTg" covered="_ItYYBQWYEfGAS7nvoHpUTg" start="_ItYYEgWYEfGAS7nvoHpUTg" finish="_ItYYFAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYFAWYEfGAS7nvoHpUTg" covered="_ItYYBQWYEfGAS7nvoHpUTg" message="_ItYYJwWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYFQWYEfGAS7nvoHpUTg" covered="_ItYYCAWYEfGAS7nvoHpUTg" message="_ItYYJwWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYFgWYEfGAS7nvoHpUTg" covered="_ItYYCAWYEfGAS7nvoHpUTg" message="_ItYYKAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYFwWYEfGAS7nvoHpUTg" covered="_ItYYCgWYEfGAS7nvoHpUTg" message="_ItYYKAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYYGAWYEfGAS7nvoHpUTg" covered="_ItYYCgWYEfGAS7nvoHpUTg" start="_ItYYFwWYEfGAS7nvoHpUTg" finish="_ItYYGQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYGQWYEfGAS7nvoHpUTg" covered="_ItYYCgWYEfGAS7nvoHpUTg" message="_ItYYKQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYGgWYEfGAS7nvoHpUTg" covered="_ItYYCAWYEfGAS7nvoHpUTg" message="_ItYYKQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYGwWYEfGAS7nvoHpUTg" covered="_ItYYCgWYEfGAS7nvoHpUTg" event="_ItYYMwWYEfGAS7nvoHpUTg" message="_ItYYKgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYHAWYEfGAS7nvoHpUTg" covered="_ItYYCgWYEfGAS7nvoHpUTg" event="_ItYYNAWYEfGAS7nvoHpUTg" message="_ItYYKgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYYHQWYEfGAS7nvoHpUTg" covered="_ItYYCgWYEfGAS7nvoHpUTg" start="_ItYYHAWYEfGAS7nvoHpUTg" finish="_ItYYIQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYHgWYEfGAS7nvoHpUTg" covered="_ItYYCAWYEfGAS7nvoHpUTg" event="_ItYYNQWYEfGAS7nvoHpUTg" message="_ItYYKwWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYHwWYEfGAS7nvoHpUTg" covered="_ItYYBgWYEfGAS7nvoHpUTg" event="_ItYYNgWYEfGAS7nvoHpUTg" message="_ItYYKwWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYYIAWYEfGAS7nvoHpUTg" covered="_ItYYBgWYEfGAS7nvoHpUTg" start="_ItYYHwWYEfGAS7nvoHpUTg" finish="_ItYYIgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ItYYIQWYEfGAS7nvoHpUTg" covered="_ItYYCgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYIgWYEfGAS7nvoHpUTg" covered="_ItYYBgWYEfGAS7nvoHpUTg" message="_ItYYLAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYIwWYEfGAS7nvoHpUTg" covered="_ItYYCAWYEfGAS7nvoHpUTg" message="_ItYYLAWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYJAWYEfGAS7nvoHpUTg" name="make purchase" receiveEvent="_ItYYDAWYEfGAS7nvoHpUTg" sendEvent="_ItYYCwWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYJQWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYYDwWYEfGAS7nvoHpUTg" sendEvent="_ItYYDgWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYJgWYEfGAS7nvoHpUTg" name="get price" receiveEvent="_ItYYEgWYEfGAS7nvoHpUTg" sendEvent="_ItYYEQWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYJwWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYYFQWYEfGAS7nvoHpUTg" sendEvent="_ItYYFAWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYKAWYEfGAS7nvoHpUTg" name="create order" receiveEvent="_ItYYFwWYEfGAS7nvoHpUTg" sendEvent="_ItYYFgWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYKQWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYYGgWYEfGAS7nvoHpUTg" sendEvent="_ItYYGQWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYKgWYEfGAS7nvoHpUTg" name="calc total" receiveEvent="_ItYYHAWYEfGAS7nvoHpUTg" sendEvent="_ItYYGwWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYKwWYEfGAS7nvoHpUTg" name="process payment" receiveEvent="_ItYYHwWYEfGAS7nvoHpUTg" sendEvent="_ItYYHgWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYLAWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYYIwWYEfGAS7nvoHpUTg" sendEvent="_ItYYIgWYEfGAS7nvoHpUTg"/>
+      </ownedBehavior>
+      <include xmi:id="_ItYYLQWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYXqwWYEfGAS7nvoHpUTg"/>
+      <include xmi:id="_ItYYLgWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYYPAWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYLwWYEfGAS7nvoHpUTg" operation="_ItYZmwWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYMAWYEfGAS7nvoHpUTg" operation="_ItYZmwWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYMQWYEfGAS7nvoHpUTg" operation="_ItYZ6AWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYMgWYEfGAS7nvoHpUTg" operation="_ItYZ6AWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYMwWYEfGAS7nvoHpUTg" operation="_ItYZwAWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYNAWYEfGAS7nvoHpUTg" operation="_ItYZwAWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYNQWYEfGAS7nvoHpUTg" operation="_ItYZrgWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYNgWYEfGAS7nvoHpUTg" operation="_ItYZrgWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYNwWYEfGAS7nvoHpUTg" memberEnd="_ItYYOAWYEfGAS7nvoHpUTg _ItYYOgWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYOAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYOAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYXpQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYNwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYOQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYOgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYX9AWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYNwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYOwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYYPAWYEfGAS7nvoHpUTg" name="checkout">
+      <ownedComment xmi:id="_ItYYPQWYEfGAS7nvoHpUTg">
+        <body>Trigger: test</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYPgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYPwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYQAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYQQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYQgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ItYYQwWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYY3wWYEfGAS7nvoHpUTg"/>
+      <include xmi:id="_ItYYRAWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYZGgWYEfGAS7nvoHpUTg"/>
+      <include xmi:id="_ItYYRQWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYZIQWYEfGAS7nvoHpUTg"/>
+      <include xmi:id="_ItYYRgWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYZKQWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYYRwWYEfGAS7nvoHpUTg" name="client register">
+      <ownedComment xmi:id="_ItYYSAWYEfGAS7nvoHpUTg">
+        <body>trigger: select register
+objectTag:  Account, customer
+Basic flow:  System displays the registration form. 
+
+Customer enters personal information (username, email, password). 
+
+System validates the entered information. 
+
+System creates a new Account. 
+
+System confirms successful registration.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYSQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYSgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYSwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYTAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYTQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ItYYTgWYEfGAS7nvoHpUTg" name="new customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYTwWYEfGAS7nvoHpUTg" memberEnd="_ItYYUAWYEfGAS7nvoHpUTg _ItYYUgWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYUAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYUAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYXqwWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYTwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYUQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYUgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYTgWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYTwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYUwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYVAWYEfGAS7nvoHpUTg" memberEnd="_ItYYVQWYEfGAS7nvoHpUTg _ItYYVwWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYVQWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYVQWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYRwWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYVAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYVgWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYVwWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYTgWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYVAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYWAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ItYYWQWYEfGAS7nvoHpUTg" name="authentication service "/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYWgWYEfGAS7nvoHpUTg" memberEnd="_ItYYWwWYEfGAS7nvoHpUTg _ItYYXQWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYWwWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYWwWYEfGAS7nvoHpUTg" visibility="public" type="_ItYXqwWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYWgWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYXAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYXQWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYWQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYWgWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYXgWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYXwWYEfGAS7nvoHpUTg" memberEnd="_ItYYYAWYEfGAS7nvoHpUTg _ItYYYgWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYYAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYYAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYPAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYXwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYYQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYYgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYWQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYXwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYYwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYZAWYEfGAS7nvoHpUTg" memberEnd="_ItYYZQWYEfGAS7nvoHpUTg _ItYYZwWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYZQWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYZQWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYRwWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYZAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYZgWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYZwWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYWQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYZAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYaAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ItYYaQWYEfGAS7nvoHpUTg" name="identity provider"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYagWYEfGAS7nvoHpUTg" memberEnd="_ItYYawWYEfGAS7nvoHpUTg _ItYYbQWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYawWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYawWYEfGAS7nvoHpUTg" visibility="public" type="_ItYXqwWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYagWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYbAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYbQWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYaQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYagWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYbgWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYbwWYEfGAS7nvoHpUTg" memberEnd="_ItYYcAWYEfGAS7nvoHpUTg _ItYYcgWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYcAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYcAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYPAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYbwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYcQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYcgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYaQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYbwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYcwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ItYYdAWYEfGAS7nvoHpUTg" name="credit payment service"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYdQWYEfGAS7nvoHpUTg" memberEnd="_ItYYdgWYEfGAS7nvoHpUTg _ItYYeAWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYdgWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYdgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYPAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYdQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYdwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYeAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYdAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYdQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYeQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ItYYegWYEfGAS7nvoHpUTg" name="pay pal"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYYewWYEfGAS7nvoHpUTg" memberEnd="_ItYYfAWYEfGAS7nvoHpUTg _ItYYfgWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYYfAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYYfAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYPAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYewWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYfQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYYfgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYegWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYYewWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYYfwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ItYYgAWYEfGAS7nvoHpUTg" name="use cases L1">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYYgQWYEfGAS7nvoHpUTg" name="search items">
+      <ownedComment xmi:id="_ItYYggWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYgwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYhAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYhQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYhgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYhwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <extend xmi:id="_ItYYiAWYEfGAS7nvoHpUTg" name="UseCaseDependency" extendedCase="_ItYXqwWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYYiQWYEfGAS7nvoHpUTg" name="browse items">
+      <ownedComment xmi:id="_ItYYigWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYiwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYjAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYjQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYjgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYjwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <extend xmi:id="_ItYYkAWYEfGAS7nvoHpUTg" name="UseCaseDependency" extendedCase="_ItYXqwWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYYkQWYEfGAS7nvoHpUTg" name="view recommended items">
+      <ownedComment xmi:id="_ItYYkgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYkwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYlAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYlQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYlgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYlwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ItYYmAWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYY3wWYEfGAS7nvoHpUTg"/>
+      <extend xmi:id="_ItYYmQWYEfGAS7nvoHpUTg" name="UseCaseDependency" extendedCase="_ItYXqwWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYYmgWYEfGAS7nvoHpUTg" name="add to shopping cart">
+      <ownedComment xmi:id="_ItYYmwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYnAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYnQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYngWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYnwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYYoAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_ItYYoQWYEfGAS7nvoHpUTg" name="add to cart Interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ItYYogWYEfGAS7nvoHpUTg" name="locals">
+          <ownedAttribute xmi:id="_ItYYowWYEfGAS7nvoHpUTg" name="r" type="_ItYXpQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYpAWYEfGAS7nvoHpUTg" name="r1" type="_ItYZgQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYpQWYEfGAS7nvoHpUTg" name="r2" type="_ItYZyQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYpgWYEfGAS7nvoHpUTg" name="r3" type="_ItYZ1gWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYpwWYEfGAS7nvoHpUTg" name="r4" type="_ItYZ4gWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYYqAWYEfGAS7nvoHpUTg" name="r5" type="_ItYZYAWYEfGAS7nvoHpUTg" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_ItYYqQWYEfGAS7nvoHpUTg" name="r" represents="_ItYYowWYEfGAS7nvoHpUTg" coveredBy="_ItYYsAWYEfGAS7nvoHpUTg _ItYYwwWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYqgWYEfGAS7nvoHpUTg" name="r1" represents="_ItYYpAWYEfGAS7nvoHpUTg" coveredBy="_ItYYsQWYEfGAS7nvoHpUTg _ItYYsgWYEfGAS7nvoHpUTg _ItYYswWYEfGAS7nvoHpUTg _ItYYwQWYEfGAS7nvoHpUTg _ItYYwgWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYqwWYEfGAS7nvoHpUTg" name="r2" represents="_ItYYpQWYEfGAS7nvoHpUTg" coveredBy="_ItYYtAWYEfGAS7nvoHpUTg _ItYYtQWYEfGAS7nvoHpUTg _ItYYtgWYEfGAS7nvoHpUTg _ItYYugWYEfGAS7nvoHpUTg _ItYYuwWYEfGAS7nvoHpUTg _ItYYvwWYEfGAS7nvoHpUTg _ItYYwAWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYrAWYEfGAS7nvoHpUTg" name="r3" represents="_ItYYpgWYEfGAS7nvoHpUTg" coveredBy="_ItYYvAWYEfGAS7nvoHpUTg _ItYYvQWYEfGAS7nvoHpUTg _ItYYvgWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYrQWYEfGAS7nvoHpUTg" name="r4" represents="_ItYYpwWYEfGAS7nvoHpUTg" coveredBy="_ItYYtwWYEfGAS7nvoHpUTg _ItYYuAWYEfGAS7nvoHpUTg _ItYYuQWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYYrgWYEfGAS7nvoHpUTg" name="r5" represents="_ItYYqAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:InteractionUse" xmi:id="_ItYYrwWYEfGAS7nvoHpUTg" name="authenticateUser()" refersTo="_ItYY5gWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYsAWYEfGAS7nvoHpUTg" covered="_ItYYqQWYEfGAS7nvoHpUTg" event="_ItYYzgWYEfGAS7nvoHpUTg" message="_ItYYxAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYsQWYEfGAS7nvoHpUTg" covered="_ItYYqgWYEfGAS7nvoHpUTg" event="_ItYYzwWYEfGAS7nvoHpUTg" message="_ItYYxAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYYsgWYEfGAS7nvoHpUTg" covered="_ItYYqgWYEfGAS7nvoHpUTg" start="_ItYYsQWYEfGAS7nvoHpUTg" finish="_ItYYwgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYswWYEfGAS7nvoHpUTg" covered="_ItYYqgWYEfGAS7nvoHpUTg" event="_ItYY0AWYEfGAS7nvoHpUTg" message="_ItYYxQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYtAWYEfGAS7nvoHpUTg" covered="_ItYYqwWYEfGAS7nvoHpUTg" event="_ItYY0QWYEfGAS7nvoHpUTg" message="_ItYYxQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYYtQWYEfGAS7nvoHpUTg" covered="_ItYYqwWYEfGAS7nvoHpUTg" start="_ItYYtAWYEfGAS7nvoHpUTg" finish="_ItYYwAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYtgWYEfGAS7nvoHpUTg" covered="_ItYYqwWYEfGAS7nvoHpUTg" event="_ItYY0gWYEfGAS7nvoHpUTg" message="_ItYYxgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYtwWYEfGAS7nvoHpUTg" covered="_ItYYrQWYEfGAS7nvoHpUTg" event="_ItYY0wWYEfGAS7nvoHpUTg" message="_ItYYxgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYYuAWYEfGAS7nvoHpUTg" covered="_ItYYrQWYEfGAS7nvoHpUTg" start="_ItYYtwWYEfGAS7nvoHpUTg" finish="_ItYYuQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYuQWYEfGAS7nvoHpUTg" covered="_ItYYrQWYEfGAS7nvoHpUTg" message="_ItYYxwWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYugWYEfGAS7nvoHpUTg" covered="_ItYYqwWYEfGAS7nvoHpUTg" message="_ItYYxwWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYuwWYEfGAS7nvoHpUTg" covered="_ItYYqwWYEfGAS7nvoHpUTg" event="_ItYY1AWYEfGAS7nvoHpUTg" message="_ItYYyAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYvAWYEfGAS7nvoHpUTg" covered="_ItYYrAWYEfGAS7nvoHpUTg" event="_ItYY1QWYEfGAS7nvoHpUTg" message="_ItYYyAWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYYvQWYEfGAS7nvoHpUTg" covered="_ItYYrAWYEfGAS7nvoHpUTg" start="_ItYYvAWYEfGAS7nvoHpUTg" finish="_ItYYvgWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYvgWYEfGAS7nvoHpUTg" covered="_ItYYrAWYEfGAS7nvoHpUTg" message="_ItYYyQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYvwWYEfGAS7nvoHpUTg" covered="_ItYYqwWYEfGAS7nvoHpUTg" message="_ItYYyQWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYwAWYEfGAS7nvoHpUTg" covered="_ItYYqwWYEfGAS7nvoHpUTg" message="_ItYYygWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYwQWYEfGAS7nvoHpUTg" covered="_ItYYqgWYEfGAS7nvoHpUTg" message="_ItYYygWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYwgWYEfGAS7nvoHpUTg" covered="_ItYYqgWYEfGAS7nvoHpUTg" message="_ItYYywWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYYwwWYEfGAS7nvoHpUTg" covered="_ItYYqQWYEfGAS7nvoHpUTg" message="_ItYYywWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYxAWYEfGAS7nvoHpUTg" name="updateOrder" receiveEvent="_ItYYsQWYEfGAS7nvoHpUTg" sendEvent="_ItYYsAWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYxQWYEfGAS7nvoHpUTg" name="addItem" receiveEvent="_ItYYtAWYEfGAS7nvoHpUTg" sendEvent="_ItYYswWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYxgWYEfGAS7nvoHpUTg" name="getName" receiveEvent="_ItYYtwWYEfGAS7nvoHpUTg" sendEvent="_ItYYtgWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYxwWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYYugWYEfGAS7nvoHpUTg" sendEvent="_ItYYuQWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYyAWYEfGAS7nvoHpUTg" name="setQuantity" receiveEvent="_ItYYvAWYEfGAS7nvoHpUTg" sendEvent="_ItYYuwWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYyQWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYYvwWYEfGAS7nvoHpUTg" sendEvent="_ItYYvgWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYygWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYYwQWYEfGAS7nvoHpUTg" sendEvent="_ItYYwAWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYYywWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYYwwWYEfGAS7nvoHpUTg" sendEvent="_ItYYwgWYEfGAS7nvoHpUTg"/>
+      </ownedBehavior>
+      <include xmi:id="_ItYYzAWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYY3wWYEfGAS7nvoHpUTg"/>
+      <extend xmi:id="_ItYYzQWYEfGAS7nvoHpUTg" name="UseCaseDependency" extendedCase="_ItYXqwWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYzgWYEfGAS7nvoHpUTg" operation="_ItYZmgWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYYzwWYEfGAS7nvoHpUTg" operation="_ItYZmgWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY0AWYEfGAS7nvoHpUTg" operation="_ItYZywWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY0QWYEfGAS7nvoHpUTg" operation="_ItYZywWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY0gWYEfGAS7nvoHpUTg" operation="_ItYZ5wWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY0wWYEfGAS7nvoHpUTg" operation="_ItYZ5wWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY1AWYEfGAS7nvoHpUTg" operation="_ItYZ3AWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY1QWYEfGAS7nvoHpUTg" operation="_ItYZ3AWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYY1gWYEfGAS7nvoHpUTg" name="add to wishlist">
+      <ownedComment xmi:id="_ItYY1wWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY2AWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY2QWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY2gWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY2wWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY3AWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ItYY3QWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYY3wWYEfGAS7nvoHpUTg"/>
+      <extend xmi:id="_ItYY3gWYEfGAS7nvoHpUTg" name="UseCaseDependency" extendedCase="_ItYXqwWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYY3wWYEfGAS7nvoHpUTg" name="customer authentication">
+      <ownedComment xmi:id="_ItYY4AWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY4QWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY4gWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY4wWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY5AWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYY5QWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_ItYY5gWYEfGAS7nvoHpUTg" name="authenticate interaction">
+        <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ItYY5wWYEfGAS7nvoHpUTg" name="locals">
+          <ownedAttribute xmi:id="_ItYY6AWYEfGAS7nvoHpUTg" name="r" type="_ItYXpQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+          <ownedAttribute xmi:id="_ItYY6QWYEfGAS7nvoHpUTg" name="r1" type="_ItYZYAWYEfGAS7nvoHpUTg" aggregation="composite"/>
+        </nestedClassifier>
+        <lifeline xmi:id="_ItYY6gWYEfGAS7nvoHpUTg" name="r" represents="_ItYY6AWYEfGAS7nvoHpUTg" coveredBy="_ItYY7AWYEfGAS7nvoHpUTg _ItYY8gWYEfGAS7nvoHpUTg"/>
+        <lifeline xmi:id="_ItYY6wWYEfGAS7nvoHpUTg" name="r1" represents="_ItYY6QWYEfGAS7nvoHpUTg" coveredBy="_ItYY7QWYEfGAS7nvoHpUTg _ItYY7gWYEfGAS7nvoHpUTg _ItYY7wWYEfGAS7nvoHpUTg _ItYY8AWYEfGAS7nvoHpUTg _ItYY8QWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYY7AWYEfGAS7nvoHpUTg" covered="_ItYY6gWYEfGAS7nvoHpUTg" event="_ItYY9wWYEfGAS7nvoHpUTg" message="_ItYY8wWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYY7QWYEfGAS7nvoHpUTg" covered="_ItYY6wWYEfGAS7nvoHpUTg" event="_ItYY-AWYEfGAS7nvoHpUTg" message="_ItYY8wWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYY7gWYEfGAS7nvoHpUTg" covered="_ItYY6wWYEfGAS7nvoHpUTg" start="_ItYY7QWYEfGAS7nvoHpUTg" finish="_ItYY8QWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYY7wWYEfGAS7nvoHpUTg" covered="_ItYY6wWYEfGAS7nvoHpUTg" event="_ItYY-QWYEfGAS7nvoHpUTg" message="_ItYY9AWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYY8AWYEfGAS7nvoHpUTg" covered="_ItYY6wWYEfGAS7nvoHpUTg" event="_ItYY-gWYEfGAS7nvoHpUTg" message="_ItYY9AWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYY8QWYEfGAS7nvoHpUTg" covered="_ItYY6wWYEfGAS7nvoHpUTg" message="_ItYY9gWYEfGAS7nvoHpUTg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYY8gWYEfGAS7nvoHpUTg" covered="_ItYY6gWYEfGAS7nvoHpUTg" message="_ItYY9gWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYY8wWYEfGAS7nvoHpUTg" name="Login" receiveEvent="_ItYY7QWYEfGAS7nvoHpUTg" sendEvent="_ItYY7AWYEfGAS7nvoHpUTg"/>
+        <message xmi:id="_ItYY9AWYEfGAS7nvoHpUTg" name="setState" receiveEvent="_ItYY8AWYEfGAS7nvoHpUTg" sendEvent="_ItYY7wWYEfGAS7nvoHpUTg">
+          <argument xmi:type="uml:LiteralString" xmi:id="_ItYY9QWYEfGAS7nvoHpUTg" value="active"/>
+        </message>
+        <message xmi:id="_ItYY9gWYEfGAS7nvoHpUTg" name="result" messageSort="reply" receiveEvent="_ItYY8gWYEfGAS7nvoHpUTg" sendEvent="_ItYY8QWYEfGAS7nvoHpUTg"/>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY9wWYEfGAS7nvoHpUTg" operation="_ItYZZQWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY-AWYEfGAS7nvoHpUTg" operation="_ItYZZQWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY-QWYEfGAS7nvoHpUTg" operation="_ItYZaAWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYY-gWYEfGAS7nvoHpUTg" operation="_ItYZaAWYEfGAS7nvoHpUTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ItYY-wWYEfGAS7nvoHpUTg" name="use cases L1_">
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYY_AWYEfGAS7nvoHpUTg" memberEnd="_ItYY_QWYEfGAS7nvoHpUTg _ItYY_wWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYY_QWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYY_QWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZMAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYY_AWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYY_gWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYY_wWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYWQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYY_AWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZAAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZAQWYEfGAS7nvoHpUTg" memberEnd="_ItYZAgWYEfGAS7nvoHpUTg _ItYZBAWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYZAgWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZAgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZOAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZAQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZAwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZBAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYWQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZAQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZBQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZBgWYEfGAS7nvoHpUTg" memberEnd="_ItYZBwWYEfGAS7nvoHpUTg _ItYZCQWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYZBwWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZBwWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZQAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZBgWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZCAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZCQWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYWQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZBgWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZCgWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZCwWYEfGAS7nvoHpUTg" memberEnd="_ItYZDAWYEfGAS7nvoHpUTg _ItYZDgWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYZDAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZDAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZQAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZCwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZDQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZDgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYaQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZCwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZDwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZEAWYEfGAS7nvoHpUTg" memberEnd="_ItYZEQWYEfGAS7nvoHpUTg _ItYZEwWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYZEQWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZEQWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZTwWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZEAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZEgWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZEwWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYdAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZEAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZFAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZFQWYEfGAS7nvoHpUTg" memberEnd="_ItYZFgWYEfGAS7nvoHpUTg _ItYZGAWYEfGAS7nvoHpUTg" navigableOwnedEnd="_ItYZFgWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZFgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZVwWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZFQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZFwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZGAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYYegWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZFQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZGQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYZGgWYEfGAS7nvoHpUTg" name="view/update shopping cart">
+      <ownedComment xmi:id="_ItYZGwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZHAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZHQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZHgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZHwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZIAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYZIQWYEfGAS7nvoHpUTg" name="calculate taxes and shipping">
+      <ownedComment xmi:id="_ItYZIgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZIwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZJAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZJQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZJgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZJwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ItYZKAWYEfGAS7nvoHpUTg" name="UseCaseDependency" addition="_ItYZSAWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYZKQWYEfGAS7nvoHpUTg" name="payment">
+      <ownedComment xmi:id="_ItYZKgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZKwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZLAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZLQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZLgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZLwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYZMAWYEfGAS7nvoHpUTg" name="user sign in">
+      <ownedComment xmi:id="_ItYZMQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZMgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZMwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZNAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZNQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZNgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_ItYZNwWYEfGAS7nvoHpUTg" general="_ItYY3wWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYZOAWYEfGAS7nvoHpUTg" name="remember me">
+      <ownedComment xmi:id="_ItYZOQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZOgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZOwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZPAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZPQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZPgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_ItYZPwWYEfGAS7nvoHpUTg" general="_ItYY3wWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYZQAWYEfGAS7nvoHpUTg" name="single sign on">
+      <ownedComment xmi:id="_ItYZQQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZQgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZQwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZRAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZRQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZRgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_ItYZRwWYEfGAS7nvoHpUTg" general="_ItYY3wWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYZSAWYEfGAS7nvoHpUTg" name="calculate total">
+      <ownedComment xmi:id="_ItYZSQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZSgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZSwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZTAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZTQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZTgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYZTwWYEfGAS7nvoHpUTg" name="payment by credit">
+      <ownedComment xmi:id="_ItYZUAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZUQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZUgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZUwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZVAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZVQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_ItYZVgWYEfGAS7nvoHpUTg" general="_ItYZKQWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItYZVwWYEfGAS7nvoHpUTg" name="payment by paypal">
+      <ownedComment xmi:id="_ItYZWAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZWQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZWgWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZWwWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZXAWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ItYZXQWYEfGAS7nvoHpUTg">
+        <body>...</body>
+      </ownedComment>
+      <generalization xmi:id="_ItYZXgWYEfGAS7nvoHpUTg" general="_ItYZKQWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ItYZXwWYEfGAS7nvoHpUTg" name="class diagram">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ItYZYAWYEfGAS7nvoHpUTg" name="Web user">
+      <ownedComment xmi:id="_ItYZYQWYEfGAS7nvoHpUTg">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_ItYZYgWYEfGAS7nvoHpUTg" name="login_id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZYwWYEfGAS7nvoHpUTg" name="password" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZZAWYEfGAS7nvoHpUTg" name="state" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_ItYZZQWYEfGAS7nvoHpUTg" name="login" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZZgWYEfGAS7nvoHpUTg" name="logout" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZZwWYEfGAS7nvoHpUTg" name="getState" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZaAWYEfGAS7nvoHpUTg" name="setState" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZaQWYEfGAS7nvoHpUTg" memberEnd="_ItYZagWYEfGAS7nvoHpUTg _ItYZbAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZagWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZdAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZaQWYEfGAS7nvoHpUTg">
+        <ownedComment xmi:id="_ItYZawWYEfGAS7nvoHpUTg">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZbAWYEfGAS7nvoHpUTg" name="web user" visibility="public" type="_ItYZYAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZaQWYEfGAS7nvoHpUTg">
+        <ownedComment xmi:id="_ItYZbQWYEfGAS7nvoHpUTg">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZbgWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZbwWYEfGAS7nvoHpUTg" memberEnd="_ItYZcAWYEfGAS7nvoHpUTg _ItYZcgWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZcAWYEfGAS7nvoHpUTg" name="shopping cart" visibility="public" type="_ItYZyQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZbwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZcQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZcgWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZYAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZbwWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZcwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ItYZdAWYEfGAS7nvoHpUTg" name="Customer">
+      <ownedAttribute xmi:id="_ItYZdQWYEfGAS7nvoHpUTg" name="id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZdgWYEfGAS7nvoHpUTg" name="address" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZdwWYEfGAS7nvoHpUTg" name="phone" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZeAWYEfGAS7nvoHpUTg" name="email" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_ItYZeQWYEfGAS7nvoHpUTg" name="getID" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZegWYEfGAS7nvoHpUTg" name="getAddress" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZewWYEfGAS7nvoHpUTg" name="getEmail" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZfAWYEfGAS7nvoHpUTg" name="getPhone" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZfQWYEfGAS7nvoHpUTg" memberEnd="_ItYZfgWYEfGAS7nvoHpUTg _ItYZgAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZfgWYEfGAS7nvoHpUTg" name="account" visibility="public" type="_ItYZgQWYEfGAS7nvoHpUTg" isUnique="false" aggregation="composite" association="_ItYZfQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZfwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZgAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZdAWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZfQWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ItYZgQWYEfGAS7nvoHpUTg" name="Account">
+      <ownedAttribute xmi:id="_ItYZggWYEfGAS7nvoHpUTg" name="id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZgwWYEfGAS7nvoHpUTg" name="biling_address" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZhAWYEfGAS7nvoHpUTg" name="is_closed" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZhQWYEfGAS7nvoHpUTg" name="open" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZhgWYEfGAS7nvoHpUTg" name="closed" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ItYZhwWYEfGAS7nvoHpUTg" name="State Machine1">
+        <region xmi:id="_ItYZiAWYEfGAS7nvoHpUTg">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_ItYZiQWYEfGAS7nvoHpUTg" name="Initial State"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ItYZigWYEfGAS7nvoHpUTg" name="new"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_ItYZiwWYEfGAS7nvoHpUTg" name="Final State"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ItYZjAWYEfGAS7nvoHpUTg" name="active"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ItYZjQWYEfGAS7nvoHpUTg" name="closed"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ItYZjgWYEfGAS7nvoHpUTg" name="suspended"/>
+          <transition xmi:id="_ItYZjwWYEfGAS7nvoHpUTg" name="select register" source="_ItYZiQWYEfGAS7nvoHpUTg" target="_ItYZigWYEfGAS7nvoHpUTg"/>
+          <transition xmi:id="_ItYZkAWYEfGAS7nvoHpUTg" name="activate" source="_ItYZigWYEfGAS7nvoHpUTg" target="_ItYZjAWYEfGAS7nvoHpUTg"/>
+          <transition xmi:id="_ItYZkQWYEfGAS7nvoHpUTg" name="suspend" source="_ItYZigWYEfGAS7nvoHpUTg" target="_ItYZjgWYEfGAS7nvoHpUTg"/>
+          <transition xmi:id="_ItYZkgWYEfGAS7nvoHpUTg" name="cancel" source="_ItYZigWYEfGAS7nvoHpUTg" target="_ItYZjQWYEfGAS7nvoHpUTg"/>
+          <transition xmi:id="_ItYZkwWYEfGAS7nvoHpUTg" name="Transition" source="_ItYZjAWYEfGAS7nvoHpUTg" target="_ItYZjQWYEfGAS7nvoHpUTg"/>
+          <transition xmi:id="_ItYZlAWYEfGAS7nvoHpUTg" name="suspend" source="_ItYZjAWYEfGAS7nvoHpUTg" target="_ItYZjgWYEfGAS7nvoHpUTg"/>
+          <transition xmi:id="_ItYZlQWYEfGAS7nvoHpUTg" name="resume" source="_ItYZjgWYEfGAS7nvoHpUTg" target="_ItYZjAWYEfGAS7nvoHpUTg"/>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_ItYZlgWYEfGAS7nvoHpUTg" name="getCustomer" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZlwWYEfGAS7nvoHpUTg" name="getOrder" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZmAWYEfGAS7nvoHpUTg" name="createOrder" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZmQWYEfGAS7nvoHpUTg" name="getShoppingCart" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZmgWYEfGAS7nvoHpUTg" name="updateOrder" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZmwWYEfGAS7nvoHpUTg" name="make purchase" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZnAWYEfGAS7nvoHpUTg" memberEnd="_ItYZnQWYEfGAS7nvoHpUTg _ItYZnwWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZnQWYEfGAS7nvoHpUTg" name="shopping cart" visibility="public" type="_ItYZyQWYEfGAS7nvoHpUTg" isUnique="false" aggregation="composite" association="_ItYZnAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZngWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZnwWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZgQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZnAWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZoAWYEfGAS7nvoHpUTg" memberEnd="_ItYZoQWYEfGAS7nvoHpUTg _ItYZowWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZoQWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZqQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZoAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZogWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZowWYEfGAS7nvoHpUTg" name="account" visibility="public" type="_ItYZgQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZoAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZpAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZpQWYEfGAS7nvoHpUTg" memberEnd="_ItYZpgWYEfGAS7nvoHpUTg _ItYZqAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZpgWYEfGAS7nvoHpUTg" name="order" visibility="public" type="_ItYZtgWYEfGAS7nvoHpUTg" isUnique="false" aggregation="composite" association="_ItYZpQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZpwWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZqAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZgQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZpQWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ItYZqQWYEfGAS7nvoHpUTg" name="Payment">
+      <ownedAttribute xmi:id="_ItYZqgWYEfGAS7nvoHpUTg" name="id" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZqwWYEfGAS7nvoHpUTg" name="paid" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZrAWYEfGAS7nvoHpUTg" name="total" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZrQWYEfGAS7nvoHpUTg" name="details" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_ItYZrgWYEfGAS7nvoHpUTg" name="processPayment" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZrwWYEfGAS7nvoHpUTg" name="getOrder" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZsAWYEfGAS7nvoHpUTg" name="setOrder" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZsQWYEfGAS7nvoHpUTg" memberEnd="_ItYZsgWYEfGAS7nvoHpUTg _ItYZtAWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZsgWYEfGAS7nvoHpUTg" name="order" visibility="public" type="_ItYZtgWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZsQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZswWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZtAWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZqQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZsQWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZtQWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ItYZtgWYEfGAS7nvoHpUTg" name="Order">
+      <ownedAttribute xmi:id="_ItYZtwWYEfGAS7nvoHpUTg" name="number" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZuAWYEfGAS7nvoHpUTg" name="ordered" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZuQWYEfGAS7nvoHpUTg" name="shipped" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZugWYEfGAS7nvoHpUTg" name="ship_to" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZuwWYEfGAS7nvoHpUTg" name="status" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZvAWYEfGAS7nvoHpUTg" name="total" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_ItYZvQWYEfGAS7nvoHpUTg" name="getLineItem" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZvgWYEfGAS7nvoHpUTg" name="getShippingAddress" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZvwWYEfGAS7nvoHpUTg" name="setShippingAddress" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZwAWYEfGAS7nvoHpUTg" name="calcTotal" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZwQWYEfGAS7nvoHpUTg" name="getStatus" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZwgWYEfGAS7nvoHpUTg" name="setStatus" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZwwWYEfGAS7nvoHpUTg" name="addLineItem" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZxAWYEfGAS7nvoHpUTg" memberEnd="_ItYZxQWYEfGAS7nvoHpUTg _ItYZxwWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZxQWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZ1gWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZxAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZxgWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZxwWYEfGAS7nvoHpUTg" name="order" visibility="public" type="_ItYZtgWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZxAWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZyAWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ItYZyQWYEfGAS7nvoHpUTg" name="Shopping cart">
+      <ownedAttribute xmi:id="_ItYZygWYEfGAS7nvoHpUTg" name="created" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_ItYZywWYEfGAS7nvoHpUTg" name="addItem" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZzAWYEfGAS7nvoHpUTg" name="removeItem" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZzQWYEfGAS7nvoHpUTg" name="getTotal" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZzgWYEfGAS7nvoHpUTg" name="viewItems" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZzwWYEfGAS7nvoHpUTg" name="getItems" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZ0AWYEfGAS7nvoHpUTg" name="findItems" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZ0QWYEfGAS7nvoHpUTg" memberEnd="_ItYZ0gWYEfGAS7nvoHpUTg _ItYZ1AWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZ0gWYEfGAS7nvoHpUTg" name="lineItem" visibility="public" type="_ItYZ1gWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZ0QWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZ0wWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZ1AWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZyQWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZ0QWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZ1QWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ItYZ1gWYEfGAS7nvoHpUTg" name="LineItem">
+      <ownedAttribute xmi:id="_ItYZ1wWYEfGAS7nvoHpUTg" name="quantity" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZ2AWYEfGAS7nvoHpUTg" name="price" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_ItYZ2QWYEfGAS7nvoHpUTg" name="getQuantity" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZ2gWYEfGAS7nvoHpUTg" name="getPrice" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZ2wWYEfGAS7nvoHpUTg" name="LineItem" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZ3AWYEfGAS7nvoHpUTg" name="setQuantity" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItYZ3QWYEfGAS7nvoHpUTg" memberEnd="_ItYZ3gWYEfGAS7nvoHpUTg _ItYZ4AWYEfGAS7nvoHpUTg">
+      <ownedEnd xmi:id="_ItYZ3gWYEfGAS7nvoHpUTg" name="product" visibility="public" type="_ItYZ4gWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZ3QWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZ3wWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ItYZ4AWYEfGAS7nvoHpUTg" visibility="public" type="_ItYZ1gWYEfGAS7nvoHpUTg" isUnique="false" association="_ItYZ3QWYEfGAS7nvoHpUTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItYZ4QWYEfGAS7nvoHpUTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ItYZ4gWYEfGAS7nvoHpUTg" name="Product">
+      <ownedAttribute xmi:id="_ItYZ4wWYEfGAS7nvoHpUTg" name="id" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZ5AWYEfGAS7nvoHpUTg" name="name" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ItYZ5QWYEfGAS7nvoHpUTg" name="supplier" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_ItYZ5gWYEfGAS7nvoHpUTg" name="getID" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZ5wWYEfGAS7nvoHpUTg" name="getName" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZ6AWYEfGAS7nvoHpUTg" name="getSupplier" visibility="public"/>
+      <ownedOperation xmi:id="_ItYZ6QWYEfGAS7nvoHpUTg" name="viewProduct" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ItYZ6gWYEfGAS7nvoHpUTg" name="Orderstatus">
+      <ownedLiteral xmi:id="_ItYZ6wWYEfGAS7nvoHpUTg" name="new"/>
+      <ownedLiteral xmi:id="_ItYZ7AWYEfGAS7nvoHpUTg" name="hold"/>
+      <ownedLiteral xmi:id="_ItYZ7QWYEfGAS7nvoHpUTg" name="shipped"/>
+      <ownedLiteral xmi:id="_ItYZ7gWYEfGAS7nvoHpUTg" name="delivered"/>
+      <ownedLiteral xmi:id="_ItYZ7wWYEfGAS7nvoHpUTg" name="closed"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ItYZ8AWYEfGAS7nvoHpUTg" name="user state ">
+      <ownedLiteral xmi:id="_ItYZ8QWYEfGAS7nvoHpUTg" name="new"/>
+      <ownedLiteral xmi:id="_ItYZ8gWYEfGAS7nvoHpUTg" name="active"/>
+      <ownedLiteral xmi:id="_ItYZ8wWYEfGAS7nvoHpUTg" name="blocked"/>
+      <ownedLiteral xmi:id="_ItYZ9AWYEfGAS7nvoHpUTg" name="banned"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ItYZ9QWYEfGAS7nvoHpUTg" name="sequence">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_ItYZ9gWYEfGAS7nvoHpUTg" name="Interaction">
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ItYZ9wWYEfGAS7nvoHpUTg" name="locals">
+        <ownedAttribute xmi:id="_ItYZ-AWYEfGAS7nvoHpUTg" name="r" type="_ItYXpQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+        <ownedAttribute xmi:id="_ItYZ-QWYEfGAS7nvoHpUTg" name="r1" type="_ItYZYAWYEfGAS7nvoHpUTg" aggregation="composite"/>
+        <ownedAttribute xmi:id="_ItYZ-gWYEfGAS7nvoHpUTg" name="r2" type="_ItYZyQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+        <ownedAttribute xmi:id="_ItYZ-wWYEfGAS7nvoHpUTg" name="r3" type="_ItYZ4gWYEfGAS7nvoHpUTg" aggregation="composite"/>
+        <ownedAttribute xmi:id="_ItYZ_AWYEfGAS7nvoHpUTg" name="r4" type="_ItYZ1gWYEfGAS7nvoHpUTg" aggregation="composite"/>
+        <ownedAttribute xmi:id="_ItYZ_QWYEfGAS7nvoHpUTg" name="r5" type="_ItYZgQWYEfGAS7nvoHpUTg" aggregation="composite"/>
+      </nestedClassifier>
+      <lifeline xmi:id="_ItYZ_gWYEfGAS7nvoHpUTg" name="r" represents="_ItYZ-AWYEfGAS7nvoHpUTg" coveredBy="_ItYaBAWYEfGAS7nvoHpUTg _ItYaDQWYEfGAS7nvoHpUTg _ItYaDgWYEfGAS7nvoHpUTg _ItYaEgWYEfGAS7nvoHpUTg _ItYaEwWYEfGAS7nvoHpUTg _ItYaFwWYEfGAS7nvoHpUTg _ItYaGAWYEfGAS7nvoHpUTg _ItYaHAWYEfGAS7nvoHpUTg _ItYaHQWYEfGAS7nvoHpUTg _ItYaKwWYEfGAS7nvoHpUTg"/>
+      <lifeline xmi:id="_ItYZ_wWYEfGAS7nvoHpUTg" name="r1" represents="_ItYZ-QWYEfGAS7nvoHpUTg" coveredBy="_ItYaBQWYEfGAS7nvoHpUTg _ItYaBgWYEfGAS7nvoHpUTg _ItYaBwWYEfGAS7nvoHpUTg _ItYaCwWYEfGAS7nvoHpUTg _ItYaDAWYEfGAS7nvoHpUTg"/>
+      <lifeline xmi:id="_ItYaAAWYEfGAS7nvoHpUTg" name="r2" represents="_ItYZ-gWYEfGAS7nvoHpUTg" coveredBy="_ItYaHgWYEfGAS7nvoHpUTg _ItYaHwWYEfGAS7nvoHpUTg _ItYaIAWYEfGAS7nvoHpUTg _ItYaJAWYEfGAS7nvoHpUTg _ItYaJQWYEfGAS7nvoHpUTg _ItYaKQWYEfGAS7nvoHpUTg _ItYaKgWYEfGAS7nvoHpUTg"/>
+      <lifeline xmi:id="_ItYaAQWYEfGAS7nvoHpUTg" name="r3" represents="_ItYZ-wWYEfGAS7nvoHpUTg" coveredBy="_ItYaFAWYEfGAS7nvoHpUTg _ItYaFQWYEfGAS7nvoHpUTg _ItYaFgWYEfGAS7nvoHpUTg _ItYaGQWYEfGAS7nvoHpUTg _ItYaGgWYEfGAS7nvoHpUTg _ItYaGwWYEfGAS7nvoHpUTg"/>
+      <lifeline xmi:id="_ItYaAgWYEfGAS7nvoHpUTg" name="r4" represents="_ItYZ_AWYEfGAS7nvoHpUTg" coveredBy="_ItYaIQWYEfGAS7nvoHpUTg _ItYaIgWYEfGAS7nvoHpUTg _ItYaIwWYEfGAS7nvoHpUTg _ItYaJgWYEfGAS7nvoHpUTg _ItYaJwWYEfGAS7nvoHpUTg _ItYaKAWYEfGAS7nvoHpUTg"/>
+      <lifeline xmi:id="_ItYaAwWYEfGAS7nvoHpUTg" name="r5" represents="_ItYZ_QWYEfGAS7nvoHpUTg" coveredBy="_ItYaCAWYEfGAS7nvoHpUTg _ItYaCQWYEfGAS7nvoHpUTg _ItYaCgWYEfGAS7nvoHpUTg _ItYaDwWYEfGAS7nvoHpUTg _ItYaEAWYEfGAS7nvoHpUTg _ItYaEQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaBAWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" event="_ItYaPAWYEfGAS7nvoHpUTg" message="_ItYaLAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaBQWYEfGAS7nvoHpUTg" covered="_ItYZ_wWYEfGAS7nvoHpUTg" event="_ItYaPQWYEfGAS7nvoHpUTg" message="_ItYaLAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYaBgWYEfGAS7nvoHpUTg" covered="_ItYZ_wWYEfGAS7nvoHpUTg" start="_ItYaBQWYEfGAS7nvoHpUTg" finish="_ItYaDAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaBwWYEfGAS7nvoHpUTg" covered="_ItYZ_wWYEfGAS7nvoHpUTg" event="_ItYaPgWYEfGAS7nvoHpUTg" message="_ItYaLQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaCAWYEfGAS7nvoHpUTg" covered="_ItYaAwWYEfGAS7nvoHpUTg" event="_ItYaPwWYEfGAS7nvoHpUTg" message="_ItYaLQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYaCQWYEfGAS7nvoHpUTg" covered="_ItYaAwWYEfGAS7nvoHpUTg" start="_ItYaCAWYEfGAS7nvoHpUTg" finish="_ItYaCgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaCgWYEfGAS7nvoHpUTg" covered="_ItYaAwWYEfGAS7nvoHpUTg" message="_ItYaLgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaCwWYEfGAS7nvoHpUTg" covered="_ItYZ_wWYEfGAS7nvoHpUTg" message="_ItYaLgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaDAWYEfGAS7nvoHpUTg" covered="_ItYZ_wWYEfGAS7nvoHpUTg" message="_ItYaLwWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaDQWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" message="_ItYaLwWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaDgWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" event="_ItYaQAWYEfGAS7nvoHpUTg" message="_ItYaMAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaDwWYEfGAS7nvoHpUTg" covered="_ItYaAwWYEfGAS7nvoHpUTg" event="_ItYaQQWYEfGAS7nvoHpUTg" message="_ItYaMAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYaEAWYEfGAS7nvoHpUTg" covered="_ItYaAwWYEfGAS7nvoHpUTg" start="_ItYaDwWYEfGAS7nvoHpUTg" finish="_ItYaEQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaEQWYEfGAS7nvoHpUTg" covered="_ItYaAwWYEfGAS7nvoHpUTg" message="_ItYaMQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaEgWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" message="_ItYaMQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaEwWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" event="_ItYaQgWYEfGAS7nvoHpUTg" message="_ItYaMgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaFAWYEfGAS7nvoHpUTg" covered="_ItYaAQWYEfGAS7nvoHpUTg" event="_ItYaQwWYEfGAS7nvoHpUTg" message="_ItYaMgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYaFQWYEfGAS7nvoHpUTg" covered="_ItYaAQWYEfGAS7nvoHpUTg" start="_ItYaFAWYEfGAS7nvoHpUTg" finish="_ItYaFgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaFgWYEfGAS7nvoHpUTg" covered="_ItYaAQWYEfGAS7nvoHpUTg" message="_ItYaMwWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaFwWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" message="_ItYaMwWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaGAWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" event="_ItYaRAWYEfGAS7nvoHpUTg" message="_ItYaNAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaGQWYEfGAS7nvoHpUTg" covered="_ItYaAQWYEfGAS7nvoHpUTg" event="_ItYaRQWYEfGAS7nvoHpUTg" message="_ItYaNAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYaGgWYEfGAS7nvoHpUTg" covered="_ItYaAQWYEfGAS7nvoHpUTg" start="_ItYaGQWYEfGAS7nvoHpUTg" finish="_ItYaGwWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaGwWYEfGAS7nvoHpUTg" covered="_ItYaAQWYEfGAS7nvoHpUTg" message="_ItYaNQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaHAWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" message="_ItYaNQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaHQWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" event="_ItYaRgWYEfGAS7nvoHpUTg" message="_ItYaNgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaHgWYEfGAS7nvoHpUTg" covered="_ItYaAAWYEfGAS7nvoHpUTg" event="_ItYaRwWYEfGAS7nvoHpUTg" message="_ItYaNgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYaHwWYEfGAS7nvoHpUTg" covered="_ItYaAAWYEfGAS7nvoHpUTg" start="_ItYaHgWYEfGAS7nvoHpUTg" finish="_ItYaKgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaIAWYEfGAS7nvoHpUTg" covered="_ItYaAAWYEfGAS7nvoHpUTg" event="_ItYaSAWYEfGAS7nvoHpUTg" message="_ItYaNwWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaIQWYEfGAS7nvoHpUTg" covered="_ItYaAgWYEfGAS7nvoHpUTg" event="_ItYaSQWYEfGAS7nvoHpUTg" message="_ItYaNwWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYaIgWYEfGAS7nvoHpUTg" covered="_ItYaAgWYEfGAS7nvoHpUTg" start="_ItYaIQWYEfGAS7nvoHpUTg" finish="_ItYaIwWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaIwWYEfGAS7nvoHpUTg" covered="_ItYaAgWYEfGAS7nvoHpUTg" message="_ItYaOAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaJAWYEfGAS7nvoHpUTg" covered="_ItYaAAWYEfGAS7nvoHpUTg" message="_ItYaOAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaJQWYEfGAS7nvoHpUTg" covered="_ItYaAAWYEfGAS7nvoHpUTg" event="_ItYaSgWYEfGAS7nvoHpUTg" message="_ItYaOQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaJgWYEfGAS7nvoHpUTg" covered="_ItYaAgWYEfGAS7nvoHpUTg" event="_ItYaSwWYEfGAS7nvoHpUTg" message="_ItYaOQWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ItYaJwWYEfGAS7nvoHpUTg" covered="_ItYaAgWYEfGAS7nvoHpUTg" start="_ItYaJgWYEfGAS7nvoHpUTg" finish="_ItYaKAWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaKAWYEfGAS7nvoHpUTg" covered="_ItYaAgWYEfGAS7nvoHpUTg" message="_ItYaOgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaKQWYEfGAS7nvoHpUTg" covered="_ItYaAAWYEfGAS7nvoHpUTg" message="_ItYaOgWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaKgWYEfGAS7nvoHpUTg" covered="_ItYaAAWYEfGAS7nvoHpUTg" message="_ItYaOwWYEfGAS7nvoHpUTg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ItYaKwWYEfGAS7nvoHpUTg" covered="_ItYZ_gWYEfGAS7nvoHpUTg" message="_ItYaOwWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaLAWYEfGAS7nvoHpUTg" name=" login" receiveEvent="_ItYaBQWYEfGAS7nvoHpUTg" sendEvent="_ItYaBAWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaLQWYEfGAS7nvoHpUTg" name="getCustomer" receiveEvent="_ItYaCAWYEfGAS7nvoHpUTg" sendEvent="_ItYaBwWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaLgWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYaCwWYEfGAS7nvoHpUTg" sendEvent="_ItYaCgWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaLwWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYaDQWYEfGAS7nvoHpUTg" sendEvent="_ItYaDAWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaMAWYEfGAS7nvoHpUTg" name="getShoppingCart" receiveEvent="_ItYaDwWYEfGAS7nvoHpUTg" sendEvent="_ItYaDgWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaMQWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYaEgWYEfGAS7nvoHpUTg" sendEvent="_ItYaEQWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaMgWYEfGAS7nvoHpUTg" name="getID" receiveEvent="_ItYaFAWYEfGAS7nvoHpUTg" sendEvent="_ItYaEwWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaMwWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYaFwWYEfGAS7nvoHpUTg" sendEvent="_ItYaFgWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaNAWYEfGAS7nvoHpUTg" name="getName" receiveEvent="_ItYaGQWYEfGAS7nvoHpUTg" sendEvent="_ItYaGAWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaNQWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYaHAWYEfGAS7nvoHpUTg" sendEvent="_ItYaGwWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaNgWYEfGAS7nvoHpUTg" receiveEvent="_ItYaHgWYEfGAS7nvoHpUTg" sendEvent="_ItYaHQWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaNwWYEfGAS7nvoHpUTg" name="getQuantity" receiveEvent="_ItYaIQWYEfGAS7nvoHpUTg" sendEvent="_ItYaIAWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaOAWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYaJAWYEfGAS7nvoHpUTg" sendEvent="_ItYaIwWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaOQWYEfGAS7nvoHpUTg" name="getPrice" receiveEvent="_ItYaJgWYEfGAS7nvoHpUTg" sendEvent="_ItYaJQWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaOgWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYaKQWYEfGAS7nvoHpUTg" sendEvent="_ItYaKAWYEfGAS7nvoHpUTg"/>
+      <message xmi:id="_ItYaOwWYEfGAS7nvoHpUTg" messageSort="reply" receiveEvent="_ItYaKwWYEfGAS7nvoHpUTg" sendEvent="_ItYaKgWYEfGAS7nvoHpUTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaPAWYEfGAS7nvoHpUTg" operation="_ItYZZQWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaPQWYEfGAS7nvoHpUTg" operation="_ItYZZQWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaPgWYEfGAS7nvoHpUTg" operation="_ItYZlgWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaPwWYEfGAS7nvoHpUTg" operation="_ItYZlgWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaQAWYEfGAS7nvoHpUTg" operation="_ItYZmQWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaQQWYEfGAS7nvoHpUTg" operation="_ItYZmQWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaQgWYEfGAS7nvoHpUTg" operation="_ItYZ5gWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaQwWYEfGAS7nvoHpUTg" operation="_ItYZ5gWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaRAWYEfGAS7nvoHpUTg" operation="_ItYZ5wWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaRQWYEfGAS7nvoHpUTg" operation="_ItYZ5wWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaRgWYEfGAS7nvoHpUTg" operation="_ItYZywWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaRwWYEfGAS7nvoHpUTg" operation="_ItYZywWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaSAWYEfGAS7nvoHpUTg" operation="_ItYZ2QWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaSQWYEfGAS7nvoHpUTg" operation="_ItYZ2QWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaSgWYEfGAS7nvoHpUTg" operation="_ItYZ2gWYEfGAS7nvoHpUTg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_ItYaSwWYEfGAS7nvoHpUTg" operation="_ItYZ2gWYEfGAS7nvoHpUTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ItYaTAWYEfGAS7nvoHpUTg" name="Activity">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_ItYaTQWYEfGAS7nvoHpUTg" name="Activity">
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ItYaTgWYEfGAS7nvoHpUTg" name="locals"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_ItYaTwWYEfGAS7nvoHpUTg" name="Initial Node" outgoing="_ItYaWQWYEfGAS7nvoHpUTg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ItYaUAWYEfGAS7nvoHpUTg" name="Authenticate user" outgoing="_ItYaWwWYEfGAS7nvoHpUTg" incoming="_ItYaWQWYEfGAS7nvoHpUTg">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ItYaUQWYEfGAS7nvoHpUTg" name="view shopping cart" outgoing="_ItYaXQWYEfGAS7nvoHpUTg" incoming="_ItYaWwWYEfGAS7nvoHpUTg">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ItYaUgWYEfGAS7nvoHpUTg" name="calculate taxes and shipping" outgoing="_ItYaXwWYEfGAS7nvoHpUTg" incoming="_ItYaXQWYEfGAS7nvoHpUTg">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ItYaUwWYEfGAS7nvoHpUTg" name="calculate total" outgoing="_ItYaYQWYEfGAS7nvoHpUTg" incoming="_ItYaXwWYEfGAS7nvoHpUTg">
+        <body></body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_ItYaVAWYEfGAS7nvoHpUTg" name="Decision-Merge" outgoing="_ItYaYwWYEfGAS7nvoHpUTg _ItYaZgWYEfGAS7nvoHpUTg" incoming="_ItYaYQWYEfGAS7nvoHpUTg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ItYaVQWYEfGAS7nvoHpUTg" name="payment using PayPal" outgoing="_ItYaaQWYEfGAS7nvoHpUTg" incoming="_ItYaZgWYEfGAS7nvoHpUTg">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ItYaVgWYEfGAS7nvoHpUTg" name="payment using credit card" outgoing="_ItYaawWYEfGAS7nvoHpUTg" incoming="_ItYaYwWYEfGAS7nvoHpUTg">
+        <body></body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ItYaVwWYEfGAS7nvoHpUTg" name="Activity Final Node" incoming="_ItYabQWYEfGAS7nvoHpUTg"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_ItYaWAWYEfGAS7nvoHpUTg" name="Decision-Merge1" outgoing="_ItYabQWYEfGAS7nvoHpUTg" incoming="_ItYaaQWYEfGAS7nvoHpUTg _ItYaawWYEfGAS7nvoHpUTg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYaWQWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaTwWYEfGAS7nvoHpUTg" target="_ItYaUAWYEfGAS7nvoHpUTg">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYaWgWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYaWwWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaUAWYEfGAS7nvoHpUTg" target="_ItYaUQWYEfGAS7nvoHpUTg">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYaXAWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYaXQWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaUQWYEfGAS7nvoHpUTg" target="_ItYaUgWYEfGAS7nvoHpUTg">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYaXgWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYaXwWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaUgWYEfGAS7nvoHpUTg" target="_ItYaUwWYEfGAS7nvoHpUTg">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYaYAWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYaYQWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaUwWYEfGAS7nvoHpUTg" target="_ItYaVAWYEfGAS7nvoHpUTg">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYaYgWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYaYwWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaVAWYEfGAS7nvoHpUTg" target="_ItYaVgWYEfGAS7nvoHpUTg">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_ItYaZAWYEfGAS7nvoHpUTg">
+          <body>method= credit card</body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYaZQWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYaZgWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaVAWYEfGAS7nvoHpUTg" target="_ItYaVQWYEfGAS7nvoHpUTg">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_ItYaZwWYEfGAS7nvoHpUTg">
+          <body>method = paypal</body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYaaAWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYaaQWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaVQWYEfGAS7nvoHpUTg" target="_ItYaWAWYEfGAS7nvoHpUTg">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYaagWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYaawWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaVgWYEfGAS7nvoHpUTg" target="_ItYaWAWYEfGAS7nvoHpUTg">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYabAWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ItYabQWYEfGAS7nvoHpUTg" name="ControlFlow" source="_ItYaWAWYEfGAS7nvoHpUTg" target="_ItYaVwWYEfGAS7nvoHpUTg">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ItYabgWYEfGAS7nvoHpUTg" value="1"/>
+      </edge>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ItYabwWYEfGAS7nvoHpUTg" name="State">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_ItYacAWYEfGAS7nvoHpUTg" name="State Machine">
+      <region xmi:id="_ItYacQWYEfGAS7nvoHpUTg">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_ItYacgWYEfGAS7nvoHpUTg" name="Initial State"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_ItYacwWYEfGAS7nvoHpUTg" name="Final State"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ItYadAWYEfGAS7nvoHpUTg" name="New"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ItYadQWYEfGAS7nvoHpUTg" name="Active"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ItYadgWYEfGAS7nvoHpUTg" name="Closed"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ItYadwWYEfGAS7nvoHpUTg" name="Suspended"/>
+        <transition xmi:id="_ItYaeAWYEfGAS7nvoHpUTg" name="create" source="_ItYacgWYEfGAS7nvoHpUTg" target="_ItYadAWYEfGAS7nvoHpUTg"/>
+        <transition xmi:id="_ItYaeQWYEfGAS7nvoHpUTg" name="Transition" source="_ItYadAWYEfGAS7nvoHpUTg" target="_ItYadQWYEfGAS7nvoHpUTg"/>
+        <transition xmi:id="_ItYaegWYEfGAS7nvoHpUTg" name="Cancel" source="_ItYadAWYEfGAS7nvoHpUTg" target="_ItYadgWYEfGAS7nvoHpUTg" guard="_ItYaewWYEfGAS7nvoHpUTg">
+          <ownedRule xmi:id="_ItYaewWYEfGAS7nvoHpUTg" name="x = true" constrainedElement="_ItYaegWYEfGAS7nvoHpUTg">
+            <specification xmi:type="uml:LiteralString" xmi:id="_ItYafAWYEfGAS7nvoHpUTg" value="x = true"/>
+          </ownedRule>
+        </transition>
+        <transition xmi:id="_ItYafQWYEfGAS7nvoHpUTg" name="Suspend" source="_ItYadAWYEfGAS7nvoHpUTg" target="_ItYadwWYEfGAS7nvoHpUTg"/>
+        <transition xmi:id="_ItYafgWYEfGAS7nvoHpUTg" name="Cancel" source="_ItYadQWYEfGAS7nvoHpUTg" target="_ItYadgWYEfGAS7nvoHpUTg"/>
+        <transition xmi:id="_ItYafwWYEfGAS7nvoHpUTg" name="Lock" source="_ItYadQWYEfGAS7nvoHpUTg" target="_ItYadwWYEfGAS7nvoHpUTg"/>
+        <transition xmi:id="_ItYagAWYEfGAS7nvoHpUTg" source="_ItYadgWYEfGAS7nvoHpUTg" target="_ItYacwWYEfGAS7nvoHpUTg"/>
+        <transition xmi:id="_ItYagQWYEfGAS7nvoHpUTg" name="unlock" source="_ItYadwWYEfGAS7nvoHpUTg" target="_ItYadQWYEfGAS7nvoHpUTg"/>
+        <transition xmi:id="_ItYaggWYEfGAS7nvoHpUTg" name="Cancel" source="_ItYadwWYEfGAS7nvoHpUTg" target="_ItYadgWYEfGAS7nvoHpUTg"/>
+      </region>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
